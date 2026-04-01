@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip3 install:*)",
+      "Bash(npx next:*)",
+      "Bash(python3:*)",
+      "Bash(find /Users/patrickmckeever/hr-scout/node_modules/next/dist/docs -name *.md -o -name *.mdx)",
+      "Bash(chmod:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(printf \"\\\\nPattern test:\\\\n\")",
+      "Bash(for f:*)",
+      "Bash(do if:*)",
+      "Bash(then echo:*)",
+      "Bash(git init:*)",
+      "Bash(else echo:*)",
+      "Bash(fi)",
+      "Bash(done)"
+    ]
+  }
+}
