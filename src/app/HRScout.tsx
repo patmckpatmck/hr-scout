@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // STATIC DATA (for matchups tab rendering)
@@ -101,6 +101,7 @@ interface HistoryPlayer {
   rank: number;
   score: number;
   hitHR: boolean;
+  autoResulted?: boolean;
 }
 
 interface HistoryDay {
@@ -116,11 +117,112 @@ function vegasModifier(odds: number): number {
   return -0.5;
 }
 
+// Team concentration cap.
+//   - max 2 players per team in display positions 1-10
+//   - max 2 players per team in display positions 11-20
+//   - so a team appears at most 4 times in the top 20
+// Pure function: no React, no side effects. Returns a new array.
+// Defensive: normalizes team strings via .trim().toUpperCase() before bucketing.
+function applyTeamCap<T extends { team: string }>(
+  players: T[]
+): (T & { _capped?: boolean })[] {
+  type R = T & { _capped?: boolean };
+  const normalize = (t: string | undefined | null) => (t || "").trim().toUpperCase();
+  const result: R[] = [];
+  const deferred: T[] = [];
+  const teamCount: Record<string, { top10: number; top20: number }> = {};
+  const counts = (team: string) => {
+    const key = normalize(team);
+    if (!teamCount[key]) teamCount[key] = { top10: 0, top20: 0 };
+    return teamCount[key];
+  };
+
+  // Pass 1: walk the sorted players in score order. Place each one if their
+  // tier's cap allows; otherwise defer them.
+  for (const p of players) {
+    const slot = result.length + 1; // 1-indexed display position
+    const c = counts(p.team);
+    if (slot <= 10) {
+      if (c.top10 < 2) { result.push(p); c.top10 += 1; }
+      else { deferred.push(p); }
+    } else if (slot <= 20) {
+      if (c.top20 < 2) { result.push(p); c.top20 += 1; }
+      else { deferred.push(p); }
+    } else {
+      deferred.push(p);
+    }
+  }
+
+  // Pass 2: walk deferred players (still in score order) and place any that
+  // fit into the tier still being filled. These are flagged _capped because
+  // their raw score earned a higher position but their team was full.
+  const stillDeferred: R[] = [];
+  for (const p of deferred) {
+    const slot = result.length + 1;
+    const c = counts(p.team);
+    if (slot <= 10 && c.top10 < 2) {
+      result.push({ ...p, _capped: true } as R);
+      c.top10 += 1;
+    } else if (slot > 10 && slot <= 20 && c.top20 < 2) {
+      result.push({ ...p, _capped: true } as R);
+      c.top20 += 1;
+    } else {
+      stillDeferred.push(p as R);
+    }
+  }
+
+  return [...result, ...stillDeferred];
+}
+
+const HR_STORAGE_KEY = "hrScout:hitHR";
+const hrKey = (date: string, name: string) => `${date}|${name}`;
+
+// Static styles for memoized HistoryRow (defined outside component to preserve identity)
+const HR_TD: React.CSSProperties = { padding:"9px 10px", fontSize:"12px", borderBottom:"1px solid #070d0f" };
+const HR_TD_DATE: React.CSSProperties = { ...HR_TD, fontSize:"11px", color:"#64748b" };
+const HR_TD_RANK: React.CSSProperties = { ...HR_TD, fontFamily:"'Bebas Neue',monospace", fontSize:"20px", color:"#1e3a2a", textAlign:"center", width:"30px" };
+const HR_TD_CENTER: React.CSSProperties = { ...HR_TD, textAlign:"center" };
+const HR_NAME: React.CSSProperties = { fontWeight:"600", fontSize:"13px" };
+const HR_BADGE: React.CSSProperties = { display:"inline-block", padding:"1px 5px", borderRadius:"3px", background:"#0f2518", fontSize:"9px", fontWeight:"700", color:"#86efac", marginLeft:"5px" };
+const HR_CHECK: React.CSSProperties = { width:"16px", height:"16px", accentColor:"#e8e020", cursor:"pointer" };
+const scoreCellColor = (s: number) => s>=7.5?"#e8e020":s>=6.5?"#86efac":s>=5.5?"#93c5fd":"#94a3b8";
+
+interface HistoryRowProps {
+  date: string;
+  name: string;
+  team: string;
+  rank: number;
+  score: number;
+  hitHR: boolean;
+  autoResulted: boolean;
+  zebra: boolean;
+}
+const HistoryRow = memo(function HistoryRow({
+  date, name, team, rank, score, hitHR, autoResulted, zebra,
+}: HistoryRowProps) {
+  const resultIcon = !autoResulted ? "⏳" : hitHR ? "✅" : "❌";
+  const resultTitle = !autoResulted ? "Pending — not yet auto-resulted" : hitHR ? "Hit a HR" : "Did not hit a HR";
+  return (
+    <tr style={{background: zebra ? "#060d09" : "transparent"}}>
+      <td style={HR_TD_DATE}>{date}</td>
+      <td style={HR_TD_RANK}>{rank}</td>
+      <td style={HR_TD}><span style={HR_NAME}>{name}</span></td>
+      <td style={HR_TD}><span style={HR_BADGE}>{team}</span></td>
+      <td style={{...HR_TD, fontFamily:"'Bebas Neue',monospace", fontSize:"24px", fontWeight:"700", color:scoreCellColor(score), textAlign:"right"}}>{score.toFixed(2)}</td>
+      <td style={HR_TD_CENTER}>
+        <span title={resultTitle} style={{fontSize:"16px",cursor:"default"}}>{resultIcon}</span>
+      </td>
+    </tr>
+  );
+});
+
 export default function HRScout({ data, history: initialHistory }: { data: Data | null; history: HistoryDay[] | null }) {
   const [tab, setTab] = useState("scout");
   const [odds, setOdds] = useState<Record<string, string>>({});
-  const [history, setHistory] = useState<HistoryDay[]>(initialHistory || []);
+  const [history] = useState<HistoryDay[]>(initialHistory || []);
   const [minScore, setMinScore] = useState("");
+  // Lightweight hitHR state: {`${date}|${name}`: true} — cheap to update
+  const [hrOverrides, setHrOverrides] = useState<Record<string, boolean>>({});
   const prevGenRef = useRef(data?.generatedAt);
   useEffect(() => {
     if (data?.generatedAt && data.generatedAt !== prevGenRef.current) {
@@ -129,27 +231,130 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
     }
   }, [data?.generatedAt]);
 
-  const toggleHR = async (date: string, playerName: string, hitHR: boolean) => {
-    setHistory(prev => prev.map(day =>
-      day.date === date
-        ? { ...day, players: day.players.map(p => p.name === playerName ? { ...p, hitHR } : p) }
-        : day
-    ));
-    await fetch("/api/history", {
+  // Load hitHR state from localStorage on mount (falls back to server history)
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const seed: Record<string, boolean> = {};
+    for (const day of initialHistory || []) {
+      for (const p of day.players) {
+        if (p.hitHR) seed[hrKey(day.date, p.name)] = true;
+      }
+    }
+    try {
+      const stored = localStorage.getItem(HR_STORAGE_KEY);
+      if (stored) Object.assign(seed, JSON.parse(stored));
+    } catch {}
+    setHrOverrides(seed);
+  }, [initialHistory]);
+
+  const toggleHR = useCallback((date: string, playerName: string, hitHR: boolean) => {
+    const key = hrKey(date, playerName);
+    setHrOverrides(prev => {
+      const next = hitHR ? { ...prev, [key]: true } : (() => {
+        const n = { ...prev };
+        delete n[key];
+        return n;
+      })();
+      try { localStorage.setItem(HR_STORAGE_KEY, JSON.stringify(next)); } catch {}
+      return next;
+    });
+    // Fire-and-forget — don't block UI on network
+    fetch("/api/history", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ date, playerName, hitHR }),
-    });
-  };
+    }).catch(() => {});
+  }, []);
 
   const games = data?.games || [];
-  const players = data?.players || [];
   const date = data?.date || null;
   const windData = data?.windData || {};
   const generatedAt = data?.generatedAt || null;
 
+  // ── Rankings pipeline ──
+  // 1. raw players → 2. sort by score desc → 3. applyTeamCap → 4. render
+  // The output of this pipeline (cappedPlayers) is the ONLY array used in the
+  // Rankings table JSX. No further sort/filter happens after it.
+  const cappedPlayers = useMemo(() => {
+    const raw = data?.players || [];
+    const sorted = [...raw].sort((a, b) => b.score - a.score);
+    // STEP 1 — diagnostic: log raw team strings before the cap runs
+    if (typeof window !== "undefined" && sorted.length > 0) {
+      console.log("[applyTeamCap] RAW top 10 (BEFORE cap) — exact team strings:");
+      sorted.slice(0, 10).forEach((p, i) => {
+        console.log(
+          `  ${String(i + 1).padStart(2, " ")}. ${p.name} | team=${JSON.stringify(p.team)} | len=${(p.team || "").length} | score=${p.score}`
+        );
+      });
+    }
+    return applyTeamCap(sorted);
+  }, [data?.players]);
+
+  // STEP 3 — verification: log capped output with team strings + counts
+  useEffect(() => {
+    if (typeof window === "undefined" || cappedPlayers.length === 0) return;
+    console.log("[applyTeamCap] cappedPlayers — top 20 (this is what the table renders):");
+    cappedPlayers.slice(0, 20).forEach((p, i) => {
+      console.log(
+        `  ${String(i + 1).padStart(2, " ")}. ${p.name.padEnd(25)} team=${JSON.stringify(p.team)}${(p as { _capped?: boolean })._capped ? " [capped]" : ""}`
+      );
+    });
+    // Sanity check: count per team in each tier (using normalized keys)
+    const norm = (t: string) => (t || "").trim().toUpperCase();
+    const top10Counts: Record<string, number> = {};
+    const top20Counts: Record<string, number> = {};
+    cappedPlayers.slice(0, 10).forEach(p => { const k = norm(p.team); top10Counts[k] = (top10Counts[k] || 0) + 1; });
+    cappedPlayers.slice(10, 20).forEach(p => { const k = norm(p.team); top20Counts[k] = (top20Counts[k] || 0) + 1; });
+    console.log("[applyTeamCap] Top 10 team counts:", top10Counts);
+    console.log("[applyTeamCap] Ranks 11-20 team counts:", top20Counts);
+    const violations10 = Object.entries(top10Counts).filter(([, n]) => n > 2);
+    const violations20 = Object.entries(top20Counts).filter(([, n]) => n > 2);
+    if (violations10.length || violations20.length) {
+      console.error("[applyTeamCap] CAP VIOLATED:", { top10: violations10, top11_20: violations20 });
+    } else {
+      console.log("[applyTeamCap] ✓ Cap enforced correctly (max 2/team per tier)");
+    }
+  }, [cappedPlayers]);
+
+  // ── History tab: memoized derived data (only recomputes when inputs change) ──
+  const threshold = parseFloat(minScore) || 0;
+  const historyRows = useMemo(() => {
+    const sortedDays = [...history].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    return sortedDays.flatMap(day =>
+      day.players
+        .filter(p => p.score >= threshold)
+        .map(p => ({
+          name: p.name, team: p.team, rank: p.rank, score: p.score, date: day.date,
+          hitHR: p.hitHR, autoResulted: p.autoResulted ?? false,
+        }))
+    );
+  }, [history, threshold]);
+
+  const historyStats = useMemo(() => {
+    // Only count rows that have been auto-resulted
+    const resulted = historyRows.filter(r => r.autoResulted);
+    const hitRate = (arr: typeof resulted) => {
+      const t = arr.length;
+      const h = arr.filter(r => r.hitHR).length;
+      return t > 0 ? `${h}/${t} (${(h/t*100).toFixed(1)}%)` : "—";
+    };
+    const r1_5 = resulted.filter(r => r.rank >= 1 && r.rank <= 5);
+    const r6_10 = resulted.filter(r => r.rank >= 6 && r.rank <= 10);
+    const r11_20 = resulted.filter(r => r.rank >= 11 && r.rank <= 20);
+    const hit = resulted.filter(r => r.hitHR);
+    const miss = resulted.filter(r => !r.hitHR);
+    return {
+      overall: hitRate(resulted),
+      r1_5: hitRate(r1_5),
+      r6_10: hitRate(r6_10),
+      r11_20: hitRate(r11_20),
+      avgHit: hit.length > 0 ? (hit.reduce((s, r) => s + r.score, 0) / hit.length).toFixed(2) : "—",
+      avgMiss: miss.length > 0 ? (miss.reduce((s, r) => s + r.score, 0) / miss.length).toFixed(2) : "—",
+    };
+  }, [historyRows]);
+
   const S = {
-    app:   { minHeight:"100vh" as const, background:"#060a0c", color:"#e2e8f0", fontFamily:"'DM Sans','Segoe UI',sans-serif" },
+    app:   { minHeight:"100dvh", minWidth:"100vw", background:"#060a0c", color:"#e2e8f0", fontFamily:"'DM Sans','Segoe UI',sans-serif" } as React.CSSProperties,
     hdr:   { background:"linear-gradient(135deg,#07110a,#0d1b2a)", borderBottom:"1px solid #0f2518", padding:"18px 28px", display:"flex" as const, alignItems:"center" as const, justifyContent:"space-between" as const },
     logo:  { fontFamily:"'Bebas Neue','Impact',monospace", fontSize:"32px", letterSpacing:"3px", color:"#e8e020" },
     sub:   { fontSize:"10px", color:"#475569", letterSpacing:"1px", textTransform:"uppercase" as const, marginTop:"2px" },
@@ -205,15 +410,16 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
               </div>
             )}
 
-            {players.length > 0 && (
+            {cappedPlayers.length > 0 && (
               <>
                 <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-end",marginBottom:"16px"}}>
                   <div>
                     <div style={{fontFamily:"'Bebas Neue',monospace",fontSize:"22px",color:"#e8e020",letterSpacing:"1px"}}>TODAY'S HR LEADERS — {date}</div>
-                    <div style={{fontSize:"11px",color:"#334155",marginTop:"2px"}}>{players.length} confirmed starters scored · lineup-filtered · wind-adjusted</div>
+                    <div style={{fontSize:"11px",color:"#334155",marginTop:"2px"}}>{cappedPlayers.length} confirmed starters scored · lineup-filtered · wind-adjusted</div>
                   </div>
                 </div>
-                <table style={S.tbl}>
+                <div style={{overflowX:"auto",background:"#060a0c",WebkitOverflowScrolling:"touch"} as React.CSSProperties}>
+                <table style={{...S.tbl,minWidth:"900px"}}>
                   <thead>
                     <tr>
                       <th style={{...S.th,textAlign:"center"}}>#</th>
@@ -231,7 +437,7 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                     </tr>
                   </thead>
                   <tbody>
-                    {players.slice(0,40).map((p,i)=>(
+                    {cappedPlayers.slice(0,40).map((p,i)=>(
                       <tr key={p.name+i} style={{background:i%2===0?"transparent":"#060d09"}}
                         onMouseEnter={e=>e.currentTarget.style.background="#0a1810"}
                         onMouseLeave={e=>e.currentTarget.style.background=i%2===0?"transparent":"#060d09"}>
@@ -241,6 +447,7 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                           <span style={S.badge}>{p.team}</span>
                           {p.flags?.includes("IL") && <span title="On Injured List" style={{marginLeft:"4px",cursor:"default"}}>⚠️</span>}
                           {p.flags?.includes("NEW") && <span title="Not in database — using league avg defaults" style={{marginLeft:"4px",cursor:"default"}}>🆕</span>}
+                          {(p as typeof p & {_capped?: boolean})._capped && <span title="Displaced by team concentration cap" style={{marginLeft:"4px",fontSize:"9px",color:"#475569",cursor:"default"}}>📊 Capped</span>}
                         </td>
                         <td style={{...S.td,fontSize:"11px",color:"#64748b"}}>
                           <span style={{color:"#94a3b8"}}>{p.matchup}</span>
@@ -312,6 +519,7 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                     ))}
                   </tbody>
                 </table>
+                </div>
               </>
             )}
           </div>
@@ -324,107 +532,72 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
               <div style={{textAlign:"center",padding:"60px",color:"#1e3a2a",fontSize:"13px"}}>
                 No history yet. Run the generate script at least once, then check back after marking HR results.
               </div>
-            ) : (() => {
-              const threshold = parseFloat(minScore) || 0;
-              const sortedDays = [...history].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-              const allRows = sortedDays.flatMap(day =>
-                day.players
-                  .filter(p => p.score >= threshold)
-                  .map(p => ({ ...p, date: day.date }))
-              );
-              const checked = allRows.filter(r => r.hitHR);
-              const total = allRows.length;
-              const hitRate = (arr: typeof allRows) => {
-                const t = arr.length;
-                const h = arr.filter(r => r.hitHR).length;
-                return t > 0 ? `${h}/${t} (${(h/t*100).toFixed(1)}%)` : "—";
-              };
-              const r1_5 = allRows.filter(r => r.rank >= 1 && r.rank <= 5);
-              const r6_10 = allRows.filter(r => r.rank >= 6 && r.rank <= 10);
-              const r11_20 = allRows.filter(r => r.rank >= 11 && r.rank <= 20);
-              const avgHit = checked.length > 0
-                ? (checked.reduce((s, r) => s + r.score, 0) / checked.length).toFixed(2)
-                : "—";
-              const misses = allRows.filter(r => !r.hitHR);
-              const avgMiss = misses.length > 0
-                ? (misses.reduce((s, r) => s + r.score, 0) / misses.length).toFixed(2)
-                : "—";
+            ) : (
+              <>
+                <div style={{fontFamily:"'Bebas Neue',monospace",fontSize:"22px",color:"#e8e020",letterSpacing:"1px",marginBottom:"16px"}}>
+                  PREVIOUS HRS — TRACKING
+                </div>
 
-              return (
-                <>
-                  <div style={{fontFamily:"'Bebas Neue',monospace",fontSize:"22px",color:"#e8e020",letterSpacing:"1px",marginBottom:"16px"}}>
-                    PREVIOUS HRS — TRACKING
-                  </div>
+                {/* Stats bar */}
+                <div style={{display:"flex",gap:"12px",flexWrap:"wrap",marginBottom:"18px"}}>
+                  {[
+                    ["Overall", historyStats.overall],
+                    ["Rank 1-5", historyStats.r1_5],
+                    ["Rank 6-10", historyStats.r6_10],
+                    ["Rank 11-20", historyStats.r11_20],
+                    ["Avg Score (Hit)", historyStats.avgHit],
+                    ["Avg Score (Miss)", historyStats.avgMiss],
+                  ].map(([label, val]) => (
+                    <div key={label} style={{background:"#060d09",border:"1px solid #0f2518",borderRadius:"8px",padding:"10px 16px",minWidth:"120px"}}>
+                      <div style={{fontSize:"9px",color:"#475569",fontWeight:"700",letterSpacing:"1px",textTransform:"uppercase",marginBottom:"4px"}}>{label}</div>
+                      <div style={{fontSize:"16px",fontWeight:"700",fontFamily:"'Bebas Neue',monospace",color:"#e8e020",letterSpacing:"0.5px"}}>{val}</div>
+                    </div>
+                  ))}
+                </div>
 
-                  {/* Stats bar */}
-                  <div style={{display:"flex",gap:"12px",flexWrap:"wrap",marginBottom:"18px"}}>
-                    {[
-                      ["Overall", hitRate(allRows)],
-                      ["Rank 1-5", hitRate(r1_5)],
-                      ["Rank 6-10", hitRate(r6_10)],
-                      ["Rank 11-20", hitRate(r11_20)],
-                      ["Avg Score (Hit)", avgHit],
-                      ["Avg Score (Miss)", avgMiss],
-                    ].map(([label, val]) => (
-                      <div key={label} style={{background:"#060d09",border:"1px solid #0f2518",borderRadius:"8px",padding:"10px 16px",minWidth:"120px"}}>
-                        <div style={{fontSize:"9px",color:"#475569",fontWeight:"700",letterSpacing:"1px",textTransform:"uppercase",marginBottom:"4px"}}>{label}</div>
-                        <div style={{fontSize:"16px",fontWeight:"700",fontFamily:"'Bebas Neue',monospace",color:"#e8e020",letterSpacing:"0.5px"}}>{val}</div>
-                      </div>
+                {/* Filter */}
+                <div style={{marginBottom:"14px",display:"flex",alignItems:"center",gap:"8px"}}>
+                  <span style={{fontSize:"11px",color:"#475569",fontWeight:"700"}}>Min Score:</span>
+                  <input
+                    type="text"
+                    placeholder="0"
+                    value={minScore}
+                    onChange={e => setMinScore(e.target.value)}
+                    style={{width:"60px",padding:"4px 8px",fontSize:"12px",background:"#0a1810",border:"1px solid #0f2518",borderRadius:"4px",color:"#e8e020",textAlign:"center",outline:"none"}}
+                  />
+                  {threshold > 0 && <span style={{fontSize:"11px",color:"#334155"}}>{historyRows.length} players shown</span>}
+                </div>
+
+                {/* Table */}
+                <table style={S.tbl}>
+                  <thead>
+                    <tr>
+                      <th style={S.th}>Date</th>
+                      <th style={{...S.th,textAlign:"center"}}>Rank</th>
+                      <th style={S.th}>Player</th>
+                      <th style={S.th}>Team</th>
+                      <th style={{...S.th,textAlign:"right"}}>Score</th>
+                      <th style={{...S.th,textAlign:"center"}}>Hit HR</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {historyRows.map((r, i) => (
+                      <HistoryRow
+                        key={`${r.date}-${r.name}`}
+                        date={r.date}
+                        name={r.name}
+                        team={r.team}
+                        rank={r.rank}
+                        score={r.score}
+                        hitHR={r.hitHR}
+                        autoResulted={r.autoResulted}
+                        zebra={i % 2 === 1}
+                      />
                     ))}
-                  </div>
-
-                  {/* Filter */}
-                  <div style={{marginBottom:"14px",display:"flex",alignItems:"center",gap:"8px"}}>
-                    <span style={{fontSize:"11px",color:"#475569",fontWeight:"700"}}>Min Score:</span>
-                    <input
-                      type="text"
-                      placeholder="0"
-                      value={minScore}
-                      onChange={e => setMinScore(e.target.value)}
-                      style={{width:"60px",padding:"4px 8px",fontSize:"12px",background:"#0a1810",border:"1px solid #0f2518",borderRadius:"4px",color:"#e8e020",textAlign:"center",outline:"none"}}
-                    />
-                    {threshold > 0 && <span style={{fontSize:"11px",color:"#334155"}}>{allRows.length} players shown</span>}
-                  </div>
-
-                  {/* Table */}
-                  <table style={S.tbl}>
-                    <thead>
-                      <tr>
-                        <th style={S.th}>Date</th>
-                        <th style={{...S.th,textAlign:"center"}}>Rank</th>
-                        <th style={S.th}>Player</th>
-                        <th style={S.th}>Team</th>
-                        <th style={{...S.th,textAlign:"right"}}>Score</th>
-                        <th style={{...S.th,textAlign:"center"}}>Hit HR</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {allRows.map((r, i) => (
-                        <tr key={`${r.date}-${r.name}`} style={{background:i%2===0?"transparent":"#060d09"}}>
-                          <td style={{...S.td,fontSize:"11px",color:"#64748b"}}>{r.date}</td>
-                          <td style={{...S.td,...S.rank}}>{r.rank}</td>
-                          <td style={S.td}>
-                            <span style={{fontWeight:"600",fontSize:"13px"}}>{r.name}</span>
-                          </td>
-                          <td style={S.td}>
-                            <span style={S.badge}>{r.team}</span>
-                          </td>
-                          <td style={{...S.td,...S.sc(r.score)}}>{r.score.toFixed(2)}</td>
-                          <td style={{...S.td,textAlign:"center"}}>
-                            <input
-                              type="checkbox"
-                              checked={r.hitHR}
-                              onChange={e => toggleHR(r.date, r.name, e.target.checked)}
-                              style={{width:"16px",height:"16px",accentColor:"#e8e020",cursor:"pointer"}}
-                            />
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </>
-              );
-            })()}
+                  </tbody>
+                </table>
+              </>
+            )}
           </div>
         )}
 
