@@ -1,6 +1,6 @@
 {
   "date": "April 07, 2026",
-  "generatedAt": "2026-04-07T11:17:32.082616",
+  "generatedAt": "2026-04-07T12:32:52.221142",
   "games": [
     {
       "homeTeam": "CLE",
@@ -125,42 +125,6 @@
   ],
   "players": [
     {
-      "name": "Ben Rice",
-      "team": "NYY",
-      "hand": "L",
-      "score": 8.46,
-      "factors": {
-        "homeAway": 5,
-        "ballpark": 10,
-        "lhpVsRhp": 7.39,
-        "pitcherHR9": 10,
-        "bullpen": 7.77,
-        "xhr": 10,
-        "hr2025": 6,
-        "wind": 5,
-        "recent5": 7,
-        "recent10": 6,
-        "seasonGap": 2
-      },
-      "matchup": "vs ATH",
-      "pitcher": "Civale",
-      "pitcherHand": "R",
-      "parkName": "Yankee Stadium",
-      "windInfo": {
-        "speed": 14.1,
-        "deg": 270,
-        "score": 5,
-        "isDome": false
-      },
-      "xhrScore": 10,
-      "evScore": 8,
-      "recent": {
-        "r5": 3,
-        "r10": 3
-      },
-      "flags": []
-    },
-    {
       "name": "Trent Grisham",
       "team": "NYY",
       "hand": "L",
@@ -183,13 +147,13 @@
       "pitcherHand": "R",
       "parkName": "Yankee Stadium",
       "windInfo": {
-        "speed": 14.1,
-        "deg": 270,
+        "speed": 14.4,
+        "deg": 276,
         "score": 5,
         "isDome": false
       },
       "xhrScore": 8,
-      "evScore": 5,
+      "evScore": 7,
       "recent": {
         "r5": 0,
         "r10": 0
@@ -200,16 +164,16 @@
       "name": "Jo Adell",
       "team": "LAA",
       "hand": "R",
-      "score": 8.3,
+      "score": 8.41,
       "factors": {
         "homeAway": 5,
         "ballpark": 8,
         "lhpVsRhp": 8.06,
         "pitcherHR9": 9,
         "bullpen": 7.66,
-        "xhr": 7,
+        "xhr": 9,
         "hr2025": 9,
-        "wind": 4,
+        "wind": 3,
         "recent5": 3,
         "recent10": 4,
         "seasonGap": 10
@@ -219,52 +183,16 @@
       "pitcherHand": "R",
       "parkName": "Angel Stadium",
       "windInfo": {
-        "speed": 3.8,
-        "deg": 140,
-        "score": 4,
+        "speed": 2.9,
+        "deg": 184,
+        "score": 3,
         "isDome": false
       },
-      "xhrScore": 7,
+      "xhrScore": 9,
       "evScore": 5,
       "recent": {
         "r5": 1,
         "r10": 1
-      },
-      "flags": []
-    },
-    {
-      "name": "Jazz Chisholm Jr.",
-      "team": "NYY",
-      "hand": "L",
-      "score": 8.27,
-      "factors": {
-        "homeAway": 5,
-        "ballpark": 10,
-        "lhpVsRhp": 8.62,
-        "pitcherHR9": 10,
-        "bullpen": 7.77,
-        "xhr": 7,
-        "hr2025": 8,
-        "wind": 5,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 10
-      },
-      "matchup": "vs ATH",
-      "pitcher": "Civale",
-      "pitcherHand": "R",
-      "parkName": "Yankee Stadium",
-      "windInfo": {
-        "speed": 14.1,
-        "deg": 270,
-        "score": 5,
-        "isDome": false
-      },
-      "xhrScore": 7,
-      "evScore": 5,
-      "recent": {
-        "r5": 0,
-        "r10": 0
       },
       "flags": []
     },
@@ -291,13 +219,13 @@
       "pitcherHand": "R",
       "parkName": "Yankee Stadium",
       "windInfo": {
-        "speed": 14.1,
-        "deg": 270,
+        "speed": 14.4,
+        "deg": 276,
         "score": 5,
         "isDome": false
       },
       "xhrScore": 10,
-      "evScore": 5,
+      "evScore": 6,
       "recent": {
         "r5": 1,
         "r10": 3
@@ -341,17 +269,125 @@
       "flags": []
     },
     {
+      "name": "Cody Bellinger",
+      "team": "NYY",
+      "hand": "L",
+      "score": 8.14,
+      "factors": {
+        "homeAway": 5,
+        "ballpark": 10,
+        "lhpVsRhp": 7.5,
+        "pitcherHR9": 10,
+        "bullpen": 7.77,
+        "xhr": 6,
+        "hr2025": 7,
+        "wind": 5,
+        "recent5": 3,
+        "recent10": 4,
+        "seasonGap": 8
+      },
+      "matchup": "vs ATH",
+      "pitcher": "Civale",
+      "pitcherHand": "R",
+      "parkName": "Yankee Stadium",
+      "windInfo": {
+        "speed": 14.4,
+        "deg": 276,
+        "score": 5,
+        "isDome": false
+      },
+      "xhrScore": 6,
+      "evScore": 6,
+      "recent": {
+        "r5": 1,
+        "r10": 1
+      },
+      "flags": []
+    },
+    {
+      "name": "Pete Alonso",
+      "team": "BAL",
+      "hand": "R",
+      "score": 8.0,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 5,
+        "lhpVsRhp": 7.43,
+        "pitcherHR9": 10,
+        "bullpen": 7.55,
+        "xhr": 10,
+        "hr2025": 10,
+        "wind": 5,
+        "recent5": 1,
+        "recent10": 4,
+        "seasonGap": 10
+      },
+      "matchup": "@ CWS",
+      "pitcher": "Smith",
+      "pitcherHand": "R",
+      "parkName": "Guaranteed Rate Field",
+      "windInfo": {
+        "speed": 7.8,
+        "deg": 78,
+        "score": 5,
+        "isDome": false
+      },
+      "xhrScore": 10,
+      "evScore": 6,
+      "recent": {
+        "r5": 0,
+        "r10": 1
+      },
+      "flags": []
+    },
+    {
+      "name": "Jazz Chisholm Jr.",
+      "team": "NYY",
+      "hand": "L",
+      "score": 7.93,
+      "factors": {
+        "homeAway": 5,
+        "ballpark": 10,
+        "lhpVsRhp": 8.62,
+        "pitcherHR9": 10,
+        "bullpen": 7.77,
+        "xhr": 4,
+        "hr2025": 8,
+        "wind": 5,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 10
+      },
+      "matchup": "vs ATH",
+      "pitcher": "Civale",
+      "pitcherHand": "R",
+      "parkName": "Yankee Stadium",
+      "windInfo": {
+        "speed": 14.4,
+        "deg": 276,
+        "score": 5,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 3,
+      "recent": {
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
       "name": "Junior Caminero",
       "team": "TB",
       "hand": "R",
-      "score": 8.12,
+      "score": 7.9,
       "factors": {
         "homeAway": 5,
         "ballpark": 7,
         "lhpVsRhp": 7.05,
         "pitcherHR9": 6,
         "bullpen": 7.02,
-        "xhr": 8,
+        "xhr": 6,
         "hr2025": 10,
         "wind": 5,
         "recent5": 5,
@@ -368,7 +404,7 @@
         "score": 5,
         "isDome": true
       },
-      "xhrScore": 8,
+      "xhrScore": 6,
       "evScore": 6,
       "recent": {
         "r5": 2,
@@ -377,40 +413,78 @@
       "flags": []
     },
     {
-      "name": "Cody Bellinger",
+      "name": "Ben Rice",
       "team": "NYY",
       "hand": "L",
-      "score": 8.03,
+      "score": 7.8,
       "factors": {
         "homeAway": 5,
         "ballpark": 10,
-        "lhpVsRhp": 7.5,
+        "lhpVsRhp": 7.39,
         "pitcherHR9": 10,
         "bullpen": 7.77,
-        "xhr": 5,
-        "hr2025": 7,
+        "xhr": 4,
+        "hr2025": 6,
         "wind": 5,
-        "recent5": 3,
-        "recent10": 4,
-        "seasonGap": 8
+        "recent5": 7,
+        "recent10": 6,
+        "seasonGap": 2
       },
       "matchup": "vs ATH",
       "pitcher": "Civale",
       "pitcherHand": "R",
       "parkName": "Yankee Stadium",
       "windInfo": {
-        "speed": 14.1,
-        "deg": 270,
+        "speed": 14.4,
+        "deg": 276,
         "score": 5,
         "isDome": false
       },
-      "xhrScore": 5,
-      "evScore": 6,
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 3,
+        "r10": 3
+      },
+      "flags": []
+    },
+    {
+      "name": "Juan Soto",
+      "team": "NYM",
+      "hand": "L",
+      "score": 7.72,
+      "factors": {
+        "homeAway": 5,
+        "ballpark": 5,
+        "lhpVsRhp": 7.5,
+        "pitcherHR9": 5,
+        "bullpen": 7.02,
+        "xhr": 6,
+        "hr2025": 10,
+        "wind": 7,
+        "recent5": 3,
+        "recent10": 4,
+        "seasonGap": 10
+      },
+      "matchup": "vs AZ",
+      "pitcher": "Gallen",
+      "pitcherHand": "R",
+      "parkName": "Citi Field",
+      "windInfo": {
+        "speed": 15.5,
+        "deg": 276,
+        "score": 7,
+        "isDome": false
+      },
+      "xhrScore": 6,
+      "evScore": 3,
       "recent": {
         "r5": 1,
         "r10": 1
       },
-      "flags": []
+      "flags": [
+        "IL"
+      ]
     },
     {
       "name": "Cal Raleigh",
@@ -441,7 +515,7 @@
         "isDome": true
       },
       "xhrScore": 9,
-      "evScore": 2,
+      "evScore": 1,
       "recent": {
         "r5": 1,
         "r10": 1
@@ -471,8 +545,8 @@
       "pitcherHand": "R",
       "parkName": "Coors Field",
       "windInfo": {
-        "speed": 1.3,
-        "deg": 360,
+        "speed": 2.6,
+        "deg": 211,
         "score": 3,
         "isDome": false
       },
@@ -507,16 +581,52 @@
       "pitcherHand": "L",
       "parkName": "Oracle Park",
       "windInfo": {
-        "speed": 7.0,
-        "deg": 292,
+        "speed": 6.9,
+        "deg": 285,
         "score": 5,
         "isDome": false
       },
       "xhrScore": 10,
-      "evScore": 5,
+      "evScore": 7,
       "recent": {
         "r5": 1,
         "r10": 3
+      },
+      "flags": []
+    },
+    {
+      "name": "Giancarlo Stanton",
+      "team": "NYY",
+      "hand": "R",
+      "score": 7.59,
+      "factors": {
+        "homeAway": 5,
+        "ballpark": 6,
+        "lhpVsRhp": 8.5,
+        "pitcherHR9": 10,
+        "bullpen": 7.77,
+        "xhr": 9,
+        "hr2025": 6,
+        "wind": 5,
+        "recent5": 1,
+        "recent10": 4,
+        "seasonGap": 6
+      },
+      "matchup": "vs ATH",
+      "pitcher": "Civale",
+      "pitcherHand": "R",
+      "parkName": "Yankee Stadium",
+      "windInfo": {
+        "speed": 14.4,
+        "deg": 276,
+        "score": 5,
+        "isDome": false
+      },
+      "xhrScore": 9,
+      "evScore": 7,
+      "recent": {
+        "r5": 0,
+        "r10": 1
       },
       "flags": []
     },
@@ -543,8 +653,8 @@
       "pitcherHand": "R",
       "parkName": "Yankee Stadium",
       "windInfo": {
-        "speed": 14.1,
-        "deg": 270,
+        "speed": 14.4,
+        "deg": 276,
         "score": 5,
         "isDome": false
       },
@@ -579,8 +689,8 @@
       "pitcherHand": "R",
       "parkName": "Yankee Stadium",
       "windInfo": {
-        "speed": 14.1,
-        "deg": 270,
+        "speed": 14.4,
+        "deg": 276,
         "score": 5,
         "isDome": false
       },
@@ -593,112 +703,38 @@
       "flags": []
     },
     {
-      "name": "Juan Soto",
-      "team": "NYM",
+      "name": "Daulton Varsho",
+      "team": "TOR",
       "hand": "L",
-      "score": 7.5,
+      "score": 7.48,
       "factors": {
         "homeAway": 5,
-        "ballpark": 5,
-        "lhpVsRhp": 7.5,
-        "pitcherHR9": 5,
-        "bullpen": 7.02,
-        "xhr": 5,
-        "hr2025": 10,
-        "wind": 6,
-        "recent5": 3,
-        "recent10": 4,
-        "seasonGap": 10
-      },
-      "matchup": "vs AZ",
-      "pitcher": "Gallen",
-      "pitcherHand": "R",
-      "parkName": "Citi Field",
-      "windInfo": {
-        "speed": 14.3,
-        "deg": 267,
-        "score": 6,
-        "isDome": false
-      },
-      "xhrScore": 5,
-      "evScore": 4,
-      "recent": {
-        "r5": 1,
-        "r10": 1
-      },
-      "flags": [
-        "IL"
-      ]
-    },
-    {
-      "name": "Giancarlo Stanton",
-      "team": "NYY",
-      "hand": "R",
-      "score": 7.47,
-      "factors": {
-        "homeAway": 5,
-        "ballpark": 6,
-        "lhpVsRhp": 8.5,
-        "pitcherHR9": 10,
-        "bullpen": 7.77,
-        "xhr": 8,
-        "hr2025": 6,
+        "ballpark": 7,
+        "lhpVsRhp": 10,
+        "pitcherHR9": 8,
+        "bullpen": 8.3,
+        "xhr": 6,
+        "hr2025": 5,
         "wind": 5,
         "recent5": 1,
-        "recent10": 4,
-        "seasonGap": 6
-      },
-      "matchup": "vs ATH",
-      "pitcher": "Civale",
-      "pitcherHand": "R",
-      "parkName": "Yankee Stadium",
-      "windInfo": {
-        "speed": 14.1,
-        "deg": 270,
-        "score": 5,
-        "isDome": false
-      },
-      "xhrScore": 8,
-      "evScore": 5,
-      "recent": {
-        "r5": 0,
-        "r10": 1
-      },
-      "flags": []
-    },
-    {
-      "name": "Pete Alonso",
-      "team": "BAL",
-      "hand": "R",
-      "score": 7.44,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 5,
-        "lhpVsRhp": 7.43,
-        "pitcherHR9": 10,
-        "bullpen": 7.55,
-        "xhr": 4,
-        "hr2025": 10,
-        "wind": 6,
-        "recent5": 1,
-        "recent10": 4,
+        "recent10": 2,
         "seasonGap": 10
       },
-      "matchup": "@ CWS",
-      "pitcher": "Smith",
+      "matchup": "vs LAD",
+      "pitcher": "Yamamoto",
       "pitcherHand": "R",
-      "parkName": "Guaranteed Rate Field",
+      "parkName": "Rogers Centre",
       "windInfo": {
-        "speed": 11.0,
-        "deg": 61,
-        "score": 6,
-        "isDome": false
+        "speed": 0,
+        "deg": 0,
+        "score": 5,
+        "isDome": true
       },
-      "xhrScore": 4,
-      "evScore": 5,
+      "xhrScore": 6,
+      "evScore": 2,
       "recent": {
         "r5": 0,
-        "r10": 1
+        "r10": 0
       },
       "flags": []
     },
@@ -725,13 +761,13 @@
       "pitcherHand": "R",
       "parkName": "Yankee Stadium",
       "windInfo": {
-        "speed": 14.1,
-        "deg": 270,
+        "speed": 14.4,
+        "deg": 276,
         "score": 5,
         "isDome": false
       },
       "xhrScore": 7,
-      "evScore": 4,
+      "evScore": 3,
       "recent": {
         "r5": 0,
         "r10": 0
@@ -739,74 +775,38 @@
       "flags": []
     },
     {
-      "name": "Dansby Swanson",
-      "team": "CHC",
+      "name": "Christian Walker",
+      "team": "HOU",
       "hand": "R",
-      "score": 7.37,
+      "score": 7.33,
       "factors": {
         "homeAway": 2,
-        "ballpark": 7,
-        "lhpVsRhp": 7.5,
-        "pitcherHR9": 10,
-        "bullpen": 7.87,
-        "xhr": 6,
-        "hr2025": 7,
-        "wind": 5,
-        "recent5": 3,
-        "recent10": 4,
-        "seasonGap": 7
-      },
-      "matchup": "@ TB",
-      "pitcher": "Rasmussen",
-      "pitcherHand": "R",
-      "parkName": "Tropicana Field",
-      "windInfo": {
-        "speed": 0,
-        "deg": 0,
-        "score": 5,
-        "isDome": true
-      },
-      "xhrScore": 6,
-      "evScore": 5,
-      "recent": {
-        "r5": 1,
-        "r10": 1
-      },
-      "flags": []
-    },
-    {
-      "name": "Zach Neto",
-      "team": "LAA",
-      "hand": "R",
-      "score": 7.35,
-      "factors": {
-        "homeAway": 5,
-        "ballpark": 8,
-        "lhpVsRhp": 7.5,
-        "pitcherHR9": 9,
-        "bullpen": 7.66,
-        "xhr": 4,
-        "hr2025": 7,
-        "wind": 4,
+        "ballpark": 10,
+        "lhpVsRhp": 7.0,
+        "pitcherHR9": 5,
+        "bullpen": 10,
+        "xhr": 10,
+        "hr2025": 6,
+        "wind": 3,
         "recent5": 5,
-        "recent10": 7,
-        "seasonGap": 2
+        "recent10": 5,
+        "seasonGap": 3
       },
-      "matchup": "vs ATL",
-      "pitcher": "López",
-      "pitcherHand": "R",
-      "parkName": "Angel Stadium",
+      "matchup": "@ COL",
+      "pitcher": "Freeland",
+      "pitcherHand": "L",
+      "parkName": "Coors Field",
       "windInfo": {
-        "speed": 3.8,
-        "deg": 140,
-        "score": 4,
+        "speed": 2.6,
+        "deg": 211,
+        "score": 3,
         "isDome": false
       },
-      "xhrScore": 4,
-      "evScore": 5,
+      "xhrScore": 10,
+      "evScore": 7,
       "recent": {
         "r5": 2,
-        "r10": 4
+        "r10": 2
       },
       "flags": []
     },
@@ -847,42 +847,6 @@
       "flags": []
     },
     {
-      "name": "Ian Happ",
-      "team": "CHC",
-      "hand": "B",
-      "score": 7.32,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 7,
-        "lhpVsRhp": 7.0,
-        "pitcherHR9": 10,
-        "bullpen": 7.87,
-        "xhr": 8,
-        "hr2025": 7,
-        "wind": 5,
-        "recent5": 3,
-        "recent10": 7,
-        "seasonGap": 2
-      },
-      "matchup": "@ TB",
-      "pitcher": "Rasmussen",
-      "pitcherHand": "R",
-      "parkName": "Tropicana Field",
-      "windInfo": {
-        "speed": 0,
-        "deg": 0,
-        "score": 5,
-        "isDome": true
-      },
-      "xhrScore": 8,
-      "evScore": 5,
-      "recent": {
-        "r5": 1,
-        "r10": 4
-      },
-      "flags": []
-    },
-    {
       "name": "Vladimir Guerrero Jr.",
       "team": "TOR",
       "hand": "R",
@@ -919,32 +883,32 @@
       "flags": []
     },
     {
-      "name": "Taylor Ward",
-      "team": "BAL",
+      "name": "Pete Crow-Armstrong",
+      "team": "CHC",
       "hand": "R",
-      "score": 7.29,
+      "score": 7.27,
       "factors": {
         "homeAway": 2,
-        "ballpark": 5,
-        "lhpVsRhp": 8.06,
+        "ballpark": 7,
+        "lhpVsRhp": 7.59,
         "pitcherHR9": 10,
-        "bullpen": 7.55,
+        "bullpen": 7.87,
         "xhr": 5,
-        "hr2025": 9,
-        "wind": 6,
+        "hr2025": 8,
+        "wind": 5,
         "recent5": 1,
         "recent10": 2,
         "seasonGap": 10
       },
-      "matchup": "@ CWS",
-      "pitcher": "Smith",
+      "matchup": "@ TB",
+      "pitcher": "Rasmussen",
       "pitcherHand": "R",
-      "parkName": "Guaranteed Rate Field",
+      "parkName": "Tropicana Field",
       "windInfo": {
-        "speed": 11.0,
-        "deg": 61,
-        "score": 6,
-        "isDome": false
+        "speed": 0,
+        "deg": 0,
+        "score": 5,
+        "isDome": true
       },
       "xhrScore": 5,
       "evScore": 5,
@@ -955,38 +919,38 @@
       "flags": []
     },
     {
-      "name": "Daulton Varsho",
-      "team": "TOR",
+      "name": "Matt Olson",
+      "team": "ATL",
       "hand": "L",
-      "score": 7.26,
+      "score": 7.27,
       "factors": {
-        "homeAway": 5,
-        "ballpark": 7,
-        "lhpVsRhp": 10,
-        "pitcherHR9": 8,
-        "bullpen": 8.3,
-        "xhr": 4,
-        "hr2025": 5,
-        "wind": 5,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 10
+        "homeAway": 2,
+        "ballpark": 8,
+        "lhpVsRhp": 6.0,
+        "pitcherHR9": 6,
+        "bullpen": 9.47,
+        "xhr": 10,
+        "hr2025": 7,
+        "wind": 3,
+        "recent5": 5,
+        "recent10": 5,
+        "seasonGap": 4
       },
-      "matchup": "vs LAD",
-      "pitcher": "Yamamoto",
-      "pitcherHand": "R",
-      "parkName": "Rogers Centre",
+      "matchup": "@ LAA",
+      "pitcher": "Kikuchi",
+      "pitcherHand": "L",
+      "parkName": "Angel Stadium",
       "windInfo": {
-        "speed": 0,
-        "deg": 0,
-        "score": 5,
-        "isDome": true
+        "speed": 2.9,
+        "deg": 184,
+        "score": 3,
+        "isDome": false
       },
-      "xhrScore": 4,
-      "evScore": 3,
+      "xhrScore": 10,
+      "evScore": 5,
       "recent": {
-        "r5": 0,
-        "r10": 0
+        "r5": 2,
+        "r10": 2
       },
       "flags": []
     },
@@ -1019,7 +983,7 @@
         "isDome": true
       },
       "xhrScore": 8,
-      "evScore": 3,
+      "evScore": 4,
       "recent": {
         "r5": 0,
         "r10": 0
@@ -1049,8 +1013,8 @@
       "pitcherHand": "R",
       "parkName": "Yankee Stadium",
       "windInfo": {
-        "speed": 14.1,
-        "deg": 270,
+        "speed": 14.4,
+        "deg": 276,
         "score": 5,
         "isDome": false
       },
@@ -1063,106 +1027,70 @@
       "flags": []
     },
     {
-      "name": "Christian Walker",
-      "team": "HOU",
+      "name": "Zach Neto",
+      "team": "LAA",
       "hand": "R",
-      "score": 7.22,
+      "score": 7.24,
       "factors": {
-        "homeAway": 2,
-        "ballpark": 10,
-        "lhpVsRhp": 7.0,
-        "pitcherHR9": 5,
-        "bullpen": 10,
-        "xhr": 9,
-        "hr2025": 6,
+        "homeAway": 5,
+        "ballpark": 8,
+        "lhpVsRhp": 7.5,
+        "pitcherHR9": 9,
+        "bullpen": 7.66,
+        "xhr": 4,
+        "hr2025": 7,
         "wind": 3,
         "recent5": 5,
-        "recent10": 5,
-        "seasonGap": 3
+        "recent10": 7,
+        "seasonGap": 2
       },
-      "matchup": "@ COL",
-      "pitcher": "Freeland",
-      "pitcherHand": "L",
-      "parkName": "Coors Field",
+      "matchup": "vs ATL",
+      "pitcher": "López",
+      "pitcherHand": "R",
+      "parkName": "Angel Stadium",
       "windInfo": {
-        "speed": 1.3,
-        "deg": 360,
+        "speed": 2.9,
+        "deg": 184,
         "score": 3,
         "isDome": false
       },
-      "xhrScore": 9,
+      "xhrScore": 4,
       "evScore": 5,
       "recent": {
         "r5": 2,
-        "r10": 2
+        "r10": 4
       },
       "flags": []
     },
     {
-      "name": "James Wood",
-      "team": "WSH",
-      "hand": "L",
-      "score": 7.2,
-      "factors": {
-        "homeAway": 5,
-        "ballpark": 4,
-        "lhpVsRhp": 5.0,
-        "pitcherHR9": 9,
-        "bullpen": 4.79,
-        "xhr": 9,
-        "hr2025": 8,
-        "wind": 7,
-        "recent5": 5,
-        "recent10": 6,
-        "seasonGap": 2
-      },
-      "matchup": "vs STL",
-      "pitcher": "Liberatore",
-      "pitcherHand": "L",
-      "parkName": "Nationals Park",
-      "windInfo": {
-        "speed": 14.6,
-        "deg": 302,
-        "score": 7,
-        "isDome": false
-      },
-      "xhrScore": 9,
-      "evScore": 6,
-      "recent": {
-        "r5": 2,
-        "r10": 3
-      },
-      "flags": []
-    },
-    {
-      "name": "Pete Crow-Armstrong",
-      "team": "CHC",
+      "name": "Taylor Ward",
+      "team": "BAL",
       "hand": "R",
-      "score": 7.16,
+      "score": 7.18,
       "factors": {
         "homeAway": 2,
-        "ballpark": 7,
-        "lhpVsRhp": 7.59,
+        "ballpark": 5,
+        "lhpVsRhp": 8.06,
         "pitcherHR9": 10,
-        "bullpen": 7.87,
-        "xhr": 4,
-        "hr2025": 8,
+        "bullpen": 7.55,
+        "xhr": 5,
+        "hr2025": 9,
         "wind": 5,
         "recent5": 1,
         "recent10": 2,
         "seasonGap": 10
       },
-      "matchup": "@ TB",
-      "pitcher": "Rasmussen",
+      "matchup": "@ CWS",
+      "pitcher": "Smith",
       "pitcherHand": "R",
-      "parkName": "Tropicana Field",
+      "parkName": "Guaranteed Rate Field",
       "windInfo": {
-        "speed": 0,
-        "deg": 0,
+        "speed": 7.8,
+        "deg": 78,
         "score": 5,
-        "isDome": true
+        "isDome": false
       },
-      "xhrScore": 4,
+      "xhrScore": 5,
       "evScore": 5,
       "recent": {
         "r5": 0,
@@ -1193,8 +1121,8 @@
       "pitcherHand": "R",
       "parkName": "Fenway Park",
       "windInfo": {
-        "speed": 4.5,
-        "deg": 110,
+        "speed": 3.9,
+        "deg": 80,
         "score": 4,
         "isDome": false
       },
@@ -1207,38 +1135,74 @@
       "flags": []
     },
     {
-      "name": "Brenton Doyle",
-      "team": "COL",
+      "name": "Dansby Swanson",
+      "team": "CHC",
       "hand": "R",
-      "score": 7.11,
+      "score": 7.15,
       "factors": {
-        "homeAway": 5,
-        "ballpark": 10,
-        "lhpVsRhp": 7.0,
+        "homeAway": 2,
+        "ballpark": 7,
+        "lhpVsRhp": 7.5,
         "pitcherHR9": 10,
-        "bullpen": 7.98,
+        "bullpen": 7.87,
         "xhr": 4,
-        "hr2025": 6,
-        "wind": 3,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 8
+        "hr2025": 7,
+        "wind": 5,
+        "recent5": 3,
+        "recent10": 4,
+        "seasonGap": 7
       },
-      "matchup": "vs HOU",
-      "pitcher": "Burrows",
+      "matchup": "@ TB",
+      "pitcher": "Rasmussen",
       "pitcherHand": "R",
-      "parkName": "Coors Field",
+      "parkName": "Tropicana Field",
       "windInfo": {
-        "speed": 1.3,
-        "deg": 360,
-        "score": 3,
-        "isDome": false
+        "speed": 0,
+        "deg": 0,
+        "score": 5,
+        "isDome": true
       },
       "xhrScore": 4,
       "evScore": 5,
       "recent": {
-        "r5": 0,
-        "r10": 0
+        "r5": 1,
+        "r10": 1
+      },
+      "flags": []
+    },
+    {
+      "name": "Shea Langeliers",
+      "team": "ATH",
+      "hand": "R",
+      "score": 7.1,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 6,
+        "lhpVsRhp": 7.0,
+        "pitcherHR9": 5,
+        "bullpen": 7.87,
+        "xhr": 9,
+        "hr2025": 8,
+        "wind": 5,
+        "recent5": 5,
+        "recent10": 7,
+        "seasonGap": 2
+      },
+      "matchup": "@ NYY",
+      "pitcher": "Schlittler",
+      "pitcherHand": "R",
+      "parkName": "Yankee Stadium",
+      "windInfo": {
+        "speed": 14.4,
+        "deg": 276,
+        "score": 5,
+        "isDome": false
+      },
+      "xhrScore": 9,
+      "evScore": 6,
+      "recent": {
+        "r5": 2,
+        "r10": 5
       },
       "flags": []
     },
@@ -1265,8 +1229,8 @@
       "pitcherHand": "R",
       "parkName": "Yankee Stadium",
       "windInfo": {
-        "speed": 14.1,
-        "deg": 270,
+        "speed": 14.4,
+        "deg": 276,
         "score": 5,
         "isDome": false
       },
@@ -1315,38 +1279,38 @@
       "flags": []
     },
     {
-      "name": "Seiya Suzuki",
-      "team": "CHC",
+      "name": "Eugenio Suárez",
+      "team": "CIN",
       "hand": "R",
-      "score": 7.06,
+      "score": 7.05,
       "factors": {
         "homeAway": 2,
-        "ballpark": 7,
-        "lhpVsRhp": 6.67,
-        "pitcherHR9": 10,
-        "bullpen": 7.87,
-        "xhr": 9,
-        "hr2025": 8,
+        "ballpark": 3,
+        "lhpVsRhp": 7.33,
+        "pitcherHR9": 5,
+        "bullpen": 8.09,
+        "xhr": 7,
+        "hr2025": 10,
         "wind": 5,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 5
+        "recent5": 3,
+        "recent10": 5,
+        "seasonGap": 8
       },
-      "matchup": "@ TB",
-      "pitcher": "Rasmussen",
+      "matchup": "@ MIA",
+      "pitcher": "Alcantara",
       "pitcherHand": "R",
-      "parkName": "Tropicana Field",
+      "parkName": "loanDepot Park",
       "windInfo": {
         "speed": 0,
         "deg": 0,
         "score": 5,
         "isDome": true
       },
-      "xhrScore": 9,
+      "xhrScore": 7,
       "evScore": 5,
       "recent": {
-        "r5": 0,
-        "r10": 0
+        "r5": 1,
+        "r10": 2
       },
       "flags": []
     },
@@ -1387,38 +1351,38 @@
       "flags": []
     },
     {
-      "name": "Freddie Freeman",
-      "team": "LAD",
-      "hand": "L",
-      "score": 6.99,
+      "name": "Brenton Doyle",
+      "team": "COL",
+      "hand": "R",
+      "score": 7.0,
       "factors": {
-        "homeAway": 2,
-        "ballpark": 7,
+        "homeAway": 5,
+        "ballpark": 10,
         "lhpVsRhp": 7.0,
-        "pitcherHR9": 5,
-        "bullpen": 6.91,
-        "xhr": 9,
+        "pitcherHR9": 10,
+        "bullpen": 7.98,
+        "xhr": 3,
         "hr2025": 6,
-        "wind": 5,
-        "recent5": 7,
-        "recent10": 6,
-        "seasonGap": 2
+        "wind": 3,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 8
       },
-      "matchup": "@ TOR",
-      "pitcher": "Gausman",
+      "matchup": "vs HOU",
+      "pitcher": "Burrows",
       "pitcherHand": "R",
-      "parkName": "Rogers Centre",
+      "parkName": "Coors Field",
       "windInfo": {
-        "speed": 0,
-        "deg": 0,
-        "score": 5,
-        "isDome": true
+        "speed": 2.6,
+        "deg": 211,
+        "score": 3,
+        "isDome": false
       },
-      "xhrScore": 9,
-      "evScore": 6,
+      "xhrScore": 3,
+      "evScore": 5,
       "recent": {
-        "r5": 3,
-        "r10": 3
+        "r5": 0,
+        "r10": 0
       },
       "flags": []
     },
@@ -1459,74 +1423,74 @@
       "flags": []
     },
     {
-      "name": "Eugenio Suárez",
-      "team": "CIN",
+      "name": "Ezequiel Tovar",
+      "team": "COL",
       "hand": "R",
-      "score": 6.94,
+      "score": 6.98,
       "factors": {
-        "homeAway": 2,
-        "ballpark": 3,
-        "lhpVsRhp": 7.33,
-        "pitcherHR9": 5,
-        "bullpen": 8.09,
-        "xhr": 6,
-        "hr2025": 10,
-        "wind": 5,
-        "recent5": 3,
-        "recent10": 5,
-        "seasonGap": 8
+        "homeAway": 5,
+        "ballpark": 10,
+        "lhpVsRhp": 6.8,
+        "pitcherHR9": 10,
+        "bullpen": 7.98,
+        "xhr": 5,
+        "hr2025": 6,
+        "wind": 3,
+        "recent5": 1,
+        "recent10": 4,
+        "seasonGap": 4
       },
-      "matchup": "@ MIA",
-      "pitcher": "Alcantara",
+      "matchup": "vs HOU",
+      "pitcher": "Burrows",
       "pitcherHand": "R",
-      "parkName": "loanDepot Park",
+      "parkName": "Coors Field",
       "windInfo": {
-        "speed": 0,
-        "deg": 0,
-        "score": 5,
-        "isDome": true
+        "speed": 2.6,
+        "deg": 211,
+        "score": 3,
+        "isDome": false
       },
-      "xhrScore": 6,
+      "xhrScore": 5,
       "evScore": 5,
       "recent": {
-        "r5": 1,
-        "r10": 2
+        "r5": 0,
+        "r10": 1
       },
       "flags": []
     },
     {
-      "name": "Tyler Soderstrom",
-      "team": "ATH",
+      "name": "Corbin Carroll",
+      "team": "AZ",
       "hand": "L",
-      "score": 6.91,
+      "score": 6.88,
       "factors": {
         "homeAway": 2,
-        "ballpark": 10,
-        "lhpVsRhp": 8.33,
-        "pitcherHR9": 5,
-        "bullpen": 7.87,
-        "xhr": 5,
-        "hr2025": 6,
-        "wind": 5,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 10
+        "ballpark": 5,
+        "lhpVsRhp": 7.5,
+        "pitcherHR9": 10,
+        "bullpen": 6.38,
+        "xhr": 4,
+        "hr2025": 8,
+        "wind": 7,
+        "recent5": 3,
+        "recent10": 5,
+        "seasonGap": 4
       },
-      "matchup": "@ NYY",
-      "pitcher": "Schlittler",
+      "matchup": "@ NYM",
+      "pitcher": "Peralta",
       "pitcherHand": "R",
-      "parkName": "Yankee Stadium",
+      "parkName": "Citi Field",
       "windInfo": {
-        "speed": 14.1,
-        "deg": 270,
-        "score": 5,
+        "speed": 15.5,
+        "deg": 276,
+        "score": 7,
         "isDome": false
       },
-      "xhrScore": 5,
-      "evScore": 4,
+      "xhrScore": 4,
+      "evScore": 5,
       "recent": {
-        "r5": 0,
-        "r10": 0
+        "r5": 1,
+        "r10": 2
       },
       "flags": []
     },
@@ -1559,7 +1523,7 @@
         "isDome": true
       },
       "xhrScore": 10,
-      "evScore": 7,
+      "evScore": 5,
       "recent": {
         "r5": 1,
         "r10": 1
@@ -1567,143 +1531,71 @@
       "flags": []
     },
     {
-      "name": "Mike Trout",
-      "team": "LAA",
-      "hand": "R",
-      "score": 6.86,
-      "factors": {
-        "homeAway": 5,
-        "ballpark": 8,
-        "lhpVsRhp": 9.05,
-        "pitcherHR9": 9,
-        "bullpen": 7.66,
-        "xhr": 4,
-        "hr2025": 6,
-        "wind": 4,
-        "recent5": 1,
-        "recent10": 5,
-        "seasonGap": 3
-      },
-      "matchup": "vs ATL",
-      "pitcher": "López",
-      "pitcherHand": "R",
-      "parkName": "Angel Stadium",
-      "windInfo": {
-        "speed": 3.8,
-        "deg": 140,
-        "score": 4,
-        "isDome": false
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 0,
-        "r10": 2
-      },
-      "flags": []
-    },
-    {
-      "name": "Ezequiel Tovar",
-      "team": "COL",
-      "hand": "R",
-      "score": 6.86,
-      "factors": {
-        "homeAway": 5,
-        "ballpark": 10,
-        "lhpVsRhp": 6.8,
-        "pitcherHR9": 10,
-        "bullpen": 7.98,
-        "xhr": 4,
-        "hr2025": 6,
-        "wind": 3,
-        "recent5": 1,
-        "recent10": 4,
-        "seasonGap": 4
-      },
-      "matchup": "vs HOU",
-      "pitcher": "Burrows",
-      "pitcherHand": "R",
-      "parkName": "Coors Field",
-      "windInfo": {
-        "speed": 1.3,
-        "deg": 360,
-        "score": 3,
-        "isDome": false
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 0,
-        "r10": 1
-      },
-      "flags": []
-    },
-    {
-      "name": "Logan O'Hoppe",
-      "team": "LAA",
-      "hand": "R",
-      "score": 6.85,
-      "factors": {
-        "homeAway": 5,
-        "ballpark": 8,
-        "lhpVsRhp": 7.0,
-        "pitcherHR9": 9,
-        "bullpen": 7.66,
-        "xhr": 4,
-        "hr2025": 6,
-        "wind": 4,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 8
-      },
-      "matchup": "vs ATL",
-      "pitcher": "López",
-      "pitcherHand": "R",
-      "parkName": "Angel Stadium",
-      "windInfo": {
-        "speed": 3.8,
-        "deg": 140,
-        "score": 4,
-        "isDome": false
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 0,
-        "r10": 0
-      },
-      "flags": []
-    },
-    {
-      "name": "Ronald Acuña Jr.",
-      "team": "ATL",
-      "hand": "R",
-      "score": 6.83,
+      "name": "Ian Happ",
+      "team": "CHC",
+      "hand": "B",
+      "score": 6.87,
       "factors": {
         "homeAway": 2,
-        "ballpark": 8,
+        "ballpark": 7,
         "lhpVsRhp": 7.0,
-        "pitcherHR9": 6,
-        "bullpen": 9.47,
-        "xhr": 7,
+        "pitcherHR9": 10,
+        "bullpen": 7.87,
+        "xhr": 4,
+        "hr2025": 7,
+        "wind": 5,
+        "recent5": 3,
+        "recent10": 7,
+        "seasonGap": 2
+      },
+      "matchup": "@ TB",
+      "pitcher": "Rasmussen",
+      "pitcherHand": "R",
+      "parkName": "Tropicana Field",
+      "windInfo": {
+        "speed": 0,
+        "deg": 0,
+        "score": 5,
+        "isDome": true
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 1,
+        "r10": 4
+      },
+      "flags": []
+    },
+    {
+      "name": "Josh Naylor",
+      "team": "SEA",
+      "hand": "L",
+      "score": 6.84,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 3,
+        "lhpVsRhp": 6.84,
+        "pitcherHR9": 10,
+        "bullpen": 6.7,
+        "xhr": 10,
         "hr2025": 5,
-        "wind": 4,
+        "wind": 5,
         "recent5": 1,
         "recent10": 2,
         "seasonGap": 10
       },
-      "matchup": "@ LAA",
-      "pitcher": "Kikuchi",
-      "pitcherHand": "L",
-      "parkName": "Angel Stadium",
+      "matchup": "@ TEX",
+      "pitcher": "Eovaldi",
+      "pitcherHand": "R",
+      "parkName": "Globe Life Field",
       "windInfo": {
-        "speed": 3.8,
-        "deg": 140,
-        "score": 4,
-        "isDome": false
+        "speed": 0,
+        "deg": 0,
+        "score": 5,
+        "isDome": true
       },
-      "xhrScore": 7,
-      "evScore": 3,
+      "xhrScore": 10,
+      "evScore": 5,
       "recent": {
         "r5": 0,
         "r10": 0
@@ -1733,8 +1625,8 @@
       "pitcherHand": "L",
       "parkName": "Nationals Park",
       "windInfo": {
-        "speed": 14.6,
-        "deg": 302,
+        "speed": 14.8,
+        "deg": 290,
         "score": 7,
         "isDome": false
       },
@@ -1747,34 +1639,34 @@
       "flags": []
     },
     {
-      "name": "Randy Arozarena",
-      "team": "SEA",
-      "hand": "R",
+      "name": "Tyler Soderstrom",
+      "team": "ATH",
+      "hand": "L",
       "score": 6.8,
       "factors": {
         "homeAway": 2,
-        "ballpark": 3,
-        "lhpVsRhp": 7.5,
-        "pitcherHR9": 10,
-        "bullpen": 6.7,
-        "xhr": 7,
-        "hr2025": 7,
+        "ballpark": 10,
+        "lhpVsRhp": 8.33,
+        "pitcherHR9": 5,
+        "bullpen": 7.87,
+        "xhr": 4,
+        "hr2025": 6,
         "wind": 5,
         "recent5": 1,
         "recent10": 2,
         "seasonGap": 10
       },
-      "matchup": "@ TEX",
-      "pitcher": "Eovaldi",
+      "matchup": "@ NYY",
+      "pitcher": "Schlittler",
       "pitcherHand": "R",
-      "parkName": "Globe Life Field",
+      "parkName": "Yankee Stadium",
       "windInfo": {
-        "speed": 0,
-        "deg": 0,
+        "speed": 14.4,
+        "deg": 276,
         "score": 5,
-        "isDome": true
+        "isDome": false
       },
-      "xhrScore": 7,
+      "xhrScore": 4,
       "evScore": 5,
       "recent": {
         "r5": 0,
@@ -1783,56 +1675,20 @@
       "flags": []
     },
     {
-      "name": "Corbin Carroll",
-      "team": "AZ",
-      "hand": "L",
-      "score": 6.76,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 5,
-        "lhpVsRhp": 7.5,
-        "pitcherHR9": 10,
-        "bullpen": 6.38,
-        "xhr": 4,
-        "hr2025": 8,
-        "wind": 6,
-        "recent5": 3,
-        "recent10": 5,
-        "seasonGap": 4
-      },
-      "matchup": "@ NYM",
-      "pitcher": "Peralta",
-      "pitcherHand": "R",
-      "parkName": "Citi Field",
-      "windInfo": {
-        "speed": 14.3,
-        "deg": 267,
-        "score": 6,
-        "isDome": false
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 1,
-        "r10": 2
-      },
-      "flags": []
-    },
-    {
-      "name": "Andy Pages",
+      "name": "Freddie Freeman",
       "team": "LAD",
-      "hand": "R",
-      "score": 6.75,
+      "hand": "L",
+      "score": 6.77,
       "factors": {
         "homeAway": 2,
         "ballpark": 7,
-        "lhpVsRhp": 8.8,
+        "lhpVsRhp": 7.0,
         "pitcherHR9": 5,
         "bullpen": 6.91,
-        "xhr": 6,
-        "hr2025": 7,
+        "xhr": 7,
+        "hr2025": 6,
         "wind": 5,
-        "recent5": 5,
+        "recent5": 7,
         "recent10": 6,
         "seasonGap": 2
       },
@@ -1846,11 +1702,83 @@
         "score": 5,
         "isDome": true
       },
-      "xhrScore": 6,
-      "evScore": 7,
+      "xhrScore": 7,
+      "evScore": 5,
       "recent": {
-        "r5": 2,
+        "r5": 3,
         "r10": 3
+      },
+      "flags": []
+    },
+    {
+      "name": "Mike Trout",
+      "team": "LAA",
+      "hand": "R",
+      "score": 6.75,
+      "factors": {
+        "homeAway": 5,
+        "ballpark": 8,
+        "lhpVsRhp": 9.05,
+        "pitcherHR9": 9,
+        "bullpen": 7.66,
+        "xhr": 4,
+        "hr2025": 6,
+        "wind": 3,
+        "recent5": 1,
+        "recent10": 5,
+        "seasonGap": 3
+      },
+      "matchup": "vs ATL",
+      "pitcher": "López",
+      "pitcherHand": "R",
+      "parkName": "Angel Stadium",
+      "windInfo": {
+        "speed": 2.9,
+        "deg": 184,
+        "score": 3,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 2
+      },
+      "flags": []
+    },
+    {
+      "name": "Logan O'Hoppe",
+      "team": "LAA",
+      "hand": "R",
+      "score": 6.74,
+      "factors": {
+        "homeAway": 5,
+        "ballpark": 8,
+        "lhpVsRhp": 7.0,
+        "pitcherHR9": 9,
+        "bullpen": 7.66,
+        "xhr": 4,
+        "hr2025": 6,
+        "wind": 3,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 8
+      },
+      "matchup": "vs ATL",
+      "pitcher": "López",
+      "pitcherHand": "R",
+      "parkName": "Angel Stadium",
+      "windInfo": {
+        "speed": 2.9,
+        "deg": 184,
+        "score": 3,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
       },
       "flags": []
     },
@@ -1877,52 +1805,16 @@
       "pitcherHand": "L",
       "parkName": "Coors Field",
       "windInfo": {
-        "speed": 1.3,
-        "deg": 360,
+        "speed": 2.6,
+        "deg": 211,
         "score": 3,
         "isDome": false
       },
       "xhrScore": 4,
-      "evScore": 4,
+      "evScore": 5,
       "recent": {
         "r5": 0,
         "r10": 0
-      },
-      "flags": []
-    },
-    {
-      "name": "Kyle Tucker",
-      "team": "LAD",
-      "hand": "L",
-      "score": 6.71,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 7,
-        "lhpVsRhp": 7.5,
-        "pitcherHR9": 5,
-        "bullpen": 6.91,
-        "xhr": 7,
-        "hr2025": 6,
-        "wind": 5,
-        "recent5": 3,
-        "recent10": 4,
-        "seasonGap": 7
-      },
-      "matchup": "@ TOR",
-      "pitcher": "Gausman",
-      "pitcherHand": "R",
-      "parkName": "Rogers Centre",
-      "windInfo": {
-        "speed": 0,
-        "deg": 0,
-        "score": 5,
-        "isDome": true
-      },
-      "xhrScore": 7,
-      "evScore": 4,
-      "recent": {
-        "r5": 1,
-        "r10": 1
       },
       "flags": []
     },
@@ -1937,9 +1829,9 @@
         "lhpVsRhp": 6.5,
         "pitcherHR9": 10,
         "bullpen": 7.55,
-        "xhr": 7,
+        "xhr": 8,
         "hr2025": 5,
-        "wind": 6,
+        "wind": 5,
         "recent5": 1,
         "recent10": 2,
         "seasonGap": 8
@@ -1949,12 +1841,12 @@
       "pitcherHand": "R",
       "parkName": "Guaranteed Rate Field",
       "windInfo": {
-        "speed": 11.0,
-        "deg": 61,
-        "score": 6,
+        "speed": 7.8,
+        "deg": 78,
+        "score": 5,
         "isDome": false
       },
-      "xhrScore": 7,
+      "xhrScore": 8,
       "evScore": 5,
       "recent": {
         "r5": 0,
@@ -1985,13 +1877,13 @@
       "pitcherHand": "L",
       "parkName": "Coors Field",
       "windInfo": {
-        "speed": 1.3,
-        "deg": 360,
+        "speed": 2.6,
+        "deg": 211,
         "score": 3,
         "isDome": false
       },
       "xhrScore": 4,
-      "evScore": 3,
+      "evScore": 5,
       "recent": {
         "r5": 0,
         "r10": 0
@@ -1999,74 +1891,38 @@
       "flags": []
     },
     {
-      "name": "Willson Contreras",
-      "team": "BOS",
-      "hand": "R",
-      "score": 6.66,
-      "factors": {
-        "homeAway": 5,
-        "ballpark": 3,
-        "lhpVsRhp": 7.0,
-        "pitcherHR9": 9,
-        "bullpen": 5.96,
-        "xhr": 9,
-        "hr2025": 6,
-        "wind": 3,
-        "recent5": 5,
-        "recent10": 5,
-        "seasonGap": 2
-      },
-      "matchup": "vs MIL",
-      "pitcher": "Misiorowski",
-      "pitcherHand": "R",
-      "parkName": "Fenway Park",
-      "windInfo": {
-        "speed": 4.5,
-        "deg": 110,
-        "score": 3,
-        "isDome": false
-      },
-      "xhrScore": 9,
-      "evScore": 4,
-      "recent": {
-        "r5": 2,
-        "r10": 2
-      },
-      "flags": []
-    },
-    {
-      "name": "Trevor Story",
-      "team": "BOS",
-      "hand": "R",
+      "name": "James Wood",
+      "team": "WSH",
+      "hand": "L",
       "score": 6.64,
       "factors": {
         "homeAway": 5,
-        "ballpark": 3,
-        "lhpVsRhp": 7.8,
+        "ballpark": 4,
+        "lhpVsRhp": 5.0,
         "pitcherHR9": 9,
-        "bullpen": 5.96,
-        "xhr": 7,
-        "hr2025": 7,
-        "wind": 3,
-        "recent5": 1,
-        "recent10": 4,
-        "seasonGap": 7
+        "bullpen": 4.79,
+        "xhr": 4,
+        "hr2025": 8,
+        "wind": 7,
+        "recent5": 5,
+        "recent10": 6,
+        "seasonGap": 2
       },
-      "matchup": "vs MIL",
-      "pitcher": "Misiorowski",
-      "pitcherHand": "R",
-      "parkName": "Fenway Park",
+      "matchup": "vs STL",
+      "pitcher": "Liberatore",
+      "pitcherHand": "L",
+      "parkName": "Nationals Park",
       "windInfo": {
-        "speed": 4.5,
-        "deg": 110,
-        "score": 3,
+        "speed": 14.8,
+        "deg": 290,
+        "score": 7,
         "isDome": false
       },
-      "xhrScore": 7,
-      "evScore": 4,
+      "xhrScore": 4,
+      "evScore": 5,
       "recent": {
-        "r5": 0,
-        "r10": 1
+        "r5": 2,
+        "r10": 3
       },
       "flags": []
     },
@@ -2093,8 +1949,8 @@
       "pitcherHand": "L",
       "parkName": "Progressive Field",
       "windInfo": {
-        "speed": 10.7,
-        "deg": 334,
+        "speed": 10.5,
+        "deg": 343,
         "score": 4,
         "isDome": false
       },
@@ -2103,78 +1959,6 @@
       "recent": {
         "r5": 1,
         "r10": 1
-      },
-      "flags": []
-    },
-    {
-      "name": "Matt Olson",
-      "team": "ATL",
-      "hand": "L",
-      "score": 6.61,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 8,
-        "lhpVsRhp": 6.0,
-        "pitcherHR9": 6,
-        "bullpen": 9.47,
-        "xhr": 4,
-        "hr2025": 7,
-        "wind": 3,
-        "recent5": 5,
-        "recent10": 5,
-        "seasonGap": 4
-      },
-      "matchup": "@ LAA",
-      "pitcher": "Kikuchi",
-      "pitcherHand": "L",
-      "parkName": "Angel Stadium",
-      "windInfo": {
-        "speed": 3.8,
-        "deg": 140,
-        "score": 3,
-        "isDome": false
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 2,
-        "r10": 2
-      },
-      "flags": []
-    },
-    {
-      "name": "Drake Baldwin",
-      "team": "ATL",
-      "hand": "R",
-      "score": 6.61,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 8,
-        "lhpVsRhp": 7.0,
-        "pitcherHR9": 6,
-        "bullpen": 9.47,
-        "xhr": 4,
-        "hr2025": 5,
-        "wind": 4,
-        "recent5": 5,
-        "recent10": 7,
-        "seasonGap": 2
-      },
-      "matchup": "@ LAA",
-      "pitcher": "Kikuchi",
-      "pitcherHand": "L",
-      "parkName": "Angel Stadium",
-      "windInfo": {
-        "speed": 3.8,
-        "deg": 140,
-        "score": 4,
-        "isDome": false
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 2,
-        "r10": 4
       },
       "flags": []
     },
@@ -2215,78 +1999,6 @@
       "flags": []
     },
     {
-      "name": "Lenyn Sosa",
-      "team": "CWS",
-      "hand": "R",
-      "score": 6.57,
-      "factors": {
-        "homeAway": 5,
-        "ballpark": 5,
-        "lhpVsRhp": 7.0,
-        "pitcherHR9": 5,
-        "bullpen": 8.09,
-        "xhr": 4,
-        "hr2025": 6,
-        "wind": 6,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 10
-      },
-      "matchup": "vs BAL",
-      "pitcher": "Rogers",
-      "pitcherHand": "L",
-      "parkName": "Guaranteed Rate Field",
-      "windInfo": {
-        "speed": 11.0,
-        "deg": 61,
-        "score": 6,
-        "isDome": false
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 0,
-        "r10": 0
-      },
-      "flags": []
-    },
-    {
-      "name": "Shea Langeliers",
-      "team": "ATH",
-      "hand": "R",
-      "score": 6.54,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 6,
-        "lhpVsRhp": 7.0,
-        "pitcherHR9": 5,
-        "bullpen": 7.87,
-        "xhr": 4,
-        "hr2025": 8,
-        "wind": 5,
-        "recent5": 5,
-        "recent10": 7,
-        "seasonGap": 2
-      },
-      "matchup": "@ NYY",
-      "pitcher": "Schlittler",
-      "pitcherHand": "R",
-      "parkName": "Yankee Stadium",
-      "windInfo": {
-        "speed": 14.1,
-        "deg": 270,
-        "score": 5,
-        "isDome": false
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 2,
-        "r10": 5
-      },
-      "flags": []
-    },
-    {
       "name": "Francisco Lindor",
       "team": "NYM",
       "hand": "B",
@@ -2309,10 +2021,82 @@
       "pitcherHand": "R",
       "parkName": "Citi Field",
       "windInfo": {
-        "speed": 14.3,
-        "deg": 267,
+        "speed": 15.5,
+        "deg": 276,
         "score": 4,
         "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
+      "name": "Andy Pages",
+      "team": "LAD",
+      "hand": "R",
+      "score": 6.52,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 7,
+        "lhpVsRhp": 8.8,
+        "pitcherHR9": 5,
+        "bullpen": 6.91,
+        "xhr": 4,
+        "hr2025": 7,
+        "wind": 5,
+        "recent5": 5,
+        "recent10": 6,
+        "seasonGap": 2
+      },
+      "matchup": "@ TOR",
+      "pitcher": "Gausman",
+      "pitcherHand": "R",
+      "parkName": "Rogers Centre",
+      "windInfo": {
+        "speed": 0,
+        "deg": 0,
+        "score": 5,
+        "isDome": true
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 2,
+        "r10": 3
+      },
+      "flags": []
+    },
+    {
+      "name": "Seiya Suzuki",
+      "team": "CHC",
+      "hand": "R",
+      "score": 6.5,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 7,
+        "lhpVsRhp": 6.67,
+        "pitcherHR9": 10,
+        "bullpen": 7.87,
+        "xhr": 4,
+        "hr2025": 8,
+        "wind": 5,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 5
+      },
+      "matchup": "@ TB",
+      "pitcher": "Rasmussen",
+      "pitcherHand": "R",
+      "parkName": "Tropicana Field",
+      "windInfo": {
+        "speed": 0,
+        "deg": 0,
+        "score": 5,
+        "isDome": true
       },
       "xhrScore": 4,
       "evScore": 5,
@@ -2345,8 +2129,8 @@
       "pitcherHand": "L",
       "parkName": "Coors Field",
       "windInfo": {
-        "speed": 1.3,
-        "deg": 360,
+        "speed": 2.6,
+        "deg": 211,
         "score": 3,
         "isDome": false
       },
@@ -2355,6 +2139,42 @@
       "recent": {
         "r5": 0,
         "r10": 2
+      },
+      "flags": []
+    },
+    {
+      "name": "Drake Baldwin",
+      "team": "ATL",
+      "hand": "R",
+      "score": 6.5,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 8,
+        "lhpVsRhp": 7.0,
+        "pitcherHR9": 6,
+        "bullpen": 9.47,
+        "xhr": 4,
+        "hr2025": 5,
+        "wind": 3,
+        "recent5": 5,
+        "recent10": 7,
+        "seasonGap": 2
+      },
+      "matchup": "@ LAA",
+      "pitcher": "Kikuchi",
+      "pitcherHand": "L",
+      "parkName": "Angel Stadium",
+      "windInfo": {
+        "speed": 2.9,
+        "deg": 184,
+        "score": 3,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 2,
+        "r10": 4
       },
       "flags": []
     },
@@ -2387,7 +2207,43 @@
         "isDome": true
       },
       "xhrScore": 4,
-      "evScore": 2,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
+      "name": "Randy Arozarena",
+      "team": "SEA",
+      "hand": "R",
+      "score": 6.47,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 3,
+        "lhpVsRhp": 7.5,
+        "pitcherHR9": 10,
+        "bullpen": 6.7,
+        "xhr": 4,
+        "hr2025": 7,
+        "wind": 5,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 10
+      },
+      "matchup": "@ TEX",
+      "pitcher": "Eovaldi",
+      "pitcherHand": "R",
+      "parkName": "Globe Life Field",
+      "windInfo": {
+        "speed": 0,
+        "deg": 0,
+        "score": 5,
+        "isDome": true
+      },
+      "xhrScore": 4,
+      "evScore": 5,
       "recent": {
         "r5": 0,
         "r10": 0
@@ -2417,8 +2273,8 @@
       "pitcherHand": "R",
       "parkName": "Citi Field",
       "windInfo": {
-        "speed": 14.3,
-        "deg": 267,
+        "speed": 15.5,
+        "deg": 276,
         "score": 4,
         "isDome": false
       },
@@ -2427,6 +2283,78 @@
       "recent": {
         "r5": 0,
         "r10": 1
+      },
+      "flags": []
+    },
+    {
+      "name": "Lenyn Sosa",
+      "team": "CWS",
+      "hand": "R",
+      "score": 6.45,
+      "factors": {
+        "homeAway": 5,
+        "ballpark": 5,
+        "lhpVsRhp": 7.0,
+        "pitcherHR9": 5,
+        "bullpen": 8.09,
+        "xhr": 4,
+        "hr2025": 6,
+        "wind": 5,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 10
+      },
+      "matchup": "vs BAL",
+      "pitcher": "Rogers",
+      "pitcherHand": "L",
+      "parkName": "Guaranteed Rate Field",
+      "windInfo": {
+        "speed": 7.8,
+        "deg": 78,
+        "score": 5,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
+      "name": "Brett Baty",
+      "team": "NYM",
+      "hand": "L",
+      "score": 6.43,
+      "factors": {
+        "homeAway": 5,
+        "ballpark": 5,
+        "lhpVsRhp": 8.82,
+        "pitcherHR9": 5,
+        "bullpen": 7.02,
+        "xhr": 4,
+        "hr2025": 5,
+        "wind": 7,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 8
+      },
+      "matchup": "vs AZ",
+      "pitcher": "Gallen",
+      "pitcherHand": "R",
+      "parkName": "Citi Field",
+      "windInfo": {
+        "speed": 15.5,
+        "deg": 276,
+        "score": 7,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
       },
       "flags": []
     },
@@ -2453,8 +2381,8 @@
       "pitcherHand": "L",
       "parkName": "Oracle Park",
       "windInfo": {
-        "speed": 7.0,
-        "deg": 292,
+        "speed": 6.9,
+        "deg": 285,
         "score": 5,
         "isDome": false
       },
@@ -2462,6 +2390,42 @@
       "evScore": 5,
       "recent": {
         "r5": 1,
+        "r10": 1
+      },
+      "flags": []
+    },
+    {
+      "name": "Trevor Story",
+      "team": "BOS",
+      "hand": "R",
+      "score": 6.42,
+      "factors": {
+        "homeAway": 5,
+        "ballpark": 3,
+        "lhpVsRhp": 7.8,
+        "pitcherHR9": 9,
+        "bullpen": 5.96,
+        "xhr": 5,
+        "hr2025": 7,
+        "wind": 3,
+        "recent5": 1,
+        "recent10": 4,
+        "seasonGap": 7
+      },
+      "matchup": "vs MIL",
+      "pitcher": "Misiorowski",
+      "pitcherHand": "R",
+      "parkName": "Fenway Park",
+      "windInfo": {
+        "speed": 3.9,
+        "deg": 80,
+        "score": 3,
+        "isDome": false
+      },
+      "xhrScore": 5,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
         "r10": 1
       },
       "flags": []
@@ -2503,6 +2467,114 @@
       "flags": []
     },
     {
+      "name": "Ronald Acuña Jr.",
+      "team": "ATL",
+      "hand": "R",
+      "score": 6.39,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 8,
+        "lhpVsRhp": 7.0,
+        "pitcherHR9": 6,
+        "bullpen": 9.47,
+        "xhr": 4,
+        "hr2025": 5,
+        "wind": 3,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 10
+      },
+      "matchup": "@ LAA",
+      "pitcher": "Kikuchi",
+      "pitcherHand": "L",
+      "parkName": "Angel Stadium",
+      "windInfo": {
+        "speed": 2.9,
+        "deg": 184,
+        "score": 3,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
+      "name": "Ryan Mountcastle",
+      "team": "BAL",
+      "hand": "R",
+      "score": 6.39,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 5,
+        "lhpVsRhp": 10,
+        "pitcherHR9": 10,
+        "bullpen": 7.55,
+        "xhr": 7,
+        "hr2025": 1,
+        "wind": 5,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 7
+      },
+      "matchup": "@ CWS",
+      "pitcher": "Smith",
+      "pitcherHand": "R",
+      "parkName": "Guaranteed Rate Field",
+      "windInfo": {
+        "speed": 7.8,
+        "deg": 78,
+        "score": 5,
+        "isDome": false
+      },
+      "xhrScore": 7,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
+      "name": "Kyle Tucker",
+      "team": "LAD",
+      "hand": "L",
+      "score": 6.38,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 7,
+        "lhpVsRhp": 7.5,
+        "pitcherHR9": 5,
+        "bullpen": 6.91,
+        "xhr": 4,
+        "hr2025": 6,
+        "wind": 5,
+        "recent5": 3,
+        "recent10": 4,
+        "seasonGap": 7
+      },
+      "matchup": "@ TOR",
+      "pitcher": "Gausman",
+      "pitcherHand": "R",
+      "parkName": "Rogers Centre",
+      "windInfo": {
+        "speed": 0,
+        "deg": 0,
+        "score": 5,
+        "isDome": true
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 1,
+        "r10": 1
+      },
+      "flags": []
+    },
+    {
       "name": "Jorge Polanco",
       "team": "NYM",
       "hand": "B",
@@ -2525,13 +2597,49 @@
       "pitcherHand": "R",
       "parkName": "Citi Field",
       "windInfo": {
-        "speed": 14.3,
-        "deg": 267,
+        "speed": 15.5,
+        "deg": 276,
         "score": 4,
         "isDome": false
       },
       "xhrScore": 4,
       "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
+      "name": "Kyle Manzardo",
+      "team": "CLE",
+      "hand": "L",
+      "score": 6.3,
+      "factors": {
+        "homeAway": 5,
+        "ballpark": 4,
+        "lhpVsRhp": 4.5,
+        "pitcherHR9": 5,
+        "bullpen": 6.17,
+        "xhr": 7,
+        "hr2025": 7,
+        "wind": 5,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 10
+      },
+      "matchup": "vs KC",
+      "pitcher": "Cameron",
+      "pitcherHand": "L",
+      "parkName": "Progressive Field",
+      "windInfo": {
+        "speed": 10.5,
+        "deg": 343,
+        "score": 5,
+        "isDome": false
+      },
+      "xhrScore": 7,
+      "evScore": 4,
       "recent": {
         "r5": 0,
         "r10": 0
@@ -2561,8 +2669,8 @@
       "pitcherHand": "L",
       "parkName": "Oracle Park",
       "windInfo": {
-        "speed": 7.0,
-        "deg": 292,
+        "speed": 6.9,
+        "deg": 285,
         "score": 5,
         "isDome": false
       },
@@ -2571,78 +2679,6 @@
       "recent": {
         "r5": 2,
         "r10": 2
-      },
-      "flags": []
-    },
-    {
-      "name": "Salvador Perez",
-      "team": "KC",
-      "hand": "R",
-      "score": 6.25,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 4,
-        "lhpVsRhp": 9.29,
-        "pitcherHR9": 5,
-        "bullpen": 5.0,
-        "xhr": 7,
-        "hr2025": 8,
-        "wind": 4,
-        "recent5": 3,
-        "recent10": 5,
-        "seasonGap": 4
-      },
-      "matchup": "@ CLE",
-      "pitcher": "Williams",
-      "pitcherHand": "R",
-      "parkName": "Progressive Field",
-      "windInfo": {
-        "speed": 10.7,
-        "deg": 334,
-        "score": 4,
-        "isDome": false
-      },
-      "xhrScore": 7,
-      "evScore": 5,
-      "recent": {
-        "r5": 1,
-        "r10": 2
-      },
-      "flags": []
-    },
-    {
-      "name": "Spencer Torkelson",
-      "team": "DET",
-      "hand": "R",
-      "score": 6.25,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 4,
-        "lhpVsRhp": 7.8,
-        "pitcherHR9": 5,
-        "bullpen": 6.49,
-        "xhr": 5,
-        "hr2025": 8,
-        "wind": 5,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 10
-      },
-      "matchup": "@ MIN",
-      "pitcher": "Bradley",
-      "pitcherHand": "R",
-      "parkName": "Target Field",
-      "windInfo": {
-        "speed": 0,
-        "deg": 0,
-        "score": 5,
-        "isDome": true
-      },
-      "xhrScore": 5,
-      "evScore": 2,
-      "recent": {
-        "r5": 0,
-        "r10": 0
       },
       "flags": []
     },
@@ -2683,110 +2719,74 @@
       "flags": []
     },
     {
-      "name": "Brandon Lowe",
-      "team": "PIT",
-      "hand": "L",
-      "score": 6.23,
+      "name": "Willson Contreras",
+      "team": "BOS",
+      "hand": "R",
+      "score": 6.22,
       "factors": {
         "homeAway": 5,
-        "ballpark": 1,
-        "lhpVsRhp": 8.62,
-        "pitcherHR9": 5,
-        "bullpen": 5.43,
-        "xhr": 7,
-        "hr2025": 8,
-        "wind": 7,
-        "recent5": 1,
-        "recent10": 6,
-        "seasonGap": 2
-      },
-      "matchup": "vs SD",
-      "pitcher": "Pivetta",
-      "pitcherHand": "R",
-      "parkName": "PNC Park",
-      "windInfo": {
-        "speed": 13.2,
-        "deg": 321,
-        "score": 7,
-        "isDome": false
-      },
-      "xhrScore": 7,
-      "evScore": 5,
-      "recent": {
-        "r5": 0,
-        "r10": 3
-      },
-      "flags": []
-    },
-    {
-      "name": "Oneil Cruz",
-      "team": "PIT",
-      "hand": "L",
-      "score": 6.21,
-      "factors": {
-        "homeAway": 5,
-        "ballpark": 1,
-        "lhpVsRhp": 9.47,
-        "pitcherHR9": 5,
-        "bullpen": 5.43,
-        "xhr": 4,
-        "hr2025": 5,
-        "wind": 7,
+        "ballpark": 3,
+        "lhpVsRhp": 7.0,
+        "pitcherHR9": 9,
+        "bullpen": 5.96,
+        "xhr": 5,
+        "hr2025": 6,
+        "wind": 3,
         "recent5": 5,
-        "recent10": 7,
+        "recent10": 5,
         "seasonGap": 2
       },
-      "matchup": "vs SD",
-      "pitcher": "Pivetta",
+      "matchup": "vs MIL",
+      "pitcher": "Misiorowski",
       "pitcherHand": "R",
-      "parkName": "PNC Park",
+      "parkName": "Fenway Park",
       "windInfo": {
-        "speed": 13.2,
-        "deg": 321,
-        "score": 7,
+        "speed": 3.9,
+        "deg": 80,
+        "score": 3,
         "isDome": false
       },
-      "xhrScore": 4,
+      "xhrScore": 5,
       "evScore": 5,
       "recent": {
         "r5": 2,
-        "r10": 4
+        "r10": 2
       },
       "flags": []
     },
     {
-      "name": "Brett Baty",
-      "team": "NYM",
-      "hand": "L",
-      "score": 6.2,
+      "name": "Geraldo Perdomo",
+      "team": "AZ",
+      "hand": "B",
+      "score": 6.21,
       "factors": {
-        "homeAway": 5,
+        "homeAway": 2,
         "ballpark": 5,
-        "lhpVsRhp": 8.82,
-        "pitcherHR9": 5,
-        "bullpen": 7.02,
-        "xhr": 3,
-        "hr2025": 5,
-        "wind": 6,
+        "lhpVsRhp": 6.5,
+        "pitcherHR9": 10,
+        "bullpen": 6.38,
+        "xhr": 5,
+        "hr2025": 6,
+        "wind": 4,
         "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 8
+        "recent10": 4,
+        "seasonGap": 6
       },
-      "matchup": "vs AZ",
-      "pitcher": "Gallen",
+      "matchup": "@ NYM",
+      "pitcher": "Peralta",
       "pitcherHand": "R",
       "parkName": "Citi Field",
       "windInfo": {
-        "speed": 14.3,
-        "deg": 267,
-        "score": 6,
+        "speed": 15.5,
+        "deg": 276,
+        "score": 4,
         "isDome": false
       },
-      "xhrScore": 3,
-      "evScore": 4,
+      "xhrScore": 5,
+      "evScore": 5,
       "recent": {
         "r5": 0,
-        "r10": 0
+        "r10": 1
       },
       "flags": []
     },
@@ -2827,71 +2827,35 @@
       "flags": []
     },
     {
-      "name": "Kyle Manzardo",
-      "team": "CLE",
-      "hand": "L",
-      "score": 6.19,
-      "factors": {
-        "homeAway": 5,
-        "ballpark": 4,
-        "lhpVsRhp": 4.5,
-        "pitcherHR9": 5,
-        "bullpen": 6.17,
-        "xhr": 6,
-        "hr2025": 7,
-        "wind": 5,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 10
-      },
-      "matchup": "vs KC",
-      "pitcher": "Cameron",
-      "pitcherHand": "L",
-      "parkName": "Progressive Field",
-      "windInfo": {
-        "speed": 10.7,
-        "deg": 334,
-        "score": 5,
-        "isDome": false
-      },
-      "xhrScore": 6,
-      "evScore": 4,
-      "recent": {
-        "r5": 0,
-        "r10": 0
-      },
-      "flags": []
-    },
-    {
-      "name": "Ryan Mountcastle",
-      "team": "BAL",
+      "name": "Bobby Witt Jr.",
+      "team": "KC",
       "hand": "R",
       "score": 6.17,
       "factors": {
         "homeAway": 2,
-        "ballpark": 5,
-        "lhpVsRhp": 10,
-        "pitcherHR9": 10,
-        "bullpen": 7.55,
-        "xhr": 4,
-        "hr2025": 1,
-        "wind": 6,
+        "ballpark": 4,
+        "lhpVsRhp": 9.55,
+        "pitcherHR9": 5,
+        "bullpen": 5.0,
+        "xhr": 7,
+        "hr2025": 6,
+        "wind": 4,
         "recent5": 1,
         "recent10": 2,
-        "seasonGap": 7
+        "seasonGap": 10
       },
-      "matchup": "@ CWS",
-      "pitcher": "Smith",
+      "matchup": "@ CLE",
+      "pitcher": "Williams",
       "pitcherHand": "R",
-      "parkName": "Guaranteed Rate Field",
+      "parkName": "Progressive Field",
       "windInfo": {
-        "speed": 11.0,
-        "deg": 61,
-        "score": 6,
+        "speed": 10.5,
+        "deg": 343,
+        "score": 4,
         "isDome": false
       },
-      "xhrScore": 4,
-      "evScore": 5,
+      "xhrScore": 7,
+      "evScore": 7,
       "recent": {
         "r5": 0,
         "r10": 0
@@ -2921,8 +2885,8 @@
       "pitcherHand": "L",
       "parkName": "Coors Field",
       "windInfo": {
-        "speed": 1.3,
-        "deg": 360,
+        "speed": 2.6,
+        "deg": 211,
         "score": 3,
         "isDome": false
       },
@@ -2931,42 +2895,6 @@
       "recent": {
         "r5": 2,
         "r10": 3
-      },
-      "flags": []
-    },
-    {
-      "name": "Josh Naylor",
-      "team": "SEA",
-      "hand": "L",
-      "score": 6.17,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 3,
-        "lhpVsRhp": 6.84,
-        "pitcherHR9": 10,
-        "bullpen": 6.7,
-        "xhr": 4,
-        "hr2025": 5,
-        "wind": 5,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 10
-      },
-      "matchup": "@ TEX",
-      "pitcher": "Eovaldi",
-      "pitcherHand": "R",
-      "parkName": "Globe Life Field",
-      "windInfo": {
-        "speed": 0,
-        "deg": 0,
-        "score": 5,
-        "isDome": true
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 0,
-        "r10": 0
       },
       "flags": []
     },
@@ -3007,6 +2935,42 @@
       "flags": []
     },
     {
+      "name": "Spencer Torkelson",
+      "team": "DET",
+      "hand": "R",
+      "score": 6.14,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 4,
+        "lhpVsRhp": 7.8,
+        "pitcherHR9": 5,
+        "bullpen": 6.49,
+        "xhr": 4,
+        "hr2025": 8,
+        "wind": 5,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 10
+      },
+      "matchup": "@ MIN",
+      "pitcher": "Bradley",
+      "pitcherHand": "R",
+      "parkName": "Target Field",
+      "windInfo": {
+        "speed": 0,
+        "deg": 0,
+        "score": 5,
+        "isDome": true
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
       "name": "Christopher Morel",
       "team": "TB",
       "hand": "R",
@@ -3043,76 +3007,78 @@
       "flags": []
     },
     {
-      "name": "Colton Cowser",
-      "team": "BAL",
+      "name": "Oneil Cruz",
+      "team": "PIT",
       "hand": "L",
       "score": 6.1,
       "factors": {
-        "homeAway": 2,
-        "ballpark": 5,
-        "lhpVsRhp": 7.33,
-        "pitcherHR9": 10,
-        "bullpen": 7.55,
+        "homeAway": 5,
+        "ballpark": 1,
+        "lhpVsRhp": 9.47,
+        "pitcherHR9": 5,
+        "bullpen": 5.43,
         "xhr": 4,
-        "hr2025": 4,
-        "wind": 4,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 8
+        "hr2025": 5,
+        "wind": 6,
+        "recent5": 5,
+        "recent10": 7,
+        "seasonGap": 2
       },
-      "matchup": "@ CWS",
-      "pitcher": "Smith",
+      "matchup": "vs SD",
+      "pitcher": "Pivetta",
       "pitcherHand": "R",
-      "parkName": "Guaranteed Rate Field",
+      "parkName": "PNC Park",
       "windInfo": {
-        "speed": 11.0,
-        "deg": 61,
-        "score": 4,
+        "speed": 11.7,
+        "deg": 331,
+        "score": 6,
         "isDome": false
       },
       "xhrScore": 4,
       "evScore": 5,
       "recent": {
-        "r5": 0,
-        "r10": 0
+        "r5": 2,
+        "r10": 4
       },
       "flags": []
     },
     {
-      "name": "Geraldo Perdomo",
-      "team": "AZ",
-      "hand": "B",
+      "name": "Mookie Betts",
+      "team": "LAD",
+      "hand": "R",
       "score": 6.1,
       "factors": {
         "homeAway": 2,
-        "ballpark": 5,
-        "lhpVsRhp": 6.5,
-        "pitcherHR9": 10,
-        "bullpen": 6.38,
-        "xhr": 4,
+        "ballpark": 7,
+        "lhpVsRhp": 7.0,
+        "pitcherHR9": 5,
+        "bullpen": 6.91,
+        "xhr": 6,
         "hr2025": 6,
-        "wind": 4,
-        "recent5": 1,
-        "recent10": 4,
-        "seasonGap": 6
+        "wind": 5,
+        "recent5": 3,
+        "recent10": 5,
+        "seasonGap": 2
       },
-      "matchup": "@ NYM",
-      "pitcher": "Peralta",
+      "matchup": "@ TOR",
+      "pitcher": "Gausman",
       "pitcherHand": "R",
-      "parkName": "Citi Field",
+      "parkName": "Rogers Centre",
       "windInfo": {
-        "speed": 14.3,
-        "deg": 267,
-        "score": 4,
-        "isDome": false
+        "speed": 0,
+        "deg": 0,
+        "score": 5,
+        "isDome": true
       },
-      "xhrScore": 4,
+      "xhrScore": 6,
       "evScore": 5,
       "recent": {
-        "r5": 0,
-        "r10": 1
+        "r5": 1,
+        "r10": 2
       },
-      "flags": []
+      "flags": [
+        "IL"
+      ]
     },
     {
       "name": "Kerry Carpenter",
@@ -3147,6 +3113,42 @@
       "recent": {
         "r5": 2,
         "r10": 2
+      },
+      "flags": []
+    },
+    {
+      "name": "Vinnie Pasquantino",
+      "team": "KC",
+      "hand": "L",
+      "score": 6.04,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 4,
+        "lhpVsRhp": 8.33,
+        "pitcherHR9": 5,
+        "bullpen": 5.0,
+        "xhr": 4,
+        "hr2025": 8,
+        "wind": 5,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 10
+      },
+      "matchup": "@ CLE",
+      "pitcher": "Williams",
+      "pitcherHand": "R",
+      "parkName": "Progressive Field",
+      "windInfo": {
+        "speed": 10.5,
+        "deg": 343,
+        "score": 5,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 4,
+      "recent": {
+        "r5": 0,
+        "r10": 0
       },
       "flags": []
     },
@@ -3187,42 +3189,6 @@
       "flags": []
     },
     {
-      "name": "Sean Murphy",
-      "team": "ATL",
-      "hand": "R",
-      "score": 6.0,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 8,
-        "lhpVsRhp": 7.5,
-        "pitcherHR9": 6,
-        "bullpen": 9.47,
-        "xhr": 4,
-        "hr2025": 5,
-        "wind": 4,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 5
-      },
-      "matchup": "@ LAA",
-      "pitcher": "Kikuchi",
-      "pitcherHand": "L",
-      "parkName": "Angel Stadium",
-      "windInfo": {
-        "speed": 3.8,
-        "deg": 140,
-        "score": 4,
-        "isDome": false
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 0,
-        "r10": 0
-      },
-      "flags": []
-    },
-    {
       "name": "Dillon Dingler",
       "team": "DET",
       "hand": "R",
@@ -3251,7 +3217,7 @@
         "isDome": true
       },
       "xhrScore": 10,
-      "evScore": 8,
+      "evScore": 5,
       "recent": {
         "r5": 1,
         "r10": 2
@@ -3259,42 +3225,40 @@
       "flags": []
     },
     {
-      "name": "Mookie Betts",
-      "team": "LAD",
-      "hand": "R",
+      "name": "Colton Cowser",
+      "team": "BAL",
+      "hand": "L",
       "score": 5.99,
       "factors": {
         "homeAway": 2,
-        "ballpark": 7,
-        "lhpVsRhp": 7.0,
-        "pitcherHR9": 5,
-        "bullpen": 6.91,
-        "xhr": 5,
-        "hr2025": 6,
-        "wind": 5,
-        "recent5": 3,
-        "recent10": 5,
-        "seasonGap": 2
+        "ballpark": 5,
+        "lhpVsRhp": 7.33,
+        "pitcherHR9": 10,
+        "bullpen": 7.55,
+        "xhr": 4,
+        "hr2025": 4,
+        "wind": 3,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 8
       },
-      "matchup": "@ TOR",
-      "pitcher": "Gausman",
+      "matchup": "@ CWS",
+      "pitcher": "Smith",
       "pitcherHand": "R",
-      "parkName": "Rogers Centre",
+      "parkName": "Guaranteed Rate Field",
       "windInfo": {
-        "speed": 0,
-        "deg": 0,
-        "score": 5,
-        "isDome": true
+        "speed": 7.8,
+        "deg": 78,
+        "score": 3,
+        "isDome": false
       },
-      "xhrScore": 5,
-      "evScore": 4,
+      "xhrScore": 4,
+      "evScore": 5,
       "recent": {
-        "r5": 1,
-        "r10": 2
+        "r5": 0,
+        "r10": 0
       },
-      "flags": [
-        "IL"
-      ]
+      "flags": []
     },
     {
       "name": "Ryan Jeffers",
@@ -3333,74 +3297,38 @@
       "flags": []
     },
     {
-      "name": "Bobby Witt Jr.",
-      "team": "KC",
+      "name": "Tyler Stephenson",
+      "team": "CIN",
       "hand": "R",
       "score": 5.95,
       "factors": {
         "homeAway": 2,
-        "ballpark": 4,
-        "lhpVsRhp": 9.55,
-        "pitcherHR9": 5,
-        "bullpen": 5.0,
-        "xhr": 5,
-        "hr2025": 6,
-        "wind": 4,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 10
-      },
-      "matchup": "@ CLE",
-      "pitcher": "Williams",
-      "pitcherHand": "R",
-      "parkName": "Progressive Field",
-      "windInfo": {
-        "speed": 10.7,
-        "deg": 334,
-        "score": 4,
-        "isDome": false
-      },
-      "xhrScore": 5,
-      "evScore": 7,
-      "recent": {
-        "r5": 0,
-        "r10": 0
-      },
-      "flags": []
-    },
-    {
-      "name": "Andrew Benintendi",
-      "team": "CWS",
-      "hand": "L",
-      "score": 5.95,
-      "factors": {
-        "homeAway": 5,
-        "ballpark": 5,
-        "lhpVsRhp": 4.5,
+        "ballpark": 3,
+        "lhpVsRhp": 6.5,
         "pitcherHR9": 5,
         "bullpen": 8.09,
-        "xhr": 3,
-        "hr2025": 6,
-        "wind": 4,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 10
+        "xhr": 7,
+        "hr2025": 5,
+        "wind": 5,
+        "recent5": 5,
+        "recent10": 5,
+        "seasonGap": 2
       },
-      "matchup": "vs BAL",
-      "pitcher": "Rogers",
-      "pitcherHand": "L",
-      "parkName": "Guaranteed Rate Field",
+      "matchup": "@ MIA",
+      "pitcher": "Alcantara",
+      "pitcherHand": "R",
+      "parkName": "loanDepot Park",
       "windInfo": {
-        "speed": 11.0,
-        "deg": 61,
-        "score": 4,
-        "isDome": false
+        "speed": 0,
+        "deg": 0,
+        "score": 5,
+        "isDome": true
       },
-      "xhrScore": 3,
-      "evScore": 6,
+      "xhrScore": 7,
+      "evScore": 5,
       "recent": {
-        "r5": 0,
-        "r10": 0
+        "r5": 2,
+        "r10": 2
       },
       "flags": []
     },
@@ -3427,8 +3355,8 @@
       "pitcherHand": "R",
       "parkName": "Fenway Park",
       "windInfo": {
-        "speed": 4.5,
-        "deg": 110,
+        "speed": 3.9,
+        "deg": 80,
         "score": 4,
         "isDome": false
       },
@@ -3437,42 +3365,6 @@
       "recent": {
         "r5": 1,
         "r10": 1
-      },
-      "flags": []
-    },
-    {
-      "name": "Vinnie Pasquantino",
-      "team": "KC",
-      "hand": "L",
-      "score": 5.93,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 4,
-        "lhpVsRhp": 8.33,
-        "pitcherHR9": 5,
-        "bullpen": 5.0,
-        "xhr": 3,
-        "hr2025": 8,
-        "wind": 5,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 10
-      },
-      "matchup": "@ CLE",
-      "pitcher": "Williams",
-      "pitcherHand": "R",
-      "parkName": "Progressive Field",
-      "windInfo": {
-        "speed": 10.7,
-        "deg": 334,
-        "score": 5,
-        "isDome": false
-      },
-      "xhrScore": 3,
-      "evScore": 5,
-      "recent": {
-        "r5": 0,
-        "r10": 0
       },
       "flags": []
     },
@@ -3535,8 +3427,8 @@
       "pitcherHand": "R",
       "parkName": "Citi Field",
       "windInfo": {
-        "speed": 14.3,
-        "deg": 267,
+        "speed": 15.5,
+        "deg": 276,
         "score": 4,
         "isDome": false
       },
@@ -3549,38 +3441,38 @@
       "flags": []
     },
     {
-      "name": "Bo Naylor",
-      "team": "CLE",
-      "hand": "L",
-      "score": 5.91,
+      "name": "Salvador Perez",
+      "team": "KC",
+      "hand": "R",
+      "score": 5.92,
       "factors": {
-        "homeAway": 5,
+        "homeAway": 2,
         "ballpark": 4,
-        "lhpVsRhp": 4.0,
+        "lhpVsRhp": 9.29,
         "pitcherHR9": 5,
-        "bullpen": 6.17,
-        "xhr": 8,
-        "hr2025": 5,
-        "wind": 5,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 8
+        "bullpen": 5.0,
+        "xhr": 4,
+        "hr2025": 8,
+        "wind": 4,
+        "recent5": 3,
+        "recent10": 5,
+        "seasonGap": 4
       },
-      "matchup": "vs KC",
-      "pitcher": "Cameron",
-      "pitcherHand": "L",
+      "matchup": "@ CLE",
+      "pitcher": "Williams",
+      "pitcherHand": "R",
       "parkName": "Progressive Field",
       "windInfo": {
-        "speed": 10.7,
-        "deg": 334,
-        "score": 5,
+        "speed": 10.5,
+        "deg": 343,
+        "score": 4,
         "isDome": false
       },
-      "xhrScore": 8,
-      "evScore": 3,
+      "xhrScore": 4,
+      "evScore": 5,
       "recent": {
-        "r5": 0,
-        "r10": 0
+        "r5": 1,
+        "r10": 2
       },
       "flags": []
     },
@@ -3621,34 +3513,34 @@
       "flags": []
     },
     {
-      "name": "Heliot Ramos",
-      "team": "SF",
+      "name": "Sean Murphy",
+      "team": "ATL",
       "hand": "R",
-      "score": 5.87,
+      "score": 5.89,
       "factors": {
-        "homeAway": 5,
-        "ballpark": 1,
+        "homeAway": 2,
+        "ballpark": 8,
         "lhpVsRhp": 7.5,
-        "pitcherHR9": 5,
-        "bullpen": 7.34,
-        "xhr": 5,
-        "hr2025": 6,
+        "pitcherHR9": 6,
+        "bullpen": 9.47,
+        "xhr": 4,
+        "hr2025": 5,
         "wind": 3,
         "recent5": 1,
         "recent10": 2,
-        "seasonGap": 10
+        "seasonGap": 5
       },
-      "matchup": "vs PHI",
-      "pitcher": "Sánchez",
+      "matchup": "@ LAA",
+      "pitcher": "Kikuchi",
       "pitcherHand": "L",
-      "parkName": "Oracle Park",
+      "parkName": "Angel Stadium",
       "windInfo": {
-        "speed": 7.0,
-        "deg": 292,
+        "speed": 2.9,
+        "deg": 184,
         "score": 3,
         "isDome": false
       },
-      "xhrScore": 5,
+      "xhrScore": 4,
       "evScore": 5,
       "recent": {
         "r5": 0,
@@ -3751,8 +3643,8 @@
       "pitcherHand": "L",
       "parkName": "Fenway Park",
       "windInfo": {
-        "speed": 4.5,
-        "deg": 110,
+        "speed": 3.9,
+        "deg": 80,
         "score": 4,
         "isDome": false
       },
@@ -3761,42 +3653,6 @@
       "recent": {
         "r5": 0,
         "r10": 1
-      },
-      "flags": []
-    },
-    {
-      "name": "Jackson Holliday",
-      "team": "BAL",
-      "hand": "L",
-      "score": 5.8,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 5,
-        "lhpVsRhp": 7.65,
-        "pitcherHR9": 10,
-        "bullpen": 7.55,
-        "xhr": 4,
-        "hr2025": 4,
-        "wind": 4,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 5
-      },
-      "matchup": "@ CWS",
-      "pitcher": "Smith",
-      "pitcherHand": "R",
-      "parkName": "Guaranteed Rate Field",
-      "windInfo": {
-        "speed": 11.0,
-        "deg": 61,
-        "score": 4,
-        "isDome": false
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 0,
-        "r10": 0
       },
       "flags": []
     },
@@ -3823,8 +3679,8 @@
       "pitcherHand": "R",
       "parkName": "Fenway Park",
       "windInfo": {
-        "speed": 4.5,
-        "deg": 110,
+        "speed": 3.9,
+        "deg": 80,
         "score": 3,
         "isDome": false
       },
@@ -3833,6 +3689,42 @@
       "recent": {
         "r5": 1,
         "r10": 2
+      },
+      "flags": []
+    },
+    {
+      "name": "Brandon Lowe",
+      "team": "PIT",
+      "hand": "L",
+      "score": 5.78,
+      "factors": {
+        "homeAway": 5,
+        "ballpark": 1,
+        "lhpVsRhp": 8.62,
+        "pitcherHR9": 5,
+        "bullpen": 5.43,
+        "xhr": 4,
+        "hr2025": 8,
+        "wind": 6,
+        "recent5": 1,
+        "recent10": 6,
+        "seasonGap": 2
+      },
+      "matchup": "vs SD",
+      "pitcher": "Pivetta",
+      "pitcherHand": "R",
+      "parkName": "PNC Park",
+      "windInfo": {
+        "speed": 11.7,
+        "deg": 331,
+        "score": 6,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 3
       },
       "flags": []
     },
@@ -3859,8 +3751,8 @@
       "pitcherHand": "L",
       "parkName": "Oracle Park",
       "windInfo": {
-        "speed": 7.0,
-        "deg": 292,
+        "speed": 6.9,
+        "deg": 285,
         "score": 3,
         "isDome": false
       },
@@ -3873,7 +3765,43 @@
       "flags": []
     },
     {
-      "name": "Colson Montgomery",
+      "name": "Heliot Ramos",
+      "team": "SF",
+      "hand": "R",
+      "score": 5.76,
+      "factors": {
+        "homeAway": 5,
+        "ballpark": 1,
+        "lhpVsRhp": 7.5,
+        "pitcherHR9": 5,
+        "bullpen": 7.34,
+        "xhr": 4,
+        "hr2025": 6,
+        "wind": 3,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 10
+      },
+      "matchup": "vs PHI",
+      "pitcher": "Sánchez",
+      "pitcherHand": "L",
+      "parkName": "Oracle Park",
+      "windInfo": {
+        "speed": 6.9,
+        "deg": 285,
+        "score": 3,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
+      "name": "Andrew Benintendi",
       "team": "CWS",
       "hand": "L",
       "score": 5.73,
@@ -3883,28 +3811,28 @@
         "lhpVsRhp": 4.5,
         "pitcherHR9": 5,
         "bullpen": 8.09,
-        "xhr": 5,
-        "hr2025": 5,
-        "wind": 4,
-        "recent5": 3,
-        "recent10": 5,
-        "seasonGap": 2
+        "xhr": 2,
+        "hr2025": 6,
+        "wind": 3,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 10
       },
       "matchup": "vs BAL",
       "pitcher": "Rogers",
       "pitcherHand": "L",
       "parkName": "Guaranteed Rate Field",
       "windInfo": {
-        "speed": 11.0,
-        "deg": 61,
-        "score": 4,
+        "speed": 7.8,
+        "deg": 78,
+        "score": 3,
         "isDome": false
       },
-      "xhrScore": 5,
+      "xhrScore": 2,
       "evScore": 5,
       "recent": {
-        "r5": 1,
-        "r10": 2
+        "r5": 0,
+        "r10": 0
       },
       "flags": []
     },
@@ -3931,12 +3859,120 @@
       "pitcherHand": "L",
       "parkName": "Angel Stadium",
       "windInfo": {
-        "speed": 3.8,
-        "deg": 140,
+        "speed": 2.9,
+        "deg": 184,
         "score": 3,
         "isDome": false
       },
       "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
+      "name": "Iván Herrera",
+      "team": "STL",
+      "hand": "R",
+      "score": 5.71,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 4,
+        "lhpVsRhp": 7.0,
+        "pitcherHR9": 5,
+        "bullpen": 8.4,
+        "xhr": 4,
+        "hr2025": 6,
+        "wind": 4,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 8
+      },
+      "matchup": "@ WSH",
+      "pitcher": "Cavalli",
+      "pitcherHand": "R",
+      "parkName": "Nationals Park",
+      "windInfo": {
+        "speed": 14.8,
+        "deg": 290,
+        "score": 4,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
+      "name": "Jackson Holliday",
+      "team": "BAL",
+      "hand": "L",
+      "score": 5.69,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 5,
+        "lhpVsRhp": 7.65,
+        "pitcherHR9": 10,
+        "bullpen": 7.55,
+        "xhr": 4,
+        "hr2025": 4,
+        "wind": 3,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 5
+      },
+      "matchup": "@ CWS",
+      "pitcher": "Smith",
+      "pitcherHand": "R",
+      "parkName": "Guaranteed Rate Field",
+      "windInfo": {
+        "speed": 7.8,
+        "deg": 78,
+        "score": 3,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
+      "name": "Bo Naylor",
+      "team": "CLE",
+      "hand": "L",
+      "score": 5.69,
+      "factors": {
+        "homeAway": 5,
+        "ballpark": 4,
+        "lhpVsRhp": 4.0,
+        "pitcherHR9": 5,
+        "bullpen": 6.17,
+        "xhr": 6,
+        "hr2025": 5,
+        "wind": 5,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 8
+      },
+      "matchup": "vs KC",
+      "pitcher": "Cameron",
+      "pitcherHand": "L",
+      "parkName": "Progressive Field",
+      "windInfo": {
+        "speed": 10.5,
+        "deg": 343,
+        "score": 5,
+        "isDome": false
+      },
+      "xhrScore": 6,
       "evScore": 5,
       "recent": {
         "r5": 0,
@@ -4003,8 +4039,8 @@
       "pitcherHand": "L",
       "parkName": "Oracle Park",
       "windInfo": {
-        "speed": 7.0,
-        "deg": 292,
+        "speed": 6.9,
+        "deg": 285,
         "score": 3,
         "isDome": false
       },
@@ -4075,8 +4111,8 @@
       "pitcherHand": "R",
       "parkName": "PNC Park",
       "windInfo": {
-        "speed": 13.2,
-        "deg": 321,
+        "speed": 11.7,
+        "deg": 331,
         "score": 3,
         "isDome": false
       },
@@ -4089,161 +4125,17 @@
       "flags": []
     },
     {
-      "name": "Tyler Stephenson",
-      "team": "CIN",
-      "hand": "R",
-      "score": 5.62,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 3,
-        "lhpVsRhp": 6.5,
-        "pitcherHR9": 5,
-        "bullpen": 8.09,
-        "xhr": 4,
-        "hr2025": 5,
-        "wind": 5,
-        "recent5": 5,
-        "recent10": 5,
-        "seasonGap": 2
-      },
-      "matchup": "@ MIA",
-      "pitcher": "Alcantara",
-      "pitcherHand": "R",
-      "parkName": "loanDepot Park",
-      "windInfo": {
-        "speed": 0,
-        "deg": 0,
-        "score": 5,
-        "isDome": true
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 2,
-        "r10": 2
-      },
-      "flags": []
-    },
-    {
-      "name": "Iván Herrera",
-      "team": "STL",
-      "hand": "R",
-      "score": 5.6,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 4,
-        "lhpVsRhp": 7.0,
-        "pitcherHR9": 5,
-        "bullpen": 8.4,
-        "xhr": 4,
-        "hr2025": 6,
-        "wind": 3,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 8
-      },
-      "matchup": "@ WSH",
-      "pitcher": "Cavalli",
-      "pitcherHand": "R",
-      "parkName": "Nationals Park",
-      "windInfo": {
-        "speed": 14.6,
-        "deg": 302,
-        "score": 3,
-        "isDome": false
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 0,
-        "r10": 0
-      },
-      "flags": []
-    },
-    {
-      "name": "Spencer Horwitz",
-      "team": "PIT",
-      "hand": "L",
-      "score": 5.59,
-      "factors": {
-        "homeAway": 5,
-        "ballpark": 1,
-        "lhpVsRhp": 8.89,
-        "pitcherHR9": 5,
-        "bullpen": 5.43,
-        "xhr": 4,
-        "hr2025": 3,
-        "wind": 7,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 8
-      },
-      "matchup": "vs SD",
-      "pitcher": "Pivetta",
-      "pitcherHand": "R",
-      "parkName": "PNC Park",
-      "windInfo": {
-        "speed": 13.2,
-        "deg": 321,
-        "score": 7,
-        "isDome": false
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 0,
-        "r10": 0
-      },
-      "flags": []
-    },
-    {
-      "name": "Tyler O'Neill",
-      "team": "BAL",
-      "hand": "R",
-      "score": 5.51,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 5,
-        "lhpVsRhp": 5.0,
-        "pitcherHR9": 10,
-        "bullpen": 7.55,
-        "xhr": 4,
-        "hr2025": 3,
-        "wind": 6,
-        "recent5": 1,
-        "recent10": 4,
-        "seasonGap": 2
-      },
-      "matchup": "@ CWS",
-      "pitcher": "Smith",
-      "pitcherHand": "R",
-      "parkName": "Guaranteed Rate Field",
-      "windInfo": {
-        "speed": 11.0,
-        "deg": 61,
-        "score": 6,
-        "isDome": false
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 0,
-        "r10": 1
-      },
-      "flags": []
-    },
-    {
       "name": "Riley Greene",
       "team": "DET",
       "hand": "L",
-      "score": 5.49,
+      "score": 5.6,
       "factors": {
         "homeAway": 2,
         "ballpark": 4,
         "lhpVsRhp": 0.88,
         "pitcherHR9": 5,
         "bullpen": 6.49,
-        "xhr": 4,
+        "xhr": 5,
         "hr2025": 9,
         "wind": 5,
         "recent5": 1,
@@ -4260,8 +4152,8 @@
         "score": 5,
         "isDome": true
       },
-      "xhrScore": 4,
-      "evScore": 5,
+      "xhrScore": 5,
+      "evScore": 4,
       "recent": {
         "r5": 0,
         "r10": 0
@@ -4269,46 +4161,10 @@
       "flags": []
     },
     {
-      "name": "Garrett Mitchell",
-      "team": "MIL",
-      "hand": "L",
-      "score": 5.48,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 6,
-        "lhpVsRhp": 4.5,
-        "pitcherHR9": 5,
-        "bullpen": 4.79,
-        "xhr": 7,
-        "hr2025": 5,
-        "wind": 4,
-        "recent5": 3,
-        "recent10": 4,
-        "seasonGap": 4
-      },
-      "matchup": "@ BOS",
-      "pitcher": "Crochet",
-      "pitcherHand": "L",
-      "parkName": "Fenway Park",
-      "windInfo": {
-        "speed": 4.5,
-        "deg": 110,
-        "score": 4,
-        "isDome": false
-      },
-      "xhrScore": 7,
-      "evScore": 9,
-      "recent": {
-        "r5": 1,
-        "r10": 1
-      },
-      "flags": []
-    },
-    {
       "name": "Keibert Ruiz",
       "team": "WSH",
       "hand": "B",
-      "score": 5.48,
+      "score": 5.59,
       "factors": {
         "homeAway": 5,
         "ballpark": 4,
@@ -4317,7 +4173,7 @@
         "bullpen": 4.79,
         "xhr": 4,
         "hr2025": 5,
-        "wind": 3,
+        "wind": 4,
         "recent5": 3,
         "recent10": 4,
         "seasonGap": 2
@@ -4327,9 +4183,9 @@
       "pitcherHand": "L",
       "parkName": "Nationals Park",
       "windInfo": {
-        "speed": 14.6,
-        "deg": 302,
-        "score": 3,
+        "speed": 14.8,
+        "deg": 290,
+        "score": 4,
         "isDome": false
       },
       "xhrScore": 4,
@@ -4337,6 +4193,150 @@
       "recent": {
         "r5": 1,
         "r10": 1
+      },
+      "flags": []
+    },
+    {
+      "name": "Marcell Ozuna",
+      "team": "PIT",
+      "hand": "R",
+      "score": 5.55,
+      "factors": {
+        "homeAway": 5,
+        "ballpark": 1,
+        "lhpVsRhp": 8.5,
+        "pitcherHR9": 5,
+        "bullpen": 5.43,
+        "xhr": 4,
+        "hr2025": 5,
+        "wind": 3,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 10
+      },
+      "matchup": "vs SD",
+      "pitcher": "Pivetta",
+      "pitcherHand": "R",
+      "parkName": "PNC Park",
+      "windInfo": {
+        "speed": 11.7,
+        "deg": 331,
+        "score": 3,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 3,
+      "recent": {
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
+      "name": "Masyn Winn",
+      "team": "STL",
+      "hand": "R",
+      "score": 5.54,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 4,
+        "lhpVsRhp": 6.5,
+        "pitcherHR9": 5,
+        "bullpen": 8.4,
+        "xhr": 4,
+        "hr2025": 5,
+        "wind": 4,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 8
+      },
+      "matchup": "@ WSH",
+      "pitcher": "Cavalli",
+      "pitcherHand": "R",
+      "parkName": "Nationals Park",
+      "windInfo": {
+        "speed": 14.8,
+        "deg": 290,
+        "score": 4,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
+      "name": "Nolan Arenado",
+      "team": "STL",
+      "hand": "R",
+      "score": 5.54,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 4,
+        "lhpVsRhp": 6.5,
+        "pitcherHR9": 5,
+        "bullpen": 8.4,
+        "xhr": 4,
+        "hr2025": 5,
+        "wind": 4,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 8
+      },
+      "matchup": "@ WSH",
+      "pitcher": "Cavalli",
+      "pitcherHand": "R",
+      "parkName": "Nationals Park",
+      "windInfo": {
+        "speed": 14.8,
+        "deg": 290,
+        "score": 4,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
+      "name": "Colson Montgomery",
+      "team": "CWS",
+      "hand": "L",
+      "score": 5.51,
+      "factors": {
+        "homeAway": 5,
+        "ballpark": 5,
+        "lhpVsRhp": 4.5,
+        "pitcherHR9": 5,
+        "bullpen": 8.09,
+        "xhr": 4,
+        "hr2025": 5,
+        "wind": 3,
+        "recent5": 3,
+        "recent10": 5,
+        "seasonGap": 2
+      },
+      "matchup": "vs BAL",
+      "pitcher": "Rogers",
+      "pitcherHand": "L",
+      "parkName": "Guaranteed Rate Field",
+      "windInfo": {
+        "speed": 7.8,
+        "deg": 78,
+        "score": 3,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 1,
+        "r10": 2
       },
       "flags": []
     },
@@ -4377,42 +4377,6 @@
       "flags": []
     },
     {
-      "name": "Marcell Ozuna",
-      "team": "PIT",
-      "hand": "R",
-      "score": 5.44,
-      "factors": {
-        "homeAway": 5,
-        "ballpark": 1,
-        "lhpVsRhp": 8.5,
-        "pitcherHR9": 5,
-        "bullpen": 5.43,
-        "xhr": 3,
-        "hr2025": 5,
-        "wind": 3,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 10
-      },
-      "matchup": "vs SD",
-      "pitcher": "Pivetta",
-      "pitcherHand": "R",
-      "parkName": "PNC Park",
-      "windInfo": {
-        "speed": 13.2,
-        "deg": 321,
-        "score": 3,
-        "isDome": false
-      },
-      "xhrScore": 3,
-      "evScore": 3,
-      "recent": {
-        "r5": 0,
-        "r10": 0
-      },
-      "flags": []
-    },
-    {
       "name": "Fernando Tatis Jr.",
       "team": "SD",
       "hand": "R",
@@ -4435,45 +4399,9 @@
       "pitcherHand": "R",
       "parkName": "PNC Park",
       "windInfo": {
-        "speed": 13.2,
-        "deg": 321,
+        "speed": 11.7,
+        "deg": 331,
         "score": 3,
-        "isDome": false
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 0,
-        "r10": 0
-      },
-      "flags": []
-    },
-    {
-      "name": "Gavin Sheets",
-      "team": "SD",
-      "hand": "L",
-      "score": 5.43,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 1,
-        "lhpVsRhp": 7.0,
-        "pitcherHR9": 5,
-        "bullpen": 5.85,
-        "xhr": 4,
-        "hr2025": 6,
-        "wind": 7,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 8
-      },
-      "matchup": "@ PIT",
-      "pitcher": "Skenes",
-      "pitcherHand": "R",
-      "parkName": "PNC Park",
-      "windInfo": {
-        "speed": 13.2,
-        "deg": 321,
-        "score": 7,
         "isDome": false
       },
       "xhrScore": 4,
@@ -4507,8 +4435,8 @@
       "pitcherHand": "L",
       "parkName": "Oracle Park",
       "windInfo": {
-        "speed": 7.0,
-        "deg": 292,
+        "speed": 6.9,
+        "deg": 285,
         "score": 3,
         "isDome": false
       },
@@ -4521,7 +4449,7 @@
       "flags": []
     },
     {
-      "name": "Masyn Winn",
+      "name": "Pedro Pagés",
       "team": "STL",
       "hand": "R",
       "score": 5.43,
@@ -4533,62 +4461,26 @@
         "bullpen": 8.4,
         "xhr": 4,
         "hr2025": 5,
-        "wind": 3,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 8
+        "wind": 4,
+        "recent5": 3,
+        "recent10": 4,
+        "seasonGap": 3
       },
       "matchup": "@ WSH",
       "pitcher": "Cavalli",
       "pitcherHand": "R",
       "parkName": "Nationals Park",
       "windInfo": {
-        "speed": 14.6,
-        "deg": 302,
-        "score": 3,
+        "speed": 14.8,
+        "deg": 290,
+        "score": 4,
         "isDome": false
       },
       "xhrScore": 4,
       "evScore": 5,
       "recent": {
-        "r5": 0,
-        "r10": 0
-      },
-      "flags": []
-    },
-    {
-      "name": "Nolan Arenado",
-      "team": "STL",
-      "hand": "R",
-      "score": 5.43,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 4,
-        "lhpVsRhp": 6.5,
-        "pitcherHR9": 5,
-        "bullpen": 8.4,
-        "xhr": 4,
-        "hr2025": 5,
-        "wind": 3,
-        "recent5": 1,
-        "recent10": 2,
-        "seasonGap": 8
-      },
-      "matchup": "@ WSH",
-      "pitcher": "Cavalli",
-      "pitcherHand": "R",
-      "parkName": "Nationals Park",
-      "windInfo": {
-        "speed": 14.6,
-        "deg": 302,
-        "score": 3,
-        "isDome": false
-      },
-      "xhrScore": 4,
-      "evScore": 5,
-      "recent": {
-        "r5": 0,
-        "r10": 0
+        "r5": 1,
+        "r10": 1
       },
       "flags": []
     },
@@ -4615,8 +4507,8 @@
       "pitcherHand": "L",
       "parkName": "Oracle Park",
       "windInfo": {
-        "speed": 7.0,
-        "deg": 292,
+        "speed": 6.9,
+        "deg": 285,
         "score": 3,
         "isDome": false
       },
@@ -4625,6 +4517,42 @@
       "recent": {
         "r5": 1,
         "r10": 2
+      },
+      "flags": []
+    },
+    {
+      "name": "Tyler O'Neill",
+      "team": "BAL",
+      "hand": "R",
+      "score": 5.39,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 5,
+        "lhpVsRhp": 5.0,
+        "pitcherHR9": 10,
+        "bullpen": 7.55,
+        "xhr": 4,
+        "hr2025": 3,
+        "wind": 5,
+        "recent5": 1,
+        "recent10": 4,
+        "seasonGap": 2
+      },
+      "matchup": "@ CWS",
+      "pitcher": "Smith",
+      "pitcherHand": "R",
+      "parkName": "Guaranteed Rate Field",
+      "windInfo": {
+        "speed": 7.8,
+        "deg": 78,
+        "score": 5,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 1
       },
       "flags": []
     },
@@ -4651,8 +4579,8 @@
       "pitcherHand": "R",
       "parkName": "Progressive Field",
       "windInfo": {
-        "speed": 10.7,
-        "deg": 334,
+        "speed": 10.5,
+        "deg": 343,
         "score": 5,
         "isDome": false
       },
@@ -4665,38 +4593,74 @@
       "flags": []
     },
     {
-      "name": "Pedro Pagés",
-      "team": "STL",
-      "hand": "R",
+      "name": "Gavin Sheets",
+      "team": "SD",
+      "hand": "L",
       "score": 5.32,
       "factors": {
         "homeAway": 2,
-        "ballpark": 4,
-        "lhpVsRhp": 6.5,
+        "ballpark": 1,
+        "lhpVsRhp": 7.0,
         "pitcherHR9": 5,
-        "bullpen": 8.4,
+        "bullpen": 5.85,
         "xhr": 4,
-        "hr2025": 5,
-        "wind": 3,
-        "recent5": 3,
-        "recent10": 4,
-        "seasonGap": 3
+        "hr2025": 6,
+        "wind": 6,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 8
       },
-      "matchup": "@ WSH",
-      "pitcher": "Cavalli",
+      "matchup": "@ PIT",
+      "pitcher": "Skenes",
       "pitcherHand": "R",
-      "parkName": "Nationals Park",
+      "parkName": "PNC Park",
       "windInfo": {
-        "speed": 14.6,
-        "deg": 302,
-        "score": 3,
+        "speed": 11.7,
+        "deg": 331,
+        "score": 6,
         "isDome": false
       },
       "xhrScore": 4,
       "evScore": 5,
       "recent": {
-        "r5": 1,
-        "r10": 1
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
+      "name": "Dylan Crews",
+      "team": "WSH",
+      "hand": "R",
+      "score": 5.31,
+      "factors": {
+        "homeAway": 5,
+        "ballpark": 4,
+        "lhpVsRhp": 6.0,
+        "pitcherHR9": 9,
+        "bullpen": 4.79,
+        "xhr": 4,
+        "hr2025": 3,
+        "wind": 4,
+        "recent5": 1,
+        "recent10": 2,
+        "seasonGap": 5
+      },
+      "matchup": "vs STL",
+      "pitcher": "Liberatore",
+      "pitcherHand": "L",
+      "parkName": "Nationals Park",
+      "windInfo": {
+        "speed": 14.8,
+        "deg": 290,
+        "score": 4,
+        "isDome": false
+      },
+      "xhrScore": 4,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
       },
       "flags": []
     },
@@ -4723,8 +4687,8 @@
       "pitcherHand": "L",
       "parkName": "Oracle Park",
       "windInfo": {
-        "speed": 7.0,
-        "deg": 292,
+        "speed": 6.9,
+        "deg": 285,
         "score": 3,
         "isDome": false
       },
@@ -4737,38 +4701,110 @@
       "flags": []
     },
     {
-      "name": "Dylan Crews",
-      "team": "WSH",
-      "hand": "R",
-      "score": 5.2,
+      "name": "Spencer Horwitz",
+      "team": "PIT",
+      "hand": "L",
+      "score": 5.15,
       "factors": {
         "homeAway": 5,
-        "ballpark": 4,
-        "lhpVsRhp": 6.0,
-        "pitcherHR9": 9,
-        "bullpen": 4.79,
-        "xhr": 4,
+        "ballpark": 1,
+        "lhpVsRhp": 8.89,
+        "pitcherHR9": 5,
+        "bullpen": 5.43,
+        "xhr": 1,
         "hr2025": 3,
-        "wind": 3,
+        "wind": 6,
         "recent5": 1,
         "recent10": 2,
-        "seasonGap": 5
+        "seasonGap": 8
       },
-      "matchup": "vs STL",
-      "pitcher": "Liberatore",
-      "pitcherHand": "L",
-      "parkName": "Nationals Park",
+      "matchup": "vs SD",
+      "pitcher": "Pivetta",
+      "pitcherHand": "R",
+      "parkName": "PNC Park",
       "windInfo": {
-        "speed": 14.6,
-        "deg": 302,
+        "speed": 11.7,
+        "deg": 331,
+        "score": 6,
+        "isDome": false
+      },
+      "xhrScore": 1,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 0
+      },
+      "flags": []
+    },
+    {
+      "name": "William Contreras",
+      "team": "MIL",
+      "hand": "R",
+      "score": 5.14,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 3,
+        "lhpVsRhp": 7.5,
+        "pitcherHR9": 5,
+        "bullpen": 4.79,
+        "xhr": 7,
+        "hr2025": 5,
+        "wind": 3,
+        "recent5": 1,
+        "recent10": 4,
+        "seasonGap": 4
+      },
+      "matchup": "@ BOS",
+      "pitcher": "Crochet",
+      "pitcherHand": "L",
+      "parkName": "Fenway Park",
+      "windInfo": {
+        "speed": 3.9,
+        "deg": 80,
         "score": 3,
+        "isDome": false
+      },
+      "xhrScore": 7,
+      "evScore": 5,
+      "recent": {
+        "r5": 0,
+        "r10": 1
+      },
+      "flags": []
+    },
+    {
+      "name": "Garrett Mitchell",
+      "team": "MIL",
+      "hand": "L",
+      "score": 5.14,
+      "factors": {
+        "homeAway": 2,
+        "ballpark": 6,
+        "lhpVsRhp": 4.5,
+        "pitcherHR9": 5,
+        "bullpen": 4.79,
+        "xhr": 4,
+        "hr2025": 5,
+        "wind": 4,
+        "recent5": 3,
+        "recent10": 4,
+        "seasonGap": 4
+      },
+      "matchup": "@ BOS",
+      "pitcher": "Crochet",
+      "pitcherHand": "L",
+      "parkName": "Fenway Park",
+      "windInfo": {
+        "speed": 3.9,
+        "deg": 80,
+        "score": 4,
         "isDome": false
       },
       "xhrScore": 4,
       "evScore": 5,
       "recent": {
-        "r5": 0,
-        "r10": 0
+        "r5": 1,
+        "r10": 1
       },
       "flags": []
     },
@@ -4795,8 +4831,8 @@
       "pitcherHand": "R",
       "parkName": "PNC Park",
       "windInfo": {
-        "speed": 13.2,
-        "deg": 321,
+        "speed": 11.7,
+        "deg": 331,
         "score": 3,
         "isDome": false
       },
@@ -4805,42 +4841,6 @@
       "recent": {
         "r5": 1,
         "r10": 2
-      },
-      "flags": []
-    },
-    {
-      "name": "William Contreras",
-      "team": "MIL",
-      "hand": "R",
-      "score": 5.03,
-      "factors": {
-        "homeAway": 2,
-        "ballpark": 3,
-        "lhpVsRhp": 7.5,
-        "pitcherHR9": 5,
-        "bullpen": 4.79,
-        "xhr": 6,
-        "hr2025": 5,
-        "wind": 3,
-        "recent5": 1,
-        "recent10": 4,
-        "seasonGap": 4
-      },
-      "matchup": "@ BOS",
-      "pitcher": "Crochet",
-      "pitcherHand": "L",
-      "parkName": "Fenway Park",
-      "windInfo": {
-        "speed": 4.5,
-        "deg": 110,
-        "score": 3,
-        "isDome": false
-      },
-      "xhrScore": 6,
-      "evScore": 6,
-      "recent": {
-        "r5": 0,
-        "r10": 1
       },
       "flags": []
     },
@@ -4867,8 +4867,8 @@
       "pitcherHand": "R",
       "parkName": "Progressive Field",
       "windInfo": {
-        "speed": 10.7,
-        "deg": 334,
+        "speed": 10.5,
+        "deg": 343,
         "score": 5,
         "isDome": false
       },
@@ -4903,8 +4903,8 @@
       "pitcherHand": "R",
       "parkName": "PNC Park",
       "windInfo": {
-        "speed": 13.2,
-        "deg": 321,
+        "speed": 11.7,
+        "deg": 331,
         "score": 3,
         "isDome": false
       },
@@ -4939,8 +4939,8 @@
       "pitcherHand": "L",
       "parkName": "Fenway Park",
       "windInfo": {
-        "speed": 4.5,
-        "deg": 110,
+        "speed": 3.9,
+        "deg": 80,
         "score": 3,
         "isDome": false
       },
@@ -4955,64 +4955,64 @@
   ],
   "windData": {
     "NYM": {
-      "speed": 14.3,
-      "deg": 267
+      "speed": 15.5,
+      "deg": 276
     },
     "MIA": {
       "speed": 0,
       "deg": 0
     },
+    "WSH": {
+      "speed": 14.8,
+      "deg": 290
+    },
     "BOS": {
-      "speed": 4.5,
-      "deg": 110
+      "speed": 3.9,
+      "deg": 80
     },
     "TEX": {
       "speed": 0,
       "deg": 0
-    },
-    "LAA": {
-      "speed": 3.8,
-      "deg": 140
-    },
-    "PIT": {
-      "speed": 13.2,
-      "deg": 321
-    },
-    "TB": {
-      "speed": 0,
-      "deg": 0
-    },
-    "CLE": {
-      "speed": 10.7,
-      "deg": 334
-    },
-    "NYY": {
-      "speed": 14.1,
-      "deg": 270
-    },
-    "TOR": {
-      "speed": 0,
-      "deg": 0
-    },
-    "WSH": {
-      "speed": 14.6,
-      "deg": 302
-    },
-    "CWS": {
-      "speed": 11.0,
-      "deg": 61
     },
     "MIN": {
       "speed": 0,
       "deg": 0
     },
     "SF": {
-      "speed": 7.0,
-      "deg": 292
+      "speed": 6.9,
+      "deg": 285
+    },
+    "NYY": {
+      "speed": 14.4,
+      "deg": 276
+    },
+    "TOR": {
+      "speed": 0,
+      "deg": 0
+    },
+    "LAA": {
+      "speed": 2.9,
+      "deg": 184
+    },
+    "CLE": {
+      "speed": 10.5,
+      "deg": 343
+    },
+    "PIT": {
+      "speed": 11.7,
+      "deg": 331
     },
     "COL": {
-      "speed": 1.3,
-      "deg": 360
+      "speed": 2.6,
+      "deg": 211
+    },
+    "CWS": {
+      "speed": 7.8,
+      "deg": 78
+    },
+    "TB": {
+      "speed": 0,
+      "deg": 0
     }
   }
 }
