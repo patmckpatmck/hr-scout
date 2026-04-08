@@ -14,7 +14,8 @@
       "Bash(git init:*)",
       "Bash(else echo:*)",
       "Bash(fi)",
-      "Bash(done)"
+      "Bash(done)",
+      "WebSearch"
     ]
   }
 }

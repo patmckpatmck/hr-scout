@@ -112,9 +112,9 @@ PLAYERS = [
     # sR = HR rate score vs RHP (1-10), sL = HR rate score vs LHP (1-10), hr25 = 2025 full-season HR total
     {"n": "Aaron Judge",       "t": "NYY", "hand": "R", "xhr": 10, "sR": 7.08, "sL": 8.50, "h": 10, "hr25": 52},
     {"n": "Jo Adell",          "t": "LAA", "hand": "R", "xhr": 8,  "sR": 8.06, "sL": 7.00, "h": 9,  "hr25": 37},
-    {"n": "Taylor Ward",       "t": "LAA", "hand": "R", "xhr": 6,  "sR": 8.06, "sL": 6.50, "h": 9,  "hr25": 36},
+    {"n": "Taylor Ward",       "t": "BAL", "hand": "R", "xhr": 6,  "sR": 8.06, "sL": 6.50, "h": 9,  "hr25": 36},
     {"n": "Nick Kurtz",        "t": "ATH", "hand": "L", "xhr": 7,  "sR": 7.81, "sL": 5.20, "h": 9,  "hr25": 35},
-    {"n": "Eugenio Suárez",    "t": "SEA", "hand": "R", "xhr": 6,  "sR": 7.33, "sL": 8.00, "h": 10, "hr25": 48},
+    {"n": "Eugenio Suárez",    "t": "CIN", "hand": "R", "xhr": 6,  "sR": 7.33, "sL": 8.00, "h": 10, "hr25": 48},
     {"n": "George Springer",   "t": "TOR", "hand": "R", "xhr": 8,  "sR": 7.24, "sL": 7.80, "h": 8,  "hr25": 31},
     {"n": "Cal Raleigh",       "t": "SEA", "hand": "L", "xhr": 8,  "sR": 6.25, "sL": 4.50, "h": 10, "hr25": 59},
     {"n": "Trent Grisham",     "t": "NYY", "hand": "L", "xhr": 6,  "sR": 8.06, "sL": 4.00, "h": 9,  "hr25": 34},
@@ -132,9 +132,9 @@ PLAYERS = [
     {"n": "Julio Rodríguez",   "t": "SEA", "hand": "R", "xhr": 5,  "sR": 6.67, "sL": 7.50, "h": 8,  "hr25": 32},
     {"n": "Junior Caminero",   "t": "TB",  "hand": "R", "xhr": 8,  "sR": 7.05, "sL": 8.00, "h": 10, "hr25": 45},
     {"n": "James Wood",        "t": "WSH", "hand": "L", "xhr": 6,  "sR": 6.30, "sL": 5.00, "h": 8,  "hr25": 30},
-    {"n": "Josh Bell",         "t": "WSH", "hand": "B", "xhr": 6,  "sR": 8.00, "sL": 6.50, "h": 6,  "hr25": 22},
+    {"n": "Josh Bell",         "t": "MIN", "hand": "B", "xhr": 6,  "sR": 8.00, "sL": 6.50, "h": 6,  "hr25": 22},
     {"n": "Ben Rice",          "t": "NYY", "hand": "L", "xhr": 7,  "sR": 7.39, "sL": 5.00, "h": 6,  "hr25": 23},
-    {"n": "Brandon Lowe",      "t": "TB",  "hand": "L", "xhr": 6,  "sR": 8.62, "sL": 4.50, "h": 8,  "hr25": 31},
+    {"n": "Brandon Lowe",      "t": "PIT", "hand": "L", "xhr": 6,  "sR": 8.62, "sL": 4.50, "h": 8,  "hr25": 31},
     {"n": "Shohei Ohtani",     "t": "LAD", "hand": "L", "xhr": 9,  "sR": 7.60, "sL": 8.50, "h": 10, "hr25": 54},
     {"n": "Tyler Soderstrom",  "t": "ATH", "hand": "L", "xhr": 5,  "sR": 8.33, "sL": 5.00, "h": 6,  "hr25": 25},
     {"n": "Seiya Suzuki",      "t": "CHC", "hand": "R", "xhr": 8,  "sR": 6.67, "sL": 8.00, "h": 8,  "hr25": 30},
@@ -150,10 +150,10 @@ PLAYERS = [
     {"n": "Ryan Mountcastle",  "t": "BAL", "hand": "R", "xhr": 5,  "sR": 10,   "sL": 6.50, "h": 1,  "hr25": 5},
     {"n": "Matt Olson",        "t": "ATL", "hand": "L", "xhr": 6,  "sR": 7.78, "sL": 6.00, "h": 7,  "hr25": 29},
     {"n": "Juan Soto",         "t": "NYM", "hand": "L", "xhr": 8,  "sR": 7.50, "sL": 8.00, "h": 10, "hr25": 43},
-    {"n": "Pete Alonso",       "t": "NYM", "hand": "R", "xhr": 9,  "sR": 7.43, "sL": 8.50, "h": 10, "hr25": 38},
+    {"n": "Pete Alonso",       "t": "BAL", "hand": "R", "xhr": 9,  "sR": 7.43, "sL": 8.50, "h": 10, "hr25": 38},
     {"n": "Freddie Freeman",   "t": "LAD", "hand": "L", "xhr": 5,  "sR": 7.00, "sL": 6.50, "h": 6,  "hr25": 24},
     {"n": "Riley Greene",      "t": "DET", "hand": "L", "xhr": 8,  "sR": 0.88, "sL": 3.50, "h": 9,  "hr25": 36},
-    {"n": "Marcell Ozuna",     "t": "ATL", "hand": "R", "xhr": 5,  "sR": 8.50, "sL": 7.50, "h": 5,  "hr25": 21},
+    {"n": "Marcell Ozuna",     "t": "PIT", "hand": "R", "xhr": 5,  "sR": 8.50, "sL": 7.50, "h": 5,  "hr25": 21},
     {"n": "CJ Abrams",        "t": "WSH", "hand": "L", "xhr": 4,  "sR": 7.65, "sL": 4.50, "h": 5,  "hr25": 18},
     {"n": "Rafael Devers",     "t": "SF",  "hand": "L", "xhr": 6,  "sR": 2.90, "sL": 5.50, "h": 8,  "hr25": 33},
     {"n": "Tyler O'Neill",     "t": "BAL", "hand": "R", "xhr": 8,  "sR": 5.00, "sL": 7.50, "h": 3,  "hr25": 10},
@@ -162,9 +162,10 @@ PLAYERS = [
     {"n": "José Ramírez",      "t": "CLE", "hand": "B", "xhr": 4,  "sR": 7.86, "sL": 8.50, "h": 8,  "hr25": 30},
     {"n": "Oneil Cruz",        "t": "PIT", "hand": "L", "xhr": 7,  "sR": 9.47, "sL": 5.00, "h": 5,  "hr25": 19},
     {"n": "Ketel Marte",       "t": "AZ",  "hand": "B", "xhr": 7,  "sR": 6.80, "sL": 8.00, "h": 7,  "hr25": 27},
+    {"n": "Corbin Carroll",    "t": "AZ",  "hand": "L", "xhr": 7,  "sR": 7.50, "sL": 4.50, "h": 8,  "hr25": 31},
     {"n": "Willy Adames",      "t": "SF",  "hand": "R", "xhr": 5,  "sR": 3.57, "sL": 6.50, "h": 7,  "hr25": 29},
     {"n": "Teoscar Hernández", "t": "LAD", "hand": "R", "xhr": 6,  "sR": 7.50, "sL": 8.00, "h": 6,  "hr25": 25},
-    {"n": "Jorge Polanco",     "t": "SEA", "hand": "B", "xhr": 5,  "sR": 8.33, "sL": 6.50, "h": 6,  "hr25": 25},
+    {"n": "Jorge Polanco",     "t": "NYM", "hand": "B", "xhr": 5,  "sR": 8.33, "sL": 6.50, "h": 6,  "hr25": 25},
     {"n": "Dominic Canzone",   "t": "SEA", "hand": "L", "xhr": 7,  "sR": 9.00, "sL": 4.00, "h": 3,  "hr25": 12},
     {"n": "Dylan Crews",       "t": "WSH", "hand": "R", "xhr": 5,  "sR": 10,   "sL": 6.00, "h": 3,  "hr25": 10},
     {"n": "Colton Cowser",     "t": "BAL", "hand": "L", "xhr": 5,  "sR": 7.33, "sL": 5.00, "h": 4,  "hr25": 16},
@@ -179,6 +180,100 @@ PLAYERS = [
     {"n": "Spencer Horwitz",   "t": "PIT", "hand": "L", "xhr": 4,  "sR": 8.89, "sL": 4.00, "h": 3,  "hr25": 11},
     {"n": "Josh Naylor",       "t": "SEA", "hand": "L", "xhr": 4,  "sR": 6.84, "sL": 5.50, "h": 5,  "hr25": 20},
     {"n": "Drake Baldwin",     "t": "ATL", "hand": "R", "xhr": 6,  "sR": 7.50, "sL": 7.00, "h": 5,  "hr25": 19},
+    # ── Additional players (expanded roster) ──
+    # AZ
+    {"n": "Geraldo Perdomo",   "t": "AZ",  "hand": "B", "xhr": 5,  "sR": 6.50, "sL": 5.50, "h": 6,  "hr25": 20},
+    {"n": "Gabriel Moreno",    "t": "AZ",  "hand": "R", "xhr": 4,  "sR": 6.00, "sL": 7.00, "h": 5,  "hr25": 17},
+    # ATL
+    {"n": "Sean Murphy",       "t": "ATL", "hand": "R", "xhr": 5,  "sR": 7.00, "sL": 7.50, "h": 5,  "hr25": 17},
+    # BAL
+    {"n": "Adley Rutschman",   "t": "BAL", "hand": "B", "xhr": 5,  "sR": 6.50, "sL": 6.00, "h": 5,  "hr25": 18},
+    # BOS
+    {"n": "Wilyer Abreu",      "t": "BOS", "hand": "L", "xhr": 6,  "sR": 7.50, "sL": 4.50, "h": 6,  "hr25": 22},
+    {"n": "Trevor Story",      "t": "BOS", "hand": "R", "xhr": 6,  "sR": 7.80, "sL": 8.00, "h": 7,  "hr25": 25},
+    {"n": "Willson Contreras",  "t": "BOS", "hand": "R", "xhr": 5,  "sR": 7.00, "sL": 7.50, "h": 6,  "hr25": 20},
+    # CHC
+    {"n": "Dansby Swanson",    "t": "CHC", "hand": "R", "xhr": 6,  "sR": 7.50, "sL": 7.80, "h": 7,  "hr25": 24},
+    {"n": "Ian Happ",          "t": "CHC", "hand": "B", "xhr": 6,  "sR": 7.00, "sL": 7.50, "h": 7,  "hr25": 23},
+    {"n": "Kyle Tucker",       "t": "LAD", "hand": "L", "xhr": 6,  "sR": 7.50, "sL": 5.50, "h": 6,  "hr25": 22},
+    # CIN
+    {"n": "Elly De La Cruz",   "t": "CIN", "hand": "B", "xhr": 6,  "sR": 7.00, "sL": 6.50, "h": 6,  "hr25": 22},
+    {"n": "Spencer Steer",     "t": "CIN", "hand": "R", "xhr": 5,  "sR": 7.00, "sL": 7.50, "h": 6,  "hr25": 21},
+    {"n": "Tyler Stephenson",  "t": "CIN", "hand": "R", "xhr": 4,  "sR": 6.50, "sL": 7.00, "h": 5,  "hr25": 15},
+    # CLE
+    {"n": "Bo Naylor",         "t": "CLE", "hand": "L", "xhr": 5,  "sR": 6.50, "sL": 4.00, "h": 5,  "hr25": 17},
+    # COL
+    {"n": "Hunter Goodman",    "t": "COL", "hand": "R", "xhr": 7,  "sR": 8.00, "sL": 8.50, "h": 8,  "hr25": 31},
+    {"n": "Brenton Doyle",     "t": "COL", "hand": "R", "xhr": 5,  "sR": 7.00, "sL": 6.50, "h": 6,  "hr25": 18},
+    {"n": "Ezequiel Tovar",    "t": "COL", "hand": "R", "xhr": 5,  "sR": 6.80, "sL": 7.00, "h": 6,  "hr25": 16},
+    # CWS
+    {"n": "Andrew Benintendi", "t": "CWS", "hand": "L", "xhr": 5,  "sR": 7.00, "sL": 4.50, "h": 6,  "hr25": 20},
+    # DET
+    {"n": "Spencer Torkelson", "t": "DET", "hand": "R", "xhr": 7,  "sR": 7.80, "sL": 8.50, "h": 8,  "hr25": 31},
+    {"n": "Kerry Carpenter",   "t": "DET", "hand": "L", "xhr": 7,  "sR": 8.00, "sL": 5.00, "h": 7,  "hr25": 26},
+    {"n": "Dillon Dingler",    "t": "DET", "hand": "R", "xhr": 4,  "sR": 6.50, "sL": 7.00, "h": 5,  "hr25": 16},
+    # HOU
+    {"n": "Yainer Diaz",       "t": "HOU", "hand": "R", "xhr": 5,  "sR": 7.00, "sL": 7.00, "h": 6,  "hr25": 20},
+    {"n": "Isaac Paredes",     "t": "HOU", "hand": "R", "xhr": 5,  "sR": 7.00, "sL": 7.50, "h": 6,  "hr25": 20},
+    # KC
+    {"n": "MJ Melendez",       "t": "KC",  "hand": "L", "xhr": 5,  "sR": 7.00, "sL": 4.00, "h": 5,  "hr25": 16},
+    # LAA
+    {"n": "Zach Neto",         "t": "LAA", "hand": "R", "xhr": 6,  "sR": 7.50, "sL": 8.00, "h": 7,  "hr25": 26},
+    {"n": "Logan O'Hoppe",     "t": "LAA", "hand": "R", "xhr": 5,  "sR": 7.00, "sL": 7.50, "h": 6,  "hr25": 19},
+    # LAD
+    {"n": "Mookie Betts",      "t": "LAD", "hand": "R", "xhr": 5,  "sR": 7.00, "sL": 7.50, "h": 6,  "hr25": 20},
+    {"n": "Max Muncy",         "t": "LAD", "hand": "L", "xhr": 5,  "sR": 7.00, "sL": 5.50, "h": 6,  "hr25": 19},
+    # MIA
+    {"n": "Kyle Stowers",      "t": "MIA", "hand": "L", "xhr": 6,  "sR": 7.50, "sL": 4.50, "h": 7,  "hr25": 25},
+    {"n": "Agustín Ramírez",   "t": "MIA", "hand": "R", "xhr": 5,  "sR": 7.00, "sL": 7.50, "h": 6,  "hr25": 21},
+    {"n": "Connor Norby",      "t": "MIA", "hand": "R", "xhr": 4,  "sR": 6.50, "sL": 7.00, "h": 5,  "hr25": 14},
+    # MIL
+    {"n": "Christian Yelich",  "t": "MIL", "hand": "L", "xhr": 7,  "sR": 8.00, "sL": 5.50, "h": 8,  "hr25": 29},
+    {"n": "William Contreras", "t": "MIL", "hand": "R", "xhr": 5,  "sR": 7.00, "sL": 7.50, "h": 5,  "hr25": 17},
+    {"n": "Jackson Chourio",   "t": "MIL", "hand": "R", "xhr": 6,  "sR": 7.50, "sL": 7.00, "h": 6,  "hr25": 21},
+    {"n": "Garrett Mitchell",  "t": "MIL", "hand": "L", "xhr": 5,  "sR": 7.00, "sL": 4.50, "h": 5,  "hr25": 15},
+    # MIN
+    {"n": "Matt Wallner",      "t": "MIN", "hand": "L", "xhr": 6,  "sR": 7.50, "sL": 4.50, "h": 6,  "hr25": 22},
+    {"n": "Kody Clemens",      "t": "MIN", "hand": "L", "xhr": 5,  "sR": 7.00, "sL": 4.50, "h": 6,  "hr25": 19},
+    {"n": "Ryan Jeffers",      "t": "MIN", "hand": "R", "xhr": 5,  "sR": 7.00, "sL": 7.00, "h": 5,  "hr25": 18},
+    # NYM
+    {"n": "Brandon Nimmo",     "t": "TEX", "hand": "L", "xhr": 6,  "sR": 7.50, "sL": 5.00, "h": 7,  "hr25": 25},
+    # NYY
+    {"n": "Austin Wells",      "t": "NYY", "hand": "L", "xhr": 5,  "sR": 7.00, "sL": 4.50, "h": 6,  "hr25": 21},
+    {"n": "Anthony Volpe",     "t": "NYY", "hand": "R", "xhr": 5,  "sR": 7.00, "sL": 7.50, "h": 6,  "hr25": 19},
+    {"n": "Ryan McMahon",      "t": "NYY", "hand": "L", "xhr": 5,  "sR": 7.00, "sL": 5.00, "h": 6,  "hr25": 20},
+    # PHI
+    {"n": "Bryce Harper",      "t": "PHI", "hand": "L", "xhr": 7,  "sR": 8.00, "sL": 6.50, "h": 8,  "hr25": 27},
+    {"n": "Adolis García",     "t": "PHI", "hand": "R", "xhr": 5,  "sR": 7.00, "sL": 7.50, "h": 6,  "hr25": 19},
+    {"n": "J.T. Realmuto",     "t": "PHI", "hand": "R", "xhr": 4,  "sR": 6.50, "sL": 7.00, "h": 5,  "hr25": 15},
+    # PIT
+    {"n": "Ke'Bryan Hayes",    "t": "PIT", "hand": "R", "xhr": 4,  "sR": 6.00, "sL": 6.50, "h": 4,  "hr25": 13},
+    # SD
+    {"n": "Manny Machado",     "t": "SD",  "hand": "R", "xhr": 7,  "sR": 7.80, "sL": 8.50, "h": 7,  "hr25": 27},
+    {"n": "Fernando Tatis Jr.","t": "SD",  "hand": "R", "xhr": 7,  "sR": 8.00, "sL": 8.50, "h": 7,  "hr25": 25},
+    {"n": "Ramón Laureano",    "t": "SD",  "hand": "R", "xhr": 6,  "sR": 7.50, "sL": 7.00, "h": 7,  "hr25": 24},
+    {"n": "Gavin Sheets",      "t": "SD",  "hand": "L", "xhr": 5,  "sR": 7.00, "sL": 4.50, "h": 6,  "hr25": 19},
+    # SEA
+    {"n": "Randy Arozarena",   "t": "SEA", "hand": "R", "xhr": 6,  "sR": 7.50, "sL": 7.00, "h": 7,  "hr25": 27},
+    # SF
+    {"n": "Matt Chapman",      "t": "SF",  "hand": "R", "xhr": 5,  "sR": 7.00, "sL": 7.50, "h": 6,  "hr25": 21},
+    {"n": "Heliot Ramos",      "t": "SF",  "hand": "R", "xhr": 5,  "sR": 7.00, "sL": 7.50, "h": 6,  "hr25": 21},
+    {"n": "Patrick Bailey",    "t": "SF",  "hand": "B", "xhr": 4,  "sR": 6.00, "sL": 5.50, "h": 5,  "hr25": 17},
+    # STL
+    {"n": "Iván Herrera",      "t": "STL", "hand": "R", "xhr": 5,  "sR": 7.00, "sL": 7.50, "h": 6,  "hr25": 19},
+    {"n": "Pedro Pagés",       "t": "STL", "hand": "R", "xhr": 4,  "sR": 6.50, "sL": 7.00, "h": 5,  "hr25": 17},
+    {"n": "Masyn Winn",        "t": "STL", "hand": "R", "xhr": 4,  "sR": 6.50, "sL": 7.00, "h": 5,  "hr25": 15},
+    {"n": "Nolan Arenado",     "t": "STL", "hand": "R", "xhr": 4,  "sR": 6.50, "sL": 7.50, "h": 5,  "hr25": 14},
+    # TB
+    {"n": "Yandy Díaz",        "t": "TB",  "hand": "R", "xhr": 6,  "sR": 7.50, "sL": 7.00, "h": 7,  "hr25": 25},
+    {"n": "Christopher Morel", "t": "TB",  "hand": "R", "xhr": 6,  "sR": 7.00, "sL": 7.50, "h": 6,  "hr25": 18},
+    # TEX
+    {"n": "Corey Seager",      "t": "TEX", "hand": "L", "xhr": 6,  "sR": 7.50, "sL": 5.00, "h": 6,  "hr25": 21},
+    # TOR
+    {"n": "Vladimir Guerrero Jr.","t":"TOR","hand": "R", "xhr": 6,  "sR": 7.50, "sL": 8.00, "h": 7,  "hr25": 23},
+    {"n": "Addison Barger",    "t": "TOR", "hand": "L", "xhr": 5,  "sR": 7.00, "sL": 4.50, "h": 6,  "hr25": 21},
+    # WSH
+    {"n": "Keibert Ruiz",      "t": "WSH", "hand": "B", "xhr": 4,  "sR": 6.00, "sL": 5.50, "h": 5,  "hr25": 16},
 ]
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -602,31 +697,31 @@ def main():
     print(f"  ✅ {lineup_count} batters across {len(lineups)} lineups\n")
     time.sleep(3)
 
-    # ── STAGE 2b: IL check ──
-    print("🏥 Stage 2b: Checking injured list...")
-    il_raw = call_claude(
-        f"Today is {today}. Search for current MLB injured list (IL) players. "
-        f"Return ONLY a JSON array of full player names currently on the 10-day, 15-day, or 60-day IL: "
-        f'["Mike Trout","Ronald Acuña Jr.",...]. '
-        f"Include only position players (batters), not pitchers. If unsure, return [].",
-        max_searches=3,
-    )
+    # ── STAGE 2b: IL check from MLB Stats API ──
+    # Only flags players on the official 10-day or 60-day IL, not day-to-day
+    # or minor-league reassignments. Source: team roster status codes.
+    print("🏥 Stage 2b: Checking injured list via MLB API...")
     il_names = set()
-    if isinstance(il_raw, list):
-        for name in il_raw:
-            if isinstance(name, str):
-                il_names.add(name.lower())
-    print(f"  ✅ {len(il_names)} players on IL\n")
-    time.sleep(3)
+    try:
+        for tid in MLB_TEAM_ABBR:
+            roster_url = f"https://statsapi.mlb.com/api/v1/teams/{tid}/roster?rosterType=fullSeason&season={datetime.now().year}"
+            req = urllib.request.Request(roster_url, headers={"User-Agent": "HRScout/1.0"})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                roster_data = json.loads(resp.read())
+            for person in roster_data.get("roster", []):
+                status_desc = person.get("status", {}).get("description", "")
+                pos_code = person.get("position", {}).get("code", "")
+                # Only official IL stints (10-day, 15-day, 60-day), not day-to-day
+                if "Injured" in status_desc and pos_code != "1":
+                    il_names.add(_normalize(person["person"]["fullName"]))
+                    print(f"    {person['person']['fullName']}: {status_desc}")
+        print(f"  ✅ {len(il_names)} position players on IL")
+    except Exception as e:
+        print(f"  ⚠️ IL check failed: {e}")
+    print()
 
     def is_on_il(player_name):
-        name_lower = player_name.lower()
-        last_name = player_name.split()[-1].lower() if player_name.split() else ""
-        for il_name in il_names:
-            il_last = il_name.split()[-1] if il_name.split() else ""
-            if name_lower == il_name or last_name == il_last:
-                return True
-        return False
+        return _normalize(player_name) in il_names
 
     # ── STAGE 3: Pitcher HR/9 from MLB Stats API ──
     print("📊 Stage 3: Fetching pitcher HR/9 from MLB Stats API...")
@@ -952,14 +1047,23 @@ def main():
     out_path.write_text(json.dumps(output, indent=2, ensure_ascii=False))
     print(f"\n✅ Done! Wrote {len(scored)} players to {out_path}")
 
-    # ── Append to history.json ──
+    # ── Append to history.json (preserving existing hitHR state) ──
     hist_path = Path(__file__).parent.parent / "public" / "history.json"
     try:
         history = json.loads(hist_path.read_text()) if hist_path.exists() else []
     except (json.JSONDecodeError, OSError):
         history = []
 
-    # Remove any existing entry for today (re-run replaces it)
+    # If today already exists, preserve hitHR values from the existing entry
+    existing_hr = {}
+    for h in history:
+        if h.get("date") == today:
+            for p in h.get("players", []):
+                if p.get("hitHR"):
+                    existing_hr[p["name"]] = True
+            break
+
+    # Remove the old entry for today (scores/ranks may have changed on re-run)
     history = [h for h in history if h.get("date") != today]
 
     day_entry = {
@@ -971,14 +1075,16 @@ def main():
                 "team": p["team"],
                 "rank": i + 1,
                 "score": p["score"],
-                "hitHR": False,
+                "hitHR": existing_hr.get(p["name"], False),
             }
             for i, p in enumerate(scored)
         ],
     }
     history.append(day_entry)
     hist_path.write_text(json.dumps(history, indent=2, ensure_ascii=False))
-    print(f"📜 History updated: {len(day_entry['players'])} players for {today}")
+    preserved = sum(1 for p in day_entry["players"] if p["hitHR"])
+    print(f"📜 History updated: {len(day_entry['players'])} players for {today}"
+          f"{f' ({preserved} hitHR preserved)' if preserved else ''}")
 
 
 if __name__ == "__main__":
