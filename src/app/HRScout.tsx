@@ -52,18 +52,6 @@ const BULLPEN = {
 const scoreColor = (s: number) => s>=7.5?"#e8e020":s>=6.5?"#86efac":s>=5.5?"#93c5fd":"#94a3b8";
 const factorBg   = (s: number) => `rgba(232,224,32,${0.15+(s/10)*0.6})`;
 
-const IMPS = [
-  { icon:"🌬️", tag:"ADDED", tagColor:"#86efac", title:"Wind & Weather (replaces Days w/o HR)",
-    body:"Real-time wind speed and direction from Open-Meteo pulled for every outdoor park. Scored per batter handedness — a 20mph tailwind to right field scores a LHH much higher than a RHH at the same park." },
-  { icon:"📋", tag:"ADDED", tagColor:"#86efac", title:"Confirmed Lineup Filter",
-    body:"Pulls confirmed starting lineups each day. Players not in the lineup return null and are excluded from scoring entirely — eliminating the ~15–20% of daily scores that were wasted on DNP players." },
-  { icon:"🎯", tag:"REPLACED", tagColor:"#93c5fd", title:"xHR Rate (replaces Barrel%)",
-    body:"Expected home runs per 600 PA from Baseball Savant now drives the contact quality score. More directly predictive than barrel%, especially for gap hitters who occasionally go deep." },
-  { icon:"🏟️", tag:"IMPROVED", tagColor:"#c084fc", title:"Park Factor by Handedness",
-    body:"Yankee Stadium now scores 10 for LHH, 6 for RHH. Oracle Park scores 3 for LHH, 1 for RHH. Fenway Park scores 6 for LHH, 3 for RHH. Every park now reflects actual directional dimensions." },
-  { icon:"🃏", tag:"REMOVED", tagColor:"#f87171", title:"Days Without HR (gambler's fallacy)",
-    body:"Removed entirely. Zero autocorrelation in daily HR events — a player 8 days cold is not statistically more likely to go deep. Replaced by Exit Velocity Trend: actual quality-of-contact data showing whether a hitter is making harder contact recently." },
-];
 
 interface Data {
   date: string;
@@ -217,7 +205,7 @@ const HistoryRow = memo(function HistoryRow({
 });
 
 export default function HRScout({ data, history: initialHistory }: { data: Data | null; history: HistoryDay[] | null }) {
-  const [tab, setTab] = useState("scout");
+  const [tab, setTab] = useState("top20");
   const [odds, setOdds] = useState<Record<string, string>>({});
   const [history] = useState<HistoryDay[]>(initialHistory || []);
   const [minScore, setMinScore] = useState("");
@@ -369,8 +357,6 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
     pip:   (v: number) => ({ display:"inline-block" as const, width:`${Math.max(4,(v/10)*52)}px`, height:"3px", background:factorBg(v), borderRadius:"2px", verticalAlign:"middle" as const, marginRight:"4px" }),
     badge: { display:"inline-block" as const, padding:"1px 5px", borderRadius:"3px", background:"#0f2518", fontSize:"9px", fontWeight:"700" as const, color:"#86efac", marginLeft:"5px" },
     wind:  (ws: number, isDome: boolean) => ({ color: isDome?"#475569":ws>=7?"#e8e020":ws>=5?"#86efac":"#94a3b8", fontSize:"11px" }),
-    impCard: { background:"linear-gradient(135deg,#07110a,#091520)", border:"1px solid #0f2518", borderRadius:"12px", padding:"20px 22px", marginBottom:"14px" },
-    tag:   (col: string) => ({ display:"inline-block" as const, padding:"2px 7px", borderRadius:"3px", border:`1px solid ${col}30`, color:col, fontSize:"10px", fontWeight:"700" as const, marginTop:"8px" }),
   };
 
   return (
@@ -380,22 +366,92 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
           <div style={{display:"flex",alignItems:"center",gap:"10px"}}>
             <span style={{fontSize:"26px"}}>⚾</span>
             <span style={S.logo}>HR SCOUT</span>
-            <span style={{background:"#e8e020",color:"#000",fontSize:"9px",fontWeight:"800",padding:"2px 6px",borderRadius:"3px",letterSpacing:"0.5px"}}>v2.0</span>
           </div>
           <div style={S.sub}>
-            Daily MLB Home Run Prediction · 5 Model Upgrades Active
+            Daily MLB Home Run Prediction
             {generatedAt && <span style={{marginLeft:"12px",color:"#334155"}}>· Updated {new Date(generatedAt).toLocaleTimeString()}</span>}
           </div>
+        </div>
+        <div style={{textAlign:"right",lineHeight:"1.6",fontSize:"11px",color:"rgba(255,255,255,0.55)",fontWeight:400,letterSpacing:"0.3px"}}>
+          <div>@hrmagicball</div>
+          <div>homerunscout@gmail.com</div>
+          <div>homerunscout.com</div>
         </div>
       </div>
 
       <div style={S.tabs}>
-        {([["scout","⚾ Rankings"],["history","📊 Previous HRs"],["matchups","🏟 Matchups"],["improvements","⚡ What Changed"]] as const).map(([id,label])=>(
+        {([["top20","🏆 Today's Top 20"],["scout","⚾ Rankings"],["history","📊 Previous HRs"],["matchups","🏟 Matchups"]] as const).map(([id,label])=>(
           <button key={id} style={S.tab(tab===id)} onClick={()=>setTab(id)}>{label}</button>
         ))}
       </div>
 
       <div style={S.body}>
+
+        {/* ── TOP 20 TAB ── */}
+        {tab==="top20" && (
+          <div>
+            {cappedPlayers.length > 0 ? (
+              <>
+                <div style={{marginBottom:"16px"}}>
+                  <div style={{fontFamily:"'Bebas Neue',monospace",fontSize:"22px",color:"#e8e020",letterSpacing:"1px"}}>TODAY'S TOP 20 — {date}</div>
+                  <div style={{fontSize:"11px",color:"#334155",marginTop:"2px"}}>Sorted by Adjusted Score · lineup-filtered · wind-adjusted</div>
+                </div>
+                <div style={{overflowX:"auto",background:"#060a0c",WebkitOverflowScrolling:"touch"} as React.CSSProperties}>
+                <table style={{...S.tbl,minWidth:"560px"}}>
+                  <thead>
+                    <tr>
+                      <th style={{...S.th,textAlign:"center",width:"40px"}}>#</th>
+                      <th style={S.th}>Player</th>
+                      <th style={S.th}>Matchup</th>
+                      <th style={{...S.th,textAlign:"right"}}>Adj Score</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {(() => {
+                      const top20 = cappedPlayers.slice(0, 20).map(p => {
+                        const raw = odds[p.name]?.replace(/[+\s]/g, "");
+                        const parsed = raw ? parseInt(raw, 10) : NaN;
+                        const hasOdds = !isNaN(parsed);
+                        const adjScore = hasOdds ? p.score + vegasModifier(parsed) : p.score;
+                        return { ...p, adjScore, hasOdds };
+                      });
+                      top20.sort((a, b) => b.adjScore - a.adjScore);
+                      return top20.map((p, i) => (
+                        <tr key={p.name+i} style={{background:i%2===0?"transparent":"#060d09"}}
+                          onMouseEnter={e=>e.currentTarget.style.background="#0a1810"}
+                          onMouseLeave={e=>e.currentTarget.style.background=i%2===0?"transparent":"#060d09"}>
+                          <td style={{...S.td,...S.rank}}>{i+1}</td>
+                          <td style={S.td}>
+                            <span style={{fontWeight:"600",fontSize:"13px"}}>{p.name}</span>
+                            <span style={S.badge}>{p.team}</span>
+                            <span style={{marginLeft:"6px",fontSize:"10px",color:"#475569"}}>{p.hand==="L"?"LHH":p.hand==="R"?"RHH":"SWI"}</span>
+                          </td>
+                          <td style={{...S.td,fontSize:"11px",color:"#64748b"}}>
+                            <span style={{color:"#94a3b8"}}>{p.matchup}</span>
+                            <div style={{color:"#475569",fontSize:"10px"}}>{p.pitcher} ({p.pitcherHand}HP)</div>
+                          </td>
+                          <td style={S.td}>
+                            <div style={{textAlign:"right"}}>
+                              <span style={{fontFamily:"'Bebas Neue',monospace",fontSize:"24px",fontWeight:"700",color:scoreColor(p.adjScore)}}>{p.adjScore.toFixed(2)}</span>
+                              {!p.hasOdds && <span style={{marginLeft:"4px",fontSize:"10px",color:"#475569"}} title="No odds entered — showing base score">*</span>}
+                            </div>
+                          </td>
+                        </tr>
+                      ));
+                    })()}
+                  </tbody>
+                </table>
+                </div>
+              </>
+            ) : (
+              <div style={{textAlign:"center",padding:"72px 20px"}}>
+                <div style={{fontSize:"48px",marginBottom:"12px"}}>⏳</div>
+                <div style={{fontFamily:"'Bebas Neue',monospace",fontSize:"20px",color:"#e8e020",marginBottom:"8px"}}>WAITING FOR TODAY'S DATA</div>
+                <div style={{fontSize:"12px",color:"#475569"}}>Scores will appear once lineups are confirmed.</div>
+              </div>
+            )}
+          </div>
+        )}
 
         {/* ── SCOUT TAB ── */}
         {tab==="scout" && (
@@ -644,37 +700,6 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
           </div>
         )}
 
-        {/* ── IMPROVEMENTS TAB ── */}
-        {tab==="improvements" && (
-          <div>
-            <div style={{fontFamily:"'Bebas Neue',monospace",fontSize:"22px",color:"#e8e020",letterSpacing:"1px",marginBottom:"6px"}}>WHAT CHANGED IN v2.0</div>
-            <div style={{fontSize:"12px",color:"#475569",marginBottom:"20px",lineHeight:"1.7",maxWidth:"700px"}}>
-              All five model upgrades are live. Formula preserved: <code style={{color:"#86efac"}}>SUM(11 factors) / 9</code> —
-              Days w/o HR removed, Wind and EV Trend replace it. Park score now handedness-specific.
-            </div>
-            {IMPS.map((imp,i)=>(
-              <div key={i} style={S.impCard}>
-                <div style={{display:"flex",gap:"14px",alignItems:"flex-start"}}>
-                  <span style={{fontSize:"22px",lineHeight:"1"}}>{imp.icon}</span>
-                  <div>
-                    <div style={{display:"flex",alignItems:"center",gap:"8px",marginBottom:"6px"}}>
-                      <span style={{fontSize:"14px",fontWeight:"700",color:"#e2e8f0"}}>{imp.title}</span>
-                      <span style={S.tag(imp.tagColor)}>{imp.tag}</span>
-                    </div>
-                    <div style={{fontSize:"12px",color:"#64748b",lineHeight:"1.7"}}>{imp.body}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-            <div style={{background:"#060d09",border:"1px solid #0f2518",borderRadius:"10px",padding:"16px 20px",fontSize:"11px",color:"#334155",lineHeight:"1.9"}}>
-              <strong style={{color:"#e8e020",display:"block",marginBottom:"6px"}}>📐 Updated formula</strong>
-              <code style={{color:"#86efac"}}>
-                SCORE = (Home/Away + Park[hand] + LHPvRHP + PitcherHR9 + BullpenHR9 + xHR + 2025HRs + Wind + Recent5 + Recent10 + SeasonGap) / 9
-              </code>
-              <div style={{marginTop:"8px"}}>Wind replaces Days w/o HR · xHR replaces Barrel% · Park is now handedness-specific</div>
-            </div>
-          </div>
-        )}
 
       </div>
     </div>
