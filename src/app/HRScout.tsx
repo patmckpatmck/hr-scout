@@ -424,6 +424,7 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                           <td style={S.td}>
                             <span style={{fontWeight:"600",fontSize:"13px"}}>{p.name}</span>
                             <span style={S.badge}>{p.team}</span>
+                            {p.flags?.includes("IL") && <span title="On Injured List" style={{marginLeft:"4px",cursor:"default"}}>⚠️</span>}
                             <span style={{marginLeft:"6px",fontSize:"10px",color:"#475569"}}>{p.hand==="L"?"LHH":p.hand==="R"?"RHH":"SWI"}</span>
                           </td>
                           <td style={{...S.td,fontSize:"11px",color:"#64748b"}}>
