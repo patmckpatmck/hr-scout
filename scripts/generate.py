@@ -108,7 +108,16 @@ BULLPEN = {
     "BOS": 4.79,
 }
 
-PLAYERS = [
+_players_path = Path(__file__).resolve().parent.parent / "data" / "players.json"
+if _players_path.exists():
+    with open(_players_path) as _f:
+        PLAYERS = json.load(_f)
+    print(f"  📦 Loaded {len(PLAYERS)} players from data/players.json")
+else:
+    print("  ⚠️  data/players.json not found, using empty player list")
+    PLAYERS = []
+
+_HARDCODED_PLAYERS = [
     # sR = HR rate score vs RHP (1-10), sL = HR rate score vs LHP (1-10), hr25 = 2025 full-season HR total
     {"n": "Aaron Judge",       "t": "NYY", "hand": "R", "xhr": 10, "sR": 7.08, "sL": 8.50, "h": 10, "hr25": 52},
     {"n": "Jo Adell",          "t": "LAA", "hand": "R", "xhr": 8,  "sR": 8.06, "sL": 7.00, "h": 9,  "hr25": 37},
@@ -275,6 +284,11 @@ PLAYERS = [
     # WSH
     {"n": "Keibert Ruiz",      "t": "WSH", "hand": "B", "xhr": 4,  "sR": 6.00, "sL": 5.50, "h": 5,  "hr25": 16},
 ]
+
+# Fall back to hardcoded list if data/players.json doesn't exist
+if not PLAYERS:
+    PLAYERS = _HARDCODED_PLAYERS
+    print(f"  📦 Using hardcoded player list ({len(PLAYERS)} players)")
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # SCORING FUNCTIONS

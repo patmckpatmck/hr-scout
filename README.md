@@ -29,6 +29,16 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Player Database
+
+The player database lives at `data/players.json` and is loaded by `generate.py` at runtime. To refresh it:
+
+```bash
+python3 scripts/refresh_players.py
+```
+
+**Run this manually each Monday morning before the daily `./run.sh` workflow.** It queries the MLB Stats API for the current season's top HR hitters and enriches them with Baseball Savant data via Claude. If `data/players.json` doesn't exist, `generate.py` falls back to a hardcoded list.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
