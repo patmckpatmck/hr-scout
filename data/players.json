@@ -1,0 +1,1992 @@
+[
+  {
+    "n": "Yordan Alvarez",
+    "t": "HOU",
+    "hand": "L",
+    "xhr": 8,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 5
+  },
+  {
+    "n": "Drake Baldwin",
+    "t": "ATL",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 5
+  },
+  {
+    "n": "Chase DeLauter",
+    "t": "CLE",
+    "hand": "L",
+    "xhr": 6,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 5
+  },
+  {
+    "n": "Gunnar Henderson",
+    "t": "BAL",
+    "hand": "L",
+    "xhr": 5,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 5
+  },
+  {
+    "n": "Shea Langeliers",
+    "t": "ATH",
+    "hand": "R",
+    "xhr": 6,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 5
+  },
+  {
+    "n": "Zach Neto",
+    "t": "LAA",
+    "hand": "R",
+    "xhr": 5,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 5
+  },
+  {
+    "n": "Jordan Walker",
+    "t": "STL",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 5
+  },
+  {
+    "n": "CJ Abrams",
+    "t": "WSH",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 4
+  },
+  {
+    "n": "Oneil Cruz",
+    "t": "PIT",
+    "hand": "L",
+    "xhr": 7,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 4
+  },
+  {
+    "n": "Elly De La Cruz",
+    "t": "CIN",
+    "hand": "B",
+    "xhr": 5,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 4
+  },
+  {
+    "n": "Ian Happ",
+    "t": "CHC",
+    "hand": "B",
+    "xhr": 5,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 4
+  },
+  {
+    "n": "Carter Jensen",
+    "t": "KC",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 4
+  },
+  {
+    "n": "Max Muncy",
+    "t": "LAD",
+    "hand": "L",
+    "xhr": 5,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 4
+  },
+  {
+    "n": "Munetaka Murakami",
+    "t": "CWS",
+    "hand": "L",
+    "xhr": 6,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 4
+  },
+  {
+    "n": "Matt Olson",
+    "t": "ATL",
+    "hand": "L",
+    "xhr": 6,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 4
+  },
+  {
+    "n": "Andy Pages",
+    "t": "LAD",
+    "hand": "R",
+    "xhr": 5,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 4
+  },
+  {
+    "n": "Ben Rice",
+    "t": "NYY",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 4
+  },
+  {
+    "n": "Corey Seager",
+    "t": "TEX",
+    "hand": "L",
+    "xhr": 6,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 4
+  },
+  {
+    "n": "Jorge Soler",
+    "t": "LAA",
+    "hand": "R",
+    "xhr": 6,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 4
+  },
+  {
+    "n": "Sal Stewart",
+    "t": "CIN",
+    "hand": "R",
+    "xhr": 5,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 4
+  },
+  {
+    "n": "James Wood",
+    "t": "WSH",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 4
+  },
+  {
+    "n": "Wilyer Abreu",
+    "t": "BOS",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Ozzie Albies",
+    "t": "ATL",
+    "hand": "B",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Francisco Alvarez",
+    "t": "NYM",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Jonathan Aranda",
+    "t": "TB",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Jake Bauers",
+    "t": "MIL",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Josh Bell",
+    "t": "MIN",
+    "hand": "B",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Brendan Donovan",
+    "t": "SEA",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Yandy Díaz",
+    "t": "TB",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Freddie Freeman",
+    "t": "LAD",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Liam Hicks",
+    "t": "MIA",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Aaron Judge",
+    "t": "NYY",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Brandon Lowe",
+    "t": "PIT",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Mickey Moniak",
+    "t": "COL",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Ryan O'Hearn",
+    "t": "PIT",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Shohei Ohtani",
+    "t": "LAD",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Luke Raley",
+    "t": "SEA",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Bryan Reynolds",
+    "t": "PIT",
+    "hand": "B",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Dalton Rushing",
+    "t": "LAD",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Kyle Schwarber",
+    "t": "PHI",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Cam Smith",
+    "t": "HOU",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Gary Sánchez",
+    "t": "MIL",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Christian Walker",
+    "t": "HOU",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Matt Wallner",
+    "t": "MIN",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 3
+  },
+  {
+    "n": "Willy Adames",
+    "t": "SF",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Jose Altuve",
+    "t": "HOU",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Gabriel Arias",
+    "t": "CLE",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Mookie Betts",
+    "t": "LAD",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Xander Bogaerts",
+    "t": "SD",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Alex Bregman",
+    "t": "CHC",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Jake Burger",
+    "t": "TEX",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Owen Caissie",
+    "t": "MIA",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Junior Caminero",
+    "t": "TB",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Dominic Canzone",
+    "t": "SEA",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Kerry Carpenter",
+    "t": "DET",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Corbin Carroll",
+    "t": "AZ",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Griffin Conine",
+    "t": "MIA",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Willson Contreras",
+    "t": "BOS",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Rafael Devers",
+    "t": "SF",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Dillon Dingler",
+    "t": "DET",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Mauricio Dubón",
+    "t": "ATL",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Jose Fernandez",
+    "t": "AZ",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Adolis García",
+    "t": "PHI",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Andrés Giménez",
+    "t": "TOR",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Hunter Goodman",
+    "t": "COL",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Nolan Gorman",
+    "t": "STL",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Bryce Harper",
+    "t": "PHI",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Michael Harris II",
+    "t": "ATL",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Teoscar Hernández",
+    "t": "LAD",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Brady House",
+    "t": "WSH",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Jonathan India",
+    "t": "KC",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Kyle Isbel",
+    "t": "KC",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Troy Johnston",
+    "t": "COL",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Ramón Laureano",
+    "t": "SD",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Royce Lewis",
+    "t": "MIN",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Josh Lowe",
+    "t": "LAA",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Brandon Marsh",
+    "t": "PHI",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Jackson Merrill",
+    "t": "SD",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Colson Montgomery",
+    "t": "CWS",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Kazuma Okamoto",
+    "t": "TOR",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Salvador Perez",
+    "t": "KC",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Luis Robert Jr.",
+    "t": "NYM",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Brent Rooker",
+    "t": "ATH",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Amed Rosario",
+    "t": "NYY",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "TJ Rumfield",
+    "t": "COL",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Nolan Schanuel",
+    "t": "LAA",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Matt Shaw",
+    "t": "CHC",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Gavin Sheets",
+    "t": "SD",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Dominic Smith",
+    "t": "ATL",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Will Smith",
+    "t": "LAD",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "George Springer",
+    "t": "TOR",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Tyler Stephenson",
+    "t": "CIN",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Eugenio Suárez",
+    "t": "CIN",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Mike Trout",
+    "t": "LAA",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Ramón Urías",
+    "t": "STL",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Joey Wiemer",
+    "t": "WSH",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Cole Young",
+    "t": "SEA",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 2
+  },
+  {
+    "n": "Ronald Acuña Jr.",
+    "t": "ATL",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Jo Adell",
+    "t": "LAA",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Pete Alonso",
+    "t": "BAL",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Miguel Amaya",
+    "t": "CHC",
+    "hand": "R",
+    "xhr": 5,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Roman Anthony",
+    "t": "BOS",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Randy Arozarena",
+    "t": "SEA",
+    "hand": "R",
+    "xhr": 5,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Harrison Bader",
+    "t": "SF",
+    "hand": "R",
+    "xhr": 6,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Moisés Ballesteros",
+    "t": "CHC",
+    "hand": "L",
+    "xhr": 9,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Samuel Basallo",
+    "t": "BAL",
+    "hand": "L",
+    "xhr": 7,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Dylan Beavers",
+    "t": "BAL",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Cody Bellinger",
+    "t": "NYY",
+    "hand": "L",
+    "xhr": 5,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Carson Benge",
+    "t": "NYM",
+    "hand": "L",
+    "xhr": 3,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Alec Bohm",
+    "t": "PHI",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Alec Burleson",
+    "t": "STL",
+    "hand": "L",
+    "xhr": 5,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Lawrence Butler",
+    "t": "ATH",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Javier Báez",
+    "t": "DET",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Luis Campusano",
+    "t": "SD",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Evan Carter",
+    "t": "TEX",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Willi Castro",
+    "t": "COL",
+    "hand": "B",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Matt Chapman",
+    "t": "SF",
+    "hand": "R",
+    "xhr": 3,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Nathan Church",
+    "t": "STL",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Kody Clemens",
+    "t": "MIN",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Isaac Collins",
+    "t": "KC",
+    "hand": "B",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "William Contreras",
+    "t": "MIL",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Carlos Correa",
+    "t": "HOU",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Jake Cronenworth",
+    "t": "SD",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Pete Crow-Armstrong",
+    "t": "CHC",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Jonny DeLuca",
+    "t": "TB",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Brenton Doyle",
+    "t": "COL",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Ezequiel Duran",
+    "t": "TEX",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Xavier Edwards",
+    "t": "MIA",
+    "hand": "B",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Nick Fortes",
+    "t": "TB",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Alex Freeland",
+    "t": "LAD",
+    "hand": "B",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Sal Frelick",
+    "t": "MIL",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Braxton Fulford",
+    "t": "COL",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Maikel Garcia",
+    "t": "KC",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Luis García Jr.",
+    "t": "WSH",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Paul Goldschmidt",
+    "t": "NYY",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Tristan Gray",
+    "t": "MIN",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Vladimir Guerrero Jr.",
+    "t": "TOR",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Austin Hays",
+    "t": "CWS",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Kyle Higashioka",
+    "t": "TEX",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Nico Hoerner",
+    "t": "CHC",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Danny Jansen",
+    "t": "TEX",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Ryan Jeffers",
+    "t": "MIN",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "CJ Kayfus",
+    "t": "CLE",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Luke Keaschall",
+    "t": "MIN",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Alejandro Kirk",
+    "t": "TOR",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Steven Kwan",
+    "t": "CLE",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Wyatt Langford",
+    "t": "TEX",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Jordan Lawlar",
+    "t": "AZ",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Brooks Lee",
+    "t": "MIN",
+    "hand": "B",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Jung Hoo Lee",
+    "t": "SF",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Otto Lopez",
+    "t": "MIA",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Manny Machado",
+    "t": "SD",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Kyle Manzardo",
+    "t": "CLE",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Rafael Marchán",
+    "t": "PHI",
+    "hand": "B",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Ketel Marte",
+    "t": "AZ",
+    "hand": "B",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Angel Martínez",
+    "t": "CLE",
+    "hand": "B",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Jorge Mateo",
+    "t": "ATL",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Brice Matthews",
+    "t": "HOU",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Marcelo Mayer",
+    "t": "BOS",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Andrew McCutchen",
+    "t": "TEX",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Zach McKinstry",
+    "t": "DET",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Curtis Mead",
+    "t": "WSH",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Chase Meidroth",
+    "t": "CWS",
+    "hand": "R",
+    "xhr": 3,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Jake Meyers",
+    "t": "HOU",
+    "hand": "R",
+    "xhr": 7,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Garrett Mitchell",
+    "t": "MIL",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Yoán Moncada",
+    "t": "LAA",
+    "hand": "B",
+    "xhr": 5,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Cedric Mullins",
+    "t": "TB",
+    "hand": "L",
+    "xhr": 2,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Brandon Nimmo",
+    "t": "TEX",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Connor Norby",
+    "t": "MIA",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Tyler O'Neill",
+    "t": "BAL",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Pedro Pagés",
+    "t": "STL",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Richie Palacios",
+    "t": "TB",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Joc Pederson",
+    "t": "TEX",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Oswald Peraza",
+    "t": "LAA",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Geraldo Perdomo",
+    "t": "AZ",
+    "hand": "B",
+    "xhr": 2,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Everson Pereira",
+    "t": "CWS",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Ceddanne Rafaela",
+    "t": "BOS",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Cal Raleigh",
+    "t": "SEA",
+    "hand": "B",
+    "xhr": 3,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "José Ramírez",
+    "t": "CLE",
+    "hand": "B",
+    "xhr": 3,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "J.T. Realmuto",
+    "t": "PHI",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Brayan Rocchio",
+    "t": "CLE",
+    "hand": "B",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Keibert Ruiz",
+    "t": "WSH",
+    "hand": "B",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Davis Schneider",
+    "t": "TOR",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Marcus Semien",
+    "t": "NYM",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Juan Soto",
+    "t": "NYM",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Giancarlo Stanton",
+    "t": "NYY",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Spencer Steer",
+    "t": "CIN",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Trevor Story",
+    "t": "BOS",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Dansby Swanson",
+    "t": "CHC",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Jesús Sánchez",
+    "t": "TOR",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Tyrone Taylor",
+    "t": "NYM",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Gleyber Torres",
+    "t": "DET",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Ezequiel Tovar",
+    "t": "COL",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Kyle Tucker",
+    "t": "LAD",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Brice Turang",
+    "t": "MIL",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Brandon Valenzuela",
+    "t": "TOR",
+    "hand": "B",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Ildemaro Vargas",
+    "t": "AZ",
+    "hand": "B",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Miguel Vargas",
+    "t": "CWS",
+    "hand": "R",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  },
+  {
+    "n": "Daulton Varsho",
+    "t": "TOR",
+    "hand": "L",
+    "xhr": 4,
+    "sR": 5.0,
+    "sL": 5.0,
+    "h": 5,
+    "hr25": 1
+  }
+]
