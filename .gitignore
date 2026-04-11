@@ -47,3 +47,4 @@ public/history.json
 *.tsbuildinfo
 next-env.d.ts
 .env.local.txt
+.claude/
