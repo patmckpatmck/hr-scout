@@ -356,7 +356,7 @@ def compute_score(f):
     return (
         f["homeAway"] + f["ballpark"] + f["lhpVsRhp"] + f["pitcherHR9"] +
         f["bullpen"] + f["xhr"] + f["hr2025"] + f["wind"] +
-        f["recent5"] + f["recent10"] + f["seasonGap"]
+        f["recent5"] + f["recent10"] + f["seasonGap"] + f["bvp"]
     ) / 9
 
 
@@ -948,6 +948,59 @@ def main():
     matched = sum(1 for p in active if p["n"] in recent_map)
     print(f"  ✅ {matched}/{len(active)} players with game log data\n")
 
+    # Build reverse map: player_name → batter MLB ID (for BvP lookups)
+    batter_id_by_name = {v: k for k, v in player_ids_to_fetch.items()}
+
+    # ── STAGE 6b: Batter vs Pitcher (BvP) ──
+    print("⚔️ Stage 6b: Fetching Batter vs Pitcher history...")
+    bvp_map = {}  # player_name → {"score": int, "ab": int}
+
+    def bvp_score_from_rate(ab, hr):
+        """Score BvP factor 0-10 based on HR/AB rate."""
+        if ab < 10:
+            return 5  # neutral for small sample
+        rate = hr / ab if ab > 0 else 0
+        if rate >= 0.15:
+            return 10
+        if rate >= 0.10:
+            return 8
+        if rate >= 0.05:
+            return 6
+        if rate >= 0.01:
+            return 4
+        return 2
+
+    bvp_fetched = 0
+    bvp_errors = 0
+    for p in active:
+        batter_mlb_id = batter_id_by_name.get(p["n"])
+        if not batter_mlb_id:
+            continue
+        game = next((g for g in sched if g.get("homeTeam") == p["t"] or g.get("awayTeam") == p["t"]), None)
+        if not game:
+            continue
+        is_home = game.get("homeTeam") == p["t"]
+        pitcher_id = game.get("_awayPitcherId") if is_home else game.get("_homePitcherId")
+        if not pitcher_id:
+            continue
+        try:
+            bvp_url = (
+                f"https://statsapi.mlb.com/api/v1/people/{batter_mlb_id}/stats"
+                f"?stats=vsPlayer&opposingPlayerId={pitcher_id}&group=hitting"
+            )
+            req = urllib.request.Request(bvp_url, headers={"User-Agent": "HRScout/1.0"})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                bvp_data = json.loads(resp.read())
+            splits = bvp_data.get("stats", [{}])[0].get("splits", [])
+            total_ab = sum(s.get("stat", {}).get("atBats", 0) for s in splits)
+            total_hr = sum(s.get("stat", {}).get("homeRuns", 0) for s in splits)
+            bvp_map[p["n"]] = {"score": bvp_score_from_rate(total_ab, total_hr), "ab": total_ab}
+            bvp_fetched += 1
+        except Exception:
+            bvp_errors += 1
+
+    print(f"  ✅ BvP fetched for {bvp_fetched} batters ({bvp_errors} errors)\n")
+
     # ── STAGE 7: Score & rank ──
     print("🏆 Stage 7: Computing scores...")
 
@@ -998,6 +1051,10 @@ def main():
         hr26 = recent.get("hr26", 0) if isinstance(recent, dict) else 0
         gp26 = recent.get("gp26", 0) if isinstance(recent, dict) else 0
 
+        bvp = bvp_map.get(p["n"], {"score": 5, "ab": 0})
+        bvp_sc = bvp["score"]
+        bvp_ab = bvp["ab"]
+
         factors = {
             "homeAway": 5 if is_home else 2,
             "ballpark": park,
@@ -1010,6 +1067,7 @@ def main():
             "recent5": recent5_sc(r5),
             "recent10": recent10_sc(r10),
             "seasonGap": gap_score(hr26, gp26, p["hr25"]),
+            "bvp": bvp_sc,
         }
 
         # Flags
@@ -1037,6 +1095,8 @@ def main():
             },
             "xhrScore": xhr_score,
             "evScore": ev_score,
+            "bvpScore": bvp_sc,
+            "bvpAb": bvp_ab,
             "recent": {"r5": r5, "r10": r10},
             "flags": flags,
         })

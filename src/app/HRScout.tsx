@@ -77,6 +77,8 @@ interface Data {
     windInfo: { speed: number; deg: number; score: number; isDome: boolean };
     xhrScore: number;
     evScore: number;
+    bvpScore: number;
+    bvpAb: number;
     recent: { r5: number; r10: number };
     flags?: string[];
   }>;
@@ -476,7 +478,7 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                   </div>
                 </div>
                 <div style={{overflowX:"auto",background:"#060a0c",WebkitOverflowScrolling:"touch"} as React.CSSProperties}>
-                <table style={{...S.tbl,minWidth:"900px"}}>
+                <table style={{...S.tbl,minWidth:"960px"}}>
                   <thead>
                     <tr>
                       <th style={{...S.th,textAlign:"center"}}>#</th>
@@ -486,6 +488,7 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                       <th style={S.th}>xHR</th>
                       <th style={S.th}>Pitcher HR/9</th>
                       <th style={S.th}>Wind 🌬️</th>
+                      <th style={S.th}>BvP</th>
                       <th style={S.th}>EV Trend</th>
                       <th style={S.th}>Recent 5/10</th>
                       <th style={{...S.th,textAlign:"right"}}>Score</th>
@@ -528,6 +531,10 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                                 {p.windInfo.speed.toFixed(0)}mph · {p.windInfo.score}/10
                               </span>
                           }
+                        </td>
+                        <td style={S.td}>
+                          <div style={{color:scoreColor(p.bvpScore),fontSize:"12px",fontWeight:"600"}}>{p.bvpScore}/10</div>
+                          <div style={{fontSize:"10px",color:"#475569"}}>{p.bvpAb > 0 ? `(${p.bvpAb} AB)` : "(n/a)"}</div>
                         </td>
                         <td style={S.td}>
                           <span style={{color:p.evScore>=6?"#86efac":p.evScore<=4?"#f87171":"#94a3b8",fontSize:"12px"}}>
