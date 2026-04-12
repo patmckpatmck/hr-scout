@@ -119,7 +119,6 @@ function applyTeamCap<T extends { team: string }>(
   type R = T & { _capped?: boolean };
   const normalize = (t: string | undefined | null) => (t || "").trim().toUpperCase();
   const result: R[] = [];
-  const deferred: T[] = [];
   const teamCount: Record<string, { top10: number; top20: number }> = {};
   const counts = (team: string) => {
     const key = normalize(team);
@@ -127,41 +126,49 @@ function applyTeamCap<T extends { team: string }>(
     return teamCount[key];
   };
 
-  // Pass 1: walk the sorted players in score order. Place each one if their
-  // tier's cap allows; otherwise defer them.
-  for (const p of players) {
-    const slot = result.length + 1; // 1-indexed display position
+  // Single-pass sequential placement: walk all players in score order.
+  // Try to place each one; if their team's cap for the current zone is full,
+  // add them to deferred. After each successful placement, drain deferred
+  // into any newly-opened zone slots.
+  const deferred: T[] = [];
+
+  const tryPlace = (p: T, capped: boolean): boolean => {
+    const slot = result.length + 1;
+    if (slot > 20) return false;
     const c = counts(p.team);
-    if (slot <= 10) {
-      if (c.top10 < 2) { result.push(p); c.top10 += 1; }
-      else { deferred.push(p); }
-    } else if (slot <= 20) {
-      if (c.top20 < 2) { result.push(p); c.top20 += 1; }
-      else { deferred.push(p); }
-    } else {
+    const zone = slot <= 10 ? "top10" : "top20";
+    if (c[zone] >= 2) return false;
+    result.push(capped ? { ...p, _capped: true } as R : p as R);
+    c[zone] += 1;
+    return true;
+  };
+
+  const drainDeferred = () => {
+    let placed = true;
+    while (placed && deferred.length > 0 && result.length < 20) {
+      placed = false;
+      for (let i = 0; i < deferred.length; i++) {
+        if (tryPlace(deferred[i], true)) {
+          deferred.splice(i, 1);
+          placed = true;
+          break;
+        }
+      }
+    }
+  };
+
+  for (const p of players) {
+    if (result.length >= 20) {
+      deferred.push(p);
+      continue;
+    }
+    if (!tryPlace(p, false)) {
       deferred.push(p);
     }
+    drainDeferred();
   }
 
-  // Pass 2: walk deferred players (still in score order) and place any that
-  // fit into the tier still being filled. These are flagged _capped because
-  // their raw score earned a higher position but their team was full.
-  const stillDeferred: R[] = [];
-  for (const p of deferred) {
-    const slot = result.length + 1;
-    const c = counts(p.team);
-    if (slot <= 10 && c.top10 < 2) {
-      result.push({ ...p, _capped: true } as R);
-      c.top10 += 1;
-    } else if (slot > 10 && slot <= 20 && c.top20 < 2) {
-      result.push({ ...p, _capped: true } as R);
-      c.top20 += 1;
-    } else {
-      stillDeferred.push(p as R);
-    }
-  }
-
-  return [...result, ...stillDeferred];
+  return [...result, ...deferred as R[]];
 }
 
 const HR_STORAGE_KEY = "hrScout:hitHR";
@@ -267,7 +274,8 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
   // Rankings table JSX. No further sort/filter happens after it.
   const cappedPlayers = useMemo(() => {
     const raw = data?.players || [];
-    const sorted = [...raw].sort((a, b) => b.score - a.score);
+    const noIL = raw.filter(p => !p.flags?.includes("IL"));
+    const sorted = [...noIL].sort((a, b) => b.score - a.score);
     // STEP 1 — diagnostic: log raw team strings before the cap runs
     if (typeof window !== "undefined" && sorted.length > 0) {
       console.log("[applyTeamCap] RAW top 10 (BEFORE cap) — exact team strings:");
