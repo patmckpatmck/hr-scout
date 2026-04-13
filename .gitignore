@@ -40,6 +40,9 @@ yarn-error.log*
 public/data.json
 public/history.json
 
+# local odds file (manually edited, never pushed)
+data/todays_odds.json
+
 # vercel
 .vercel
 

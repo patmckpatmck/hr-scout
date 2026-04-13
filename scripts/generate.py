@@ -1103,6 +1103,53 @@ def main():
 
     scored.sort(key=lambda x: x["score"], reverse=True)
 
+    # ── STAGE 8: Apply committed FD odds ──
+    print("💰 Stage 8: Applying FanDuel odds from todays_odds.json...")
+
+    def vegas_modifier(odds_val):
+        if odds_val <= 200:
+            return 0.5
+        if odds_val <= 400:
+            return 0
+        if odds_val <= 600:
+            return -0.3
+        return -0.5
+
+    odds_map = {}
+    odds_path = Path(__file__).resolve().parent.parent / "data" / "todays_odds.json"
+    today_iso = datetime.now().strftime("%Y-%m-%d")
+    try:
+        if odds_path.exists():
+            odds_data = json.loads(odds_path.read_text())
+            if odds_data.get("date") == today_iso:
+                odds_map = odds_data.get("odds", {})
+                print(f"  📋 Loaded {len(odds_map)} odds entries for {today_iso}")
+            else:
+                print(f"  ⚠️ Date mismatch: file has {odds_data.get('date')}, today is {today_iso} — skipping")
+        else:
+            print("  ⚠️ todays_odds.json not found — all players get base score as adjScore")
+    except Exception as e:
+        print(f"  ⚠️ Failed to read todays_odds.json: {e}")
+
+    odds_matched = 0
+    for player in scored:
+        odds_str = odds_map.get(player["name"])
+        if odds_str:
+            try:
+                parsed = int(odds_str.replace("+", "").strip())
+                mod = vegas_modifier(parsed)
+                player["adjScore"] = round(player["score"] + mod, 2)
+                player["fdOdds"] = odds_str
+                odds_matched += 1
+            except (ValueError, TypeError):
+                player["adjScore"] = player["score"]
+                player["fdOdds"] = None
+        else:
+            player["adjScore"] = player["score"]
+            player["fdOdds"] = None
+
+    print(f"  ✅ Applied odds for {odds_matched}/{len(scored)} players\n")
+
     # Strip internal-only fields from schedule before output
     clean_sched = [
         {k: v for k, v in g.items() if not k.startswith("_")}

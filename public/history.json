@@ -12292,5 +12292,1208 @@
         "hitHR": false
       }
     ]
+  },
+  {
+    "date": "April 13, 2026",
+    "generatedAt": "2026-04-13T08:48:39.046618",
+    "players": [
+      {
+        "name": "Nick Kurtz",
+        "team": "ATH",
+        "rank": 1,
+        "score": 8.83,
+        "hitHR": false
+      },
+      {
+        "name": "Gunnar Henderson",
+        "team": "BAL",
+        "rank": 2,
+        "score": 8.56,
+        "hitHR": false
+      },
+      {
+        "name": "Cal Raleigh",
+        "team": "SEA",
+        "rank": 3,
+        "score": 8.25,
+        "hitHR": false
+      },
+      {
+        "name": "Tyler Soderstrom",
+        "team": "ATH",
+        "rank": 4,
+        "score": 8.23,
+        "hitHR": false
+      },
+      {
+        "name": "Julio Rodríguez",
+        "team": "SEA",
+        "rank": 5,
+        "score": 8.18,
+        "hitHR": false
+      },
+      {
+        "name": "Taylor Ward",
+        "team": "BAL",
+        "rank": 6,
+        "score": 8.12,
+        "hitHR": false
+      },
+      {
+        "name": "Pete Alonso",
+        "team": "BAL",
+        "rank": 7,
+        "score": 8.05,
+        "hitHR": false
+      },
+      {
+        "name": "Juan Soto",
+        "team": "NYM",
+        "rank": 8,
+        "score": 7.92,
+        "hitHR": false
+      },
+      {
+        "name": "Max Muncy",
+        "team": "LAD",
+        "rank": 9,
+        "score": 7.88,
+        "hitHR": false
+      },
+      {
+        "name": "Shea Langeliers",
+        "team": "ATH",
+        "rank": 10,
+        "score": 7.86,
+        "hitHR": false
+      },
+      {
+        "name": "Matt Olson",
+        "team": "ATL",
+        "rank": 11,
+        "score": 7.76,
+        "hitHR": false
+      },
+      {
+        "name": "Kyle Schwarber",
+        "team": "PHI",
+        "rank": 12,
+        "score": 7.76,
+        "hitHR": false
+      },
+      {
+        "name": "Ben Rice",
+        "team": "NYY",
+        "rank": 13,
+        "score": 7.72,
+        "hitHR": false
+      },
+      {
+        "name": "Trent Grisham",
+        "team": "NYY",
+        "rank": 14,
+        "score": 7.72,
+        "hitHR": false
+      },
+      {
+        "name": "Shohei Ohtani",
+        "team": "LAD",
+        "rank": 15,
+        "score": 7.65,
+        "hitHR": false
+      },
+      {
+        "name": "Teoscar Hernández",
+        "team": "LAD",
+        "rank": 16,
+        "score": 7.6,
+        "hitHR": false
+      },
+      {
+        "name": "Ronald Acuña Jr.",
+        "team": "ATL",
+        "rank": 17,
+        "score": 7.59,
+        "hitHR": false
+      },
+      {
+        "name": "Colton Cowser",
+        "team": "BAL",
+        "rank": 18,
+        "score": 7.59,
+        "hitHR": false
+      },
+      {
+        "name": "Aaron Judge",
+        "team": "NYY",
+        "rank": 19,
+        "score": 7.55,
+        "hitHR": false
+      },
+      {
+        "name": "Brent Rooker",
+        "team": "ATH",
+        "rank": 20,
+        "score": 7.55,
+        "hitHR": false
+      },
+      {
+        "name": "Cody Bellinger",
+        "team": "NYY",
+        "rank": 21,
+        "score": 7.55,
+        "hitHR": false
+      },
+      {
+        "name": "Jazz Chisholm Jr.",
+        "team": "NYY",
+        "rank": 22,
+        "score": 7.55,
+        "hitHR": false
+      },
+      {
+        "name": "Randy Arozarena",
+        "team": "SEA",
+        "rank": 23,
+        "score": 7.5,
+        "hitHR": false
+      },
+      {
+        "name": "Samuel Basallo",
+        "team": "BAL",
+        "rank": 24,
+        "score": 7.45,
+        "hitHR": false
+      },
+      {
+        "name": "Josh Naylor",
+        "team": "SEA",
+        "rank": 25,
+        "score": 7.42,
+        "hitHR": false
+      },
+      {
+        "name": "Francisco Lindor",
+        "team": "NYM",
+        "rank": 26,
+        "score": 7.37,
+        "hitHR": false
+      },
+      {
+        "name": "Jordan Walker",
+        "team": "STL",
+        "rank": 27,
+        "score": 7.33,
+        "hitHR": false
+      },
+      {
+        "name": "Austin Wells",
+        "team": "NYY",
+        "rank": 28,
+        "score": 7.33,
+        "hitHR": false
+      },
+      {
+        "name": "Jackson Holliday",
+        "team": "BAL",
+        "rank": 29,
+        "score": 7.3,
+        "hitHR": false
+      },
+      {
+        "name": "Adley Rutschman",
+        "team": "BAL",
+        "rank": 30,
+        "score": 7.28,
+        "hitHR": false
+      },
+      {
+        "name": "Ryan McMahon",
+        "team": "NYY",
+        "rank": 31,
+        "score": 7.27,
+        "hitHR": false
+      },
+      {
+        "name": "Brandon Nimmo",
+        "team": "TEX",
+        "rank": 32,
+        "score": 7.25,
+        "hitHR": false
+      },
+      {
+        "name": "José Ramírez",
+        "team": "CLE",
+        "rank": 33,
+        "score": 7.25,
+        "hitHR": false
+      },
+      {
+        "name": "Bryce Harper",
+        "team": "PHI",
+        "rank": 34,
+        "score": 7.22,
+        "hitHR": false
+      },
+      {
+        "name": "Oneil Cruz",
+        "team": "PIT",
+        "rank": 35,
+        "score": 7.21,
+        "hitHR": false
+      },
+      {
+        "name": "Pete Crow-Armstrong",
+        "team": "CHC",
+        "rank": 36,
+        "score": 7.2,
+        "hitHR": false
+      },
+      {
+        "name": "Jorge Polanco",
+        "team": "NYM",
+        "rank": 37,
+        "score": 7.2,
+        "hitHR": false
+      },
+      {
+        "name": "Corbin Carroll",
+        "team": "AZ",
+        "rank": 38,
+        "score": 7.18,
+        "hitHR": false
+      },
+      {
+        "name": "Dalton Rushing",
+        "team": "LAD",
+        "rank": 39,
+        "score": 7.15,
+        "hitHR": false
+      },
+      {
+        "name": "Byron Buxton",
+        "team": "MIN",
+        "rank": 40,
+        "score": 7.14,
+        "hitHR": false
+      },
+      {
+        "name": "Dansby Swanson",
+        "team": "CHC",
+        "rank": 41,
+        "score": 7.13,
+        "hitHR": false
+      },
+      {
+        "name": "Ryan Mountcastle",
+        "team": "BAL",
+        "rank": 42,
+        "score": 7.11,
+        "hitHR": false
+      },
+      {
+        "name": "Anthony Volpe",
+        "team": "NYY",
+        "rank": 43,
+        "score": 7.11,
+        "hitHR": false
+      },
+      {
+        "name": "Michael Harris II",
+        "team": "ATL",
+        "rank": 44,
+        "score": 7.1,
+        "hitHR": false
+      },
+      {
+        "name": "Drake Baldwin",
+        "team": "ATL",
+        "rank": 45,
+        "score": 7.07,
+        "hitHR": false
+      },
+      {
+        "name": "Moisés Ballesteros",
+        "team": "CHC",
+        "rank": 46,
+        "score": 7.04,
+        "hitHR": false
+      },
+      {
+        "name": "Dominic Smith",
+        "team": "ATL",
+        "rank": 47,
+        "score": 7.01,
+        "hitHR": false
+      },
+      {
+        "name": "Brandon Lowe",
+        "team": "PIT",
+        "rank": 48,
+        "score": 7.0,
+        "hitHR": false
+      },
+      {
+        "name": "Dylan Beavers",
+        "team": "BAL",
+        "rank": 49,
+        "score": 7.0,
+        "hitHR": false
+      },
+      {
+        "name": "Andy Pages",
+        "team": "LAD",
+        "rank": 50,
+        "score": 6.99,
+        "hitHR": false
+      },
+      {
+        "name": "Zach Neto",
+        "team": "LAA",
+        "rank": 51,
+        "score": 6.93,
+        "hitHR": false
+      },
+      {
+        "name": "Seiya Suzuki",
+        "team": "CHC",
+        "rank": 52,
+        "score": 6.93,
+        "hitHR": false
+      },
+      {
+        "name": "Yordan Alvarez",
+        "team": "HOU",
+        "rank": 53,
+        "score": 6.92,
+        "hitHR": false
+      },
+      {
+        "name": "Brendan Donovan",
+        "team": "SEA",
+        "rank": 54,
+        "score": 6.89,
+        "hitHR": false
+      },
+      {
+        "name": "Freddie Freeman",
+        "team": "LAD",
+        "rank": 55,
+        "score": 6.88,
+        "hitHR": false
+      },
+      {
+        "name": "Mike Trout",
+        "team": "LAA",
+        "rank": 56,
+        "score": 6.88,
+        "hitHR": false
+      },
+      {
+        "name": "Christian Walker",
+        "team": "HOU",
+        "rank": 57,
+        "score": 6.84,
+        "hitHR": false
+      },
+      {
+        "name": "Giancarlo Stanton",
+        "team": "NYY",
+        "rank": 58,
+        "score": 6.83,
+        "hitHR": false
+      },
+      {
+        "name": "Ozzie Albies",
+        "team": "ATL",
+        "rank": 59,
+        "score": 6.79,
+        "hitHR": false
+      },
+      {
+        "name": "Sean Murphy",
+        "team": "ATL",
+        "rank": 60,
+        "score": 6.79,
+        "hitHR": false
+      },
+      {
+        "name": "Adolis García",
+        "team": "PHI",
+        "rank": 61,
+        "score": 6.78,
+        "hitHR": false
+      },
+      {
+        "name": "Jo Adell",
+        "team": "LAA",
+        "rank": 62,
+        "score": 6.77,
+        "hitHR": false
+      },
+      {
+        "name": "Jorge Soler",
+        "team": "LAA",
+        "rank": 63,
+        "score": 6.76,
+        "hitHR": false
+      },
+      {
+        "name": "J.T. Realmuto",
+        "team": "PHI",
+        "rank": 64,
+        "score": 6.72,
+        "hitHR": false
+      },
+      {
+        "name": "Carlos Correa",
+        "team": "HOU",
+        "rank": 65,
+        "score": 6.7,
+        "hitHR": false
+      },
+      {
+        "name": "Kyle Manzardo",
+        "team": "CLE",
+        "rank": 66,
+        "score": 6.7,
+        "hitHR": false
+      },
+      {
+        "name": "Michael Busch",
+        "team": "CHC",
+        "rank": 67,
+        "score": 6.7,
+        "hitHR": false
+      },
+      {
+        "name": "Yainer Diaz",
+        "team": "HOU",
+        "rank": 68,
+        "score": 6.7,
+        "hitHR": false
+      },
+      {
+        "name": "Jorge Mateo",
+        "team": "ATL",
+        "rank": 69,
+        "score": 6.68,
+        "hitHR": false
+      },
+      {
+        "name": "Ildemaro Vargas",
+        "team": "AZ",
+        "rank": 70,
+        "score": 6.68,
+        "hitHR": false
+      },
+      {
+        "name": "Ian Happ",
+        "team": "CHC",
+        "rank": 71,
+        "score": 6.65,
+        "hitHR": false
+      },
+      {
+        "name": "Ketel Marte",
+        "team": "AZ",
+        "rank": 72,
+        "score": 6.65,
+        "hitHR": false
+      },
+      {
+        "name": "Kyle Tucker",
+        "team": "LAD",
+        "rank": 73,
+        "score": 6.65,
+        "hitHR": false
+      },
+      {
+        "name": "Logan O'Hoppe",
+        "team": "LAA",
+        "rank": 74,
+        "score": 6.65,
+        "hitHR": false
+      },
+      {
+        "name": "Lawrence Butler",
+        "team": "ATH",
+        "rank": 75,
+        "score": 6.63,
+        "hitHR": false
+      },
+      {
+        "name": "Agustín Ramírez",
+        "team": "MIA",
+        "rank": 76,
+        "score": 6.63,
+        "hitHR": false
+      },
+      {
+        "name": "Wyatt Langford",
+        "team": "TEX",
+        "rank": 77,
+        "score": 6.6,
+        "hitHR": false
+      },
+      {
+        "name": "Corey Seager",
+        "team": "TEX",
+        "rank": 78,
+        "score": 6.59,
+        "hitHR": false
+      },
+      {
+        "name": "Isaac Paredes",
+        "team": "HOU",
+        "rank": 79,
+        "score": 6.59,
+        "hitHR": false
+      },
+      {
+        "name": "Mauricio Dubón",
+        "team": "ATL",
+        "rank": 80,
+        "score": 6.57,
+        "hitHR": false
+      },
+      {
+        "name": "Gabriel Moreno",
+        "team": "AZ",
+        "rank": 81,
+        "score": 6.57,
+        "hitHR": false
+      },
+      {
+        "name": "Dominic Canzone",
+        "team": "SEA",
+        "rank": 82,
+        "score": 6.55,
+        "hitHR": false
+      },
+      {
+        "name": "Cole Young",
+        "team": "SEA",
+        "rank": 83,
+        "score": 6.55,
+        "hitHR": false
+      },
+      {
+        "name": "Ezequiel Duran",
+        "team": "TEX",
+        "rank": 84,
+        "score": 6.53,
+        "hitHR": false
+      },
+      {
+        "name": "Brett Baty",
+        "team": "NYM",
+        "rank": 85,
+        "score": 6.48,
+        "hitHR": false
+      },
+      {
+        "name": "Brandon Marsh",
+        "team": "PHI",
+        "rank": 86,
+        "score": 6.45,
+        "hitHR": false
+      },
+      {
+        "name": "Jordan Lawlar",
+        "team": "AZ",
+        "rank": 87,
+        "score": 6.45,
+        "hitHR": false
+      },
+      {
+        "name": "Tyler O'Neill",
+        "team": "BAL",
+        "rank": 88,
+        "score": 6.45,
+        "hitHR": false
+      },
+      {
+        "name": "Alec Burleson",
+        "team": "STL",
+        "rank": 89,
+        "score": 6.44,
+        "hitHR": false
+      },
+      {
+        "name": "Mookie Betts",
+        "team": "LAD",
+        "rank": 90,
+        "score": 6.43,
+        "hitHR": false
+      },
+      {
+        "name": "Josh Lowe",
+        "team": "LAA",
+        "rank": 91,
+        "score": 6.43,
+        "hitHR": false
+      },
+      {
+        "name": "Marcell Ozuna",
+        "team": "PIT",
+        "rank": 92,
+        "score": 6.43,
+        "hitHR": false
+      },
+      {
+        "name": "Evan Carter",
+        "team": "TEX",
+        "rank": 93,
+        "score": 6.42,
+        "hitHR": false
+      },
+      {
+        "name": "Francisco Alvarez",
+        "team": "NYM",
+        "rank": 94,
+        "score": 6.37,
+        "hitHR": false
+      },
+      {
+        "name": "Spencer Horwitz",
+        "team": "PIT",
+        "rank": 95,
+        "score": 6.37,
+        "hitHR": false
+      },
+      {
+        "name": "James Wood",
+        "team": "WSH",
+        "rank": 96,
+        "score": 6.35,
+        "hitHR": false
+      },
+      {
+        "name": "Rafael Marchán",
+        "team": "PHI",
+        "rank": 97,
+        "score": 6.34,
+        "hitHR": false
+      },
+      {
+        "name": "Luke Raley",
+        "team": "SEA",
+        "rank": 98,
+        "score": 6.33,
+        "hitHR": false
+      },
+      {
+        "name": "Yoán Moncada",
+        "team": "LAA",
+        "rank": 99,
+        "score": 6.32,
+        "hitHR": false
+      },
+      {
+        "name": "Kyle Higashioka",
+        "team": "TEX",
+        "rank": 100,
+        "score": 6.31,
+        "hitHR": false
+      },
+      {
+        "name": "Ryan Jeffers",
+        "team": "MIN",
+        "rank": 101,
+        "score": 6.31,
+        "hitHR": false
+      },
+      {
+        "name": "Amed Rosario",
+        "team": "NYY",
+        "rank": 102,
+        "score": 6.27,
+        "hitHR": false
+      },
+      {
+        "name": "Paul Goldschmidt",
+        "team": "NYY",
+        "rank": 103,
+        "score": 6.27,
+        "hitHR": false
+      },
+      {
+        "name": "Kyle Stowers",
+        "team": "MIA",
+        "rank": 104,
+        "score": 6.24,
+        "hitHR": false
+      },
+      {
+        "name": "Iván Herrera",
+        "team": "STL",
+        "rank": 105,
+        "score": 6.22,
+        "hitHR": false
+      },
+      {
+        "name": "Geraldo Perdomo",
+        "team": "AZ",
+        "rank": 106,
+        "score": 6.18,
+        "hitHR": false
+      },
+      {
+        "name": "Luis Robert Jr.",
+        "team": "NYM",
+        "rank": 107,
+        "score": 6.14,
+        "hitHR": false
+      },
+      {
+        "name": "Chase DeLauter",
+        "team": "CLE",
+        "rank": 108,
+        "score": 6.09,
+        "hitHR": false
+      },
+      {
+        "name": "Gabriel Arias",
+        "team": "CLE",
+        "rank": 109,
+        "score": 6.09,
+        "hitHR": false
+      },
+      {
+        "name": "Tristan Gray",
+        "team": "MIN",
+        "rank": 110,
+        "score": 6.09,
+        "hitHR": false
+      },
+      {
+        "name": "Brooks Lee",
+        "team": "MIN",
+        "rank": 111,
+        "score": 6.09,
+        "hitHR": false
+      },
+      {
+        "name": "Andrew McCutchen",
+        "team": "TEX",
+        "rank": 112,
+        "score": 6.09,
+        "hitHR": false
+      },
+      {
+        "name": "Masyn Winn",
+        "team": "STL",
+        "rank": 113,
+        "score": 6.06,
+        "hitHR": false
+      },
+      {
+        "name": "Nolan Arenado",
+        "team": "STL",
+        "rank": 114,
+        "score": 6.06,
+        "hitHR": false
+      },
+      {
+        "name": "Willson Contreras",
+        "team": "BOS",
+        "rank": 115,
+        "score": 6.05,
+        "hitHR": false
+      },
+      {
+        "name": "Ke'Bryan Hayes",
+        "team": "PIT",
+        "rank": 116,
+        "score": 6.04,
+        "hitHR": false
+      },
+      {
+        "name": "Josh Bell",
+        "team": "MIN",
+        "rank": 117,
+        "score": 6.03,
+        "hitHR": false
+      },
+      {
+        "name": "Jake Meyers",
+        "team": "HOU",
+        "rank": 118,
+        "score": 6.03,
+        "hitHR": false
+      },
+      {
+        "name": "Marcus Semien",
+        "team": "NYM",
+        "rank": 119,
+        "score": 6.03,
+        "hitHR": false
+      },
+      {
+        "name": "Oswald Peraza",
+        "team": "LAA",
+        "rank": 120,
+        "score": 5.99,
+        "hitHR": false
+      },
+      {
+        "name": "Steven Kwan",
+        "team": "CLE",
+        "rank": 121,
+        "score": 5.98,
+        "hitHR": false
+      },
+      {
+        "name": "Bo Naylor",
+        "team": "CLE",
+        "rank": 122,
+        "score": 5.98,
+        "hitHR": false
+      },
+      {
+        "name": "Jake Burger",
+        "team": "TEX",
+        "rank": 123,
+        "score": 5.97,
+        "hitHR": false
+      },
+      {
+        "name": "Owen Caissie",
+        "team": "MIA",
+        "rank": 124,
+        "score": 5.96,
+        "hitHR": false
+      },
+      {
+        "name": "Griffin Conine",
+        "team": "MIA",
+        "rank": 125,
+        "score": 5.96,
+        "hitHR": false
+      },
+      {
+        "name": "Otto Lopez",
+        "team": "MIA",
+        "rank": 126,
+        "score": 5.96,
+        "hitHR": false
+      },
+      {
+        "name": "Jose Altuve",
+        "team": "HOU",
+        "rank": 127,
+        "score": 5.94,
+        "hitHR": false
+      },
+      {
+        "name": "Ceddanne Rafaela",
+        "team": "BOS",
+        "rank": 128,
+        "score": 5.94,
+        "hitHR": false
+      },
+      {
+        "name": "Bryan Reynolds",
+        "team": "PIT",
+        "rank": 129,
+        "score": 5.93,
+        "hitHR": false
+      },
+      {
+        "name": "Alex Freeland",
+        "team": "LAD",
+        "rank": 130,
+        "score": 5.93,
+        "hitHR": false
+      },
+      {
+        "name": "Carson Benge",
+        "team": "NYM",
+        "rank": 131,
+        "score": 5.92,
+        "hitHR": false
+      },
+      {
+        "name": "Kody Clemens",
+        "team": "MIN",
+        "rank": 132,
+        "score": 5.92,
+        "hitHR": false
+      },
+      {
+        "name": "Brice Matthews",
+        "team": "HOU",
+        "rank": 133,
+        "score": 5.92,
+        "hitHR": false
+      },
+      {
+        "name": "Tyrone Taylor",
+        "team": "NYM",
+        "rank": 134,
+        "score": 5.92,
+        "hitHR": false
+      },
+      {
+        "name": "Connor Norby",
+        "team": "MIA",
+        "rank": 135,
+        "score": 5.91,
+        "hitHR": false
+      },
+      {
+        "name": "CJ Kayfus",
+        "team": "CLE",
+        "rank": 136,
+        "score": 5.87,
+        "hitHR": false
+      },
+      {
+        "name": "Angel Martínez",
+        "team": "CLE",
+        "rank": 137,
+        "score": 5.87,
+        "hitHR": false
+      },
+      {
+        "name": "Danny Jansen",
+        "team": "TEX",
+        "rank": 138,
+        "score": 5.86,
+        "hitHR": false
+      },
+      {
+        "name": "Joc Pederson",
+        "team": "TEX",
+        "rank": 139,
+        "score": 5.86,
+        "hitHR": false
+      },
+      {
+        "name": "Ryan O'Hearn",
+        "team": "PIT",
+        "rank": 140,
+        "score": 5.82,
+        "hitHR": false
+      },
+      {
+        "name": "Will Smith",
+        "team": "LAD",
+        "rank": 141,
+        "score": 5.82,
+        "hitHR": false
+      },
+      {
+        "name": "Matt Wallner",
+        "team": "MIN",
+        "rank": 142,
+        "score": 5.81,
+        "hitHR": false
+      },
+      {
+        "name": "Trevor Story",
+        "team": "BOS",
+        "rank": 143,
+        "score": 5.81,
+        "hitHR": false
+      },
+      {
+        "name": "Jose Fernandez",
+        "team": "AZ",
+        "rank": 144,
+        "score": 5.79,
+        "hitHR": false
+      },
+      {
+        "name": "Wilyer Abreu",
+        "team": "BOS",
+        "rank": 145,
+        "score": 5.78,
+        "hitHR": false
+      },
+      {
+        "name": "Nathan Church",
+        "team": "STL",
+        "rank": 146,
+        "score": 5.78,
+        "hitHR": false
+      },
+      {
+        "name": "Cam Smith",
+        "team": "HOU",
+        "rank": 147,
+        "score": 5.76,
+        "hitHR": false
+      },
+      {
+        "name": "Nolan Schanuel",
+        "team": "LAA",
+        "rank": 148,
+        "score": 5.76,
+        "hitHR": false
+      },
+      {
+        "name": "Keibert Ruiz",
+        "team": "WSH",
+        "rank": 149,
+        "score": 5.76,
+        "hitHR": false
+      },
+      {
+        "name": "Brayan Rocchio",
+        "team": "CLE",
+        "rank": 150,
+        "score": 5.75,
+        "hitHR": false
+      },
+      {
+        "name": "Xavier Edwards",
+        "team": "MIA",
+        "rank": 151,
+        "score": 5.74,
+        "hitHR": false
+      },
+      {
+        "name": "CJ Abrams",
+        "team": "WSH",
+        "rank": 152,
+        "score": 5.72,
+        "hitHR": false
+      },
+      {
+        "name": "Matt Shaw",
+        "team": "CHC",
+        "rank": 153,
+        "score": 5.7,
+        "hitHR": false
+      },
+      {
+        "name": "Nico Hoerner",
+        "team": "CHC",
+        "rank": 154,
+        "score": 5.7,
+        "hitHR": false
+      },
+      {
+        "name": "Alec Bohm",
+        "team": "PHI",
+        "rank": 155,
+        "score": 5.67,
+        "hitHR": false
+      },
+      {
+        "name": "Marcelo Mayer",
+        "team": "BOS",
+        "rank": 156,
+        "score": 5.61,
+        "hitHR": false
+      },
+      {
+        "name": "Miguel Amaya",
+        "team": "CHC",
+        "rank": 157,
+        "score": 5.59,
+        "hitHR": false
+      },
+      {
+        "name": "Ramón Urías",
+        "team": "STL",
+        "rank": 158,
+        "score": 5.56,
+        "hitHR": false
+      },
+      {
+        "name": "Royce Lewis",
+        "team": "MIN",
+        "rank": 159,
+        "score": 5.53,
+        "hitHR": false
+      },
+      {
+        "name": "Luke Keaschall",
+        "team": "MIN",
+        "rank": 160,
+        "score": 5.53,
+        "hitHR": false
+      },
+      {
+        "name": "Kristian Campbell",
+        "team": "BOS",
+        "rank": 161,
+        "score": 5.52,
+        "hitHR": false
+      },
+      {
+        "name": "Pedro Pagés",
+        "team": "STL",
+        "rank": 162,
+        "score": 5.5,
+        "hitHR": false
+      },
+      {
+        "name": "Dylan Crews",
+        "team": "WSH",
+        "rank": 163,
+        "score": 5.43,
+        "hitHR": false
+      },
+      {
+        "name": "Liam Hicks",
+        "team": "MIA",
+        "rank": 164,
+        "score": 5.41,
+        "hitHR": false
+      },
+      {
+        "name": "Alex Bregman",
+        "team": "CHC",
+        "rank": 165,
+        "score": 5.37,
+        "hitHR": false
+      },
+      {
+        "name": "Nolan Gorman",
+        "team": "STL",
+        "rank": 166,
+        "score": 5.33,
+        "hitHR": false
+      },
+      {
+        "name": "Roman Anthony",
+        "team": "BOS",
+        "rank": 167,
+        "score": 5.33,
+        "hitHR": false
+      },
+      {
+        "name": "Curtis Mead",
+        "team": "WSH",
+        "rank": 168,
+        "score": 5.21,
+        "hitHR": false
+      },
+      {
+        "name": "Brady House",
+        "team": "WSH",
+        "rank": 169,
+        "score": 5.09,
+        "hitHR": false
+      },
+      {
+        "name": "Joey Wiemer",
+        "team": "WSH",
+        "rank": 170,
+        "score": 5.09,
+        "hitHR": false
+      },
+      {
+        "name": "Luis García Jr.",
+        "team": "WSH",
+        "rank": 171,
+        "score": 5.09,
+        "hitHR": false
+      }
+    ]
   }
 ]

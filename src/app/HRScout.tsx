@@ -79,6 +79,8 @@ interface Data {
     evScore: number;
     bvpScore: number;
     bvpAb: number;
+    adjScore: number;
+    fdOdds: string | null;
     recent: { r5: number; r10: number };
     flags?: string[];
   }>;
@@ -418,14 +420,8 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                   </thead>
                   <tbody>
                     {(() => {
-                      const top20 = cappedPlayers.slice(0, 20).map(p => {
-                        const raw = odds[p.name]?.replace(/[+\s]/g, "");
-                        const parsed = raw ? parseInt(raw, 10) : NaN;
-                        const hasOdds = !isNaN(parsed);
-                        const adjScore = hasOdds ? p.score + vegasModifier(parsed) : p.score;
-                        return { ...p, adjScore, hasOdds };
-                      });
-                      top20.sort((a, b) => b.adjScore - a.adjScore);
+                      const sorted = [...cappedPlayers].sort((a, b) => b.adjScore - a.adjScore);
+                      const top20 = applyTeamCap(sorted).slice(0, 20);
                       return top20.map((p, i) => (
                         <tr key={p.name+i} style={{background:i%2===0?"transparent":"#060d09"}}
                           onMouseEnter={e=>e.currentTarget.style.background="#0a1810"}
@@ -444,7 +440,7 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                           <td style={S.td}>
                             <div style={{textAlign:"right"}}>
                               <span style={{fontFamily:"'Bebas Neue',monospace",fontSize:"24px",fontWeight:"700",color:scoreColor(p.adjScore)}}>{p.adjScore.toFixed(2)}</span>
-                              {!p.hasOdds && <span style={{marginLeft:"4px",fontSize:"10px",color:"#475569"}} title="No odds entered — showing base score">*</span>}
+                              {!p.fdOdds && <span style={{marginLeft:"4px",fontSize:"10px",color:"#475569"}} title="No odds entered — showing base score">*</span>}
                             </div>
                           </td>
                         </tr>
@@ -554,7 +550,7 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                         </td>
                         <td style={{...S.td,...S.sc(p.score)}}>{p.score.toFixed(2)}</td>
                         <td style={{...S.td,textAlign:"center"}}>
-                          {i < 20 ? (
+                          {i < 30 ? (
                             <input
                               type="text"
                               placeholder="+350"
