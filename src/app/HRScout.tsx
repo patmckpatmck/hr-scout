@@ -203,7 +203,6 @@ const HistoryRow = memo(function HistoryRow({
   const resultTitle = !autoResulted ? "Pending — not yet auto-resulted" : hitHR ? "Hit a HR" : "Did not hit a HR";
   return (
     <tr style={{background: zebra ? "#060d09" : "transparent"}}>
-      <td style={HR_TD_DATE}>{date}</td>
       <td style={HR_TD_RANK}>{rank}</td>
       <td style={HR_TD}><span style={HR_NAME}>{name}</span></td>
       <td style={HR_TD}><span style={HR_BADGE}>{team}</span></td>
@@ -329,6 +328,33 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
         }))
     );
   }, [history, threshold]);
+
+  // Group history rows by date for accordion display
+  const historyGroups = useMemo(() => {
+    const sortedDays = [...history].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    return sortedDays.map(day => {
+      const players = day.players
+        .filter(p => p.score >= threshold)
+        .map(p => ({
+          name: p.name, team: p.team, rank: p.rank, score: p.score, date: day.date,
+          hitHR: p.hitHR, autoResulted: p.autoResulted ?? false,
+        }));
+      const resulted = players.filter(p => p.autoResulted);
+      const hrCount = resulted.filter(p => p.hitHR).length;
+      return { date: day.date, players, totalPlayers: players.length, hrCount };
+    });
+  }, [history, threshold]);
+
+  // Track which date groups are expanded — today open by default
+  const todayStr = data?.date || "";
+  const [openGroups, setOpenGroups] = useState<Record<string, boolean>>({});
+  const isGroupOpen = useCallback((date: string, state: Record<string, boolean>) => {
+    if (date in state) return state[date];
+    return date === todayStr;
+  }, [todayStr]);
+  const toggleGroup = useCallback((date: string) => {
+    setOpenGroups(prev => ({ ...prev, [date]: !isGroupOpen(date, prev) }));
+  }, [isGroupOpen]);
 
   const historyStats = useMemo(() => {
     // Only count rows that have been auto-resulted
@@ -636,34 +662,64 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                   {threshold > 0 && <span style={{fontSize:"11px",color:"#334155"}}>{historyRows.length} players shown</span>}
                 </div>
 
-                {/* Table */}
-                <table style={S.tbl}>
-                  <thead>
-                    <tr>
-                      <th style={S.th}>Date</th>
-                      <th style={{...S.th,textAlign:"center"}}>Rank</th>
-                      <th style={S.th}>Player</th>
-                      <th style={S.th}>Team</th>
-                      <th style={{...S.th,textAlign:"right"}}>Score</th>
-                      <th style={{...S.th,textAlign:"center"}}>Hit HR</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {historyRows.map((r, i) => (
-                      <HistoryRow
-                        key={`${r.date}-${r.name}`}
-                        date={r.date}
-                        name={r.name}
-                        team={r.team}
-                        rank={r.rank}
-                        score={r.score}
-                        hitHR={r.hitHR}
-                        autoResulted={r.autoResulted}
-                        zebra={i % 2 === 1}
-                      />
-                    ))}
-                  </tbody>
-                </table>
+                {/* Accordion by date */}
+                {historyGroups.map(group => {
+                  const open = isGroupOpen(group.date, openGroups);
+                  const hrLabel = group.hrCount > 0 ? `${group.hrCount} HR${group.hrCount !== 1 ? "s" : ""} ✅` : "0 HRs";
+                  // Format date for display — strip year, show short form
+                  const shortDate = group.date.replace(/, \d{4}$/, "");
+                  return (
+                    <div key={group.date} style={{marginBottom:"6px"}}>
+                      <button
+                        onClick={() => toggleGroup(group.date)}
+                        style={{
+                          width:"100%", display:"flex", alignItems:"center", justifyContent:"space-between",
+                          padding:"10px 14px", background: open ? "#0a1810" : "#060d09",
+                          border:"1px solid #0f2518", borderRadius: open ? "8px 8px 0 0" : "8px",
+                          cursor:"pointer", color:"#e2e8f0", outline:"none",
+                        }}
+                      >
+                        <div style={{display:"flex",alignItems:"center",gap:"10px"}}>
+                          <span style={{fontSize:"12px",color:"#475569",transition:"transform 0.15s",transform:open?"rotate(90deg)":"rotate(0deg)"}}>▶</span>
+                          <span style={{fontFamily:"'Bebas Neue',monospace",fontSize:"16px",color:"#e8e020",letterSpacing:"0.5px"}}>{shortDate}</span>
+                        </div>
+                        <span style={{fontSize:"11px",color:"#64748b"}}>
+                          {group.totalPlayers} player{group.totalPlayers !== 1 ? "s" : ""} · {hrLabel}
+                        </span>
+                      </button>
+                      {open && (
+                        <div style={{border:"1px solid #0f2518",borderTop:"none",borderRadius:"0 0 8px 8px",overflow:"hidden"}}>
+                          <table style={S.tbl}>
+                            <thead>
+                              <tr>
+                                <th style={{...S.th,textAlign:"center"}}>Rank</th>
+                                <th style={S.th}>Player</th>
+                                <th style={S.th}>Team</th>
+                                <th style={{...S.th,textAlign:"right"}}>Score</th>
+                                <th style={{...S.th,textAlign:"center"}}>Hit HR</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {group.players.map((r, i) => (
+                                <HistoryRow
+                                  key={`${r.date}-${r.name}`}
+                                  date={r.date}
+                                  name={r.name}
+                                  team={r.team}
+                                  rank={r.rank}
+                                  score={r.score}
+                                  hitHR={r.hitHR}
+                                  autoResulted={r.autoResulted}
+                                  zebra={i % 2 === 1}
+                                />
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
               </>
             )}
           </div>
