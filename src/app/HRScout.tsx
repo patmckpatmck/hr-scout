@@ -418,7 +418,7 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
       </div>
 
       <div style={S.tabs}>
-        {([["top20","🏆 Today's Top 20"],["scout","⚾ Rankings"],["history","📊 Previous HRs"],["matchups","🏟 Matchups"]] as const).map(([id,label])=>(
+        {([["top20","🏆 Today's Top 20"],["scout","⚾ Rankings"],["history","📊 Previous HRs"],["matchups","🏟 Matchups"],["golden","⭐ GOLDEN BALL"]] as const).map(([id,label])=>(
           <button key={id} style={S.tab(tab===id)} onClick={()=>setTab(id)}>{label}</button>
         ))}
       </div>
@@ -765,6 +765,63 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                   })}
                 </>
             }
+          </div>
+        )}
+
+        {/* ── GOLDEN BALL TAB ── */}
+        {tab==="golden" && (
+          <div>
+            {(() => {
+              const avg = parseFloat(historyStats.avgHit);
+              if (isNaN(avg)) {
+                return (
+                  <div style={{textAlign:"center",padding:"60px",color:"#1e3a2a",fontSize:"13px"}}>
+                    Not enough history data to compute avg score (hit).
+                  </div>
+                );
+              }
+              const lo = avg - 0.1;
+              const hi = avg + 0.1;
+              const matches = (data?.players || [])
+                .filter(p => p.score >= lo && p.score <= hi)
+                .sort((a, b) => b.score - a.score);
+              return (
+                <>
+                  <div style={{fontFamily:"'Bebas Neue',monospace",fontSize:"22px",color:"#e8e020",letterSpacing:"1px",marginBottom:"6px"}}>
+                    GOLDEN BALL
+                  </div>
+                  <div style={{fontSize:"12px",color:"#64748b",marginBottom:"18px"}}>
+                    Avg Score (Hit): <span style={{color:"#e8e020",fontWeight:"700"}}>{avg.toFixed(2)}</span> — showing players within ±0.1
+                  </div>
+                  {matches.length === 0 ? (
+                    <div style={{textAlign:"center",padding:"60px",color:"#1e3a2a",fontSize:"13px"}}>
+                      No players in range today
+                    </div>
+                  ) : (
+                    <table style={S.tbl}>
+                      <thead>
+                        <tr>
+                          <th style={{...S.th,textAlign:"center",width:"40px"}}>#</th>
+                          <th style={S.th}>Player</th>
+                          <th style={S.th}>Team</th>
+                          <th style={{...S.th,textAlign:"right"}}>Score</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {matches.map((p, i) => (
+                          <tr key={p.name} style={{background:i%2===0?"transparent":"#060d09"}}>
+                            <td style={{...S.td,...S.rank}}>{i+1}</td>
+                            <td style={S.td}><span style={{fontWeight:"600",fontSize:"13px"}}>{p.name}</span></td>
+                            <td style={S.td}><span style={S.badge}>{p.team}</span></td>
+                            <td style={{...S.td,...S.sc(p.score)}}>{p.score.toFixed(2)}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  )}
+                </>
+              );
+            })()}
           </div>
         )}
 
