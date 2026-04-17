@@ -1197,6 +1197,18 @@ def main():
                 "rank": i + 1,
                 "score": p["score"],
                 "hitHR": existing_hr.get(p["name"], False),
+                "home_away_score": p["factors"]["homeAway"],
+                "park_score": p["factors"]["ballpark"],
+                "pitcher_hand_split_score": p["factors"]["lhpVsRhp"],
+                "pitcher_hr9_score": p["factors"]["pitcherHR9"],
+                "bullpen_hr9_score": p["factors"]["bullpen"],
+                "xhr_score": p["factors"]["xhr"],
+                "season_hr_score": p["factors"]["hr2025"],
+                "wind_score": p["factors"]["wind"],
+                "bvp_score": p["factors"]["bvp"],
+                "recent_5_score": p["factors"]["recent5"],
+                "recent_10_score": p["factors"]["recent10"],
+                "season_gap_score": p["factors"]["seasonGap"],
             }
             for i, p in enumerate(scored)
         ],
