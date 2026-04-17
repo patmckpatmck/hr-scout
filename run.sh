@@ -4,9 +4,13 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 if [ -f .env ]; then
-  export "$(grep -v '^#' .env | grep -v '^\s*$' | xargs)"
+  set -a
+  source .env
+  set +a
 elif [ -f .env.local ]; then
-  export "$(grep -v '^#' .env.local | grep -v '^\s*$' | xargs)"
+  set -a
+  source .env.local
+  set +a
 else
   echo "No .env or .env.local found. Copy .env.template to .env and add your key."
   exit 1
