@@ -825,13 +825,18 @@ def main():
         pitcher_hr9 = pitcher_hr9_raw if isinstance(pitcher_hr9_raw, dict) else {}
     print()
 
-    # ── Build active player list from lineups ──
+    # ── Build active player list: per-team, confirmed-lineup-replaces-DB ──
     active = []
     new_players = set()  # names not in the static DB
-    if lineup_count > 0:
-        for team, names in lineups.items():
-            if not isinstance(names, list):
-                continue
+    confirmed_count = 0
+    fallback_count = 0
+    confirmed_teams = 0
+    fallback_teams = 0
+    for team in sorted(teams_today):
+        names = lineups.get(team)
+        if isinstance(names, list) and len(names) > 0:
+            # Confirmed lineup → use only these batters, tagged confirmed
+            confirmed_teams += 1
             for full_name in names:
                 if not isinstance(full_name, str):
                     continue
@@ -845,14 +850,32 @@ def main():
                     "sL": attrs.get("sL", 5.0),
                     "h": attrs.get("h", 5),
                     "hr25": attrs.get("hr25", 15),
+                    "lineupConfirmed": True,
                 })
                 if is_new:
                     new_players.add(full_name)
-        print(f"  📋 {len(active)} batters from lineups ({len(new_players)} new)")
-    else:
-        # Fallback to static DB if no lineups available
-        active = [p for p in PLAYERS if p["t"] in teams_today]
-        print(f"  📋 {len(active)} batters from static DB (no lineups)")
+                confirmed_count += 1
+        else:
+            # No lineup → fallback to static DB entries for this team, tagged unconfirmed
+            fallback_teams += 1
+            for p in PLAYERS:
+                if p["t"] != team:
+                    continue
+                active.append({
+                    "n": p["n"],
+                    "t": p["t"],
+                    "hand": p.get("hand", "R"),
+                    "xhr": p.get("xhr", 5),
+                    "sR": p.get("sR", 5.0),
+                    "sL": p.get("sL", 5.0),
+                    "h": p.get("h", 5),
+                    "hr25": p.get("hr25", 15),
+                    "lineupConfirmed": False,
+                })
+                fallback_count += 1
+    print(f"  📋 {confirmed_count} confirmed from {confirmed_teams} lineups, "
+          f"{fallback_count} DB-fallback from {fallback_teams} teams"
+          f"{f' ({len(new_players)} new)' if new_players else ''}")
 
     # ── STAGE 4: xHR + EV trends (batched) ──
     print("🎯 Stage 4: Fetching xHR rates & EV trends...")
@@ -1111,6 +1134,7 @@ def main():
             "name": p["n"],
             "team": p["t"],
             "hand": p["hand"],
+            "lineupConfirmed": p.get("lineupConfirmed", False),
             "score": round(compute_score(factors), 2),
             "factors": factors,
             "matchup": f"{'vs' if is_home else '@'} {opp_team}",
@@ -1227,6 +1251,7 @@ def main():
                 "rank": i + 1,
                 "score": p["score"],
                 "hitHR": existing_hr.get(p["name"], False),
+                "lineupConfirmed": p.get("lineupConfirmed", False),
                 "home_away_score": p["factors"]["homeAway"],
                 "park_score": p["factors"]["ballpark"],
                 "pitcher_hand_split_score": p["factors"]["lhpVsRhp"],
