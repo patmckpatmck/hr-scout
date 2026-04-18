@@ -698,18 +698,48 @@ def main():
         teams_today.add(g.get("awayTeam", ""))
     team_list = ",".join(sorted(teams_today))
 
-    print("📋 Stage 2: Fetching confirmed lineups...")
-    lineups_raw = call_claude(
-        f"Today is {today}. Search for today's confirmed MLB starting lineups for: {team_list}. "
-        f'Return ONLY a JSON object: {{"NYY":["Aaron Judge","Giancarlo Stanton","Juan Soto"],"BOS":["Rafael Devers"],...}}. '
-        f"Use full first and last names for each batter. Include only confirmed starters. "
-        f"If lineups not yet posted for a team, omit that team. If no lineups at all, return {{}}.",
-        max_searches=5,
+    print("📋 Stage 2: Fetching confirmed lineups from MLB Stats API...")
+    lineups = {}
+    tbd_games = []
+    lineup_url = (
+        f"https://statsapi.mlb.com/api/v1/schedule?"
+        f"date={today_iso}&sportId=1&hydrate=lineups,probablePitcher"
     )
-    lineups = lineups_raw if isinstance(lineups_raw, dict) else {}
-    lineup_count = sum(len(v) for v in lineups.values() if isinstance(v, list))
-    print(f"  ✅ {lineup_count} batters across {len(lineups)} lineups\n")
-    time.sleep(3)
+    try:
+        req = urllib.request.Request(lineup_url, headers={"User-Agent": "HRScout/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            lineup_data = json.loads(resp.read())
+        total_games = 0
+        for date_entry in lineup_data.get("dates", []):
+            for game_data in date_entry.get("games", []):
+                total_games += 1
+                teams = game_data.get("teams", {})
+                home_id = teams.get("home", {}).get("team", {}).get("id")
+                away_id = teams.get("away", {}).get("team", {}).get("id")
+                home_code = MLB_TEAM_ABBR.get(home_id, "")
+                away_code = MLB_TEAM_ABBR.get(away_id, "")
+                game_lineups = game_data.get("lineups", {})
+                home_players = game_lineups.get("homePlayers", []) or []
+                away_players = game_lineups.get("awayPlayers", []) or []
+                if not home_players and not away_players:
+                    tbd_games.append(f"{away_code} @ {home_code}")
+                    continue
+                if home_code and home_players:
+                    lineups[home_code] = [p.get("fullName", "") for p in home_players if p.get("fullName")]
+                if away_code and away_players:
+                    lineups[away_code] = [p.get("fullName", "") for p in away_players if p.get("fullName")]
+        lineup_count = sum(len(v) for v in lineups.values())
+        print(f"  ✅ Stage 2: {len(lineups)}/{total_games*2} lineups posted, {len(tbd_games)} games TBD")
+        for tbd in tbd_games:
+            print(f"    No lineup posted yet: {tbd}")
+        if lineups:
+            first_team = next(iter(lineups))
+            sample = lineups[first_team][:3]
+            print(f"    Sample ({first_team}): {', '.join(sample)}")
+        print()
+    except Exception as e:
+        print(f"  ⚠️ Stage 2 failed: {e}")
+        lineups = {}
 
     # ── STAGE 2b: IL check from MLB Stats API ──
     # Only flags players on the official 10-day or 60-day IL, not day-to-day
