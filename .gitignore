@@ -30,11 +30,13 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files
+# env files - catch all variants (nano backups, .save, .bak, etc.)
 .env
-.env.local
-.env*.local
+.env.*
 !.env.template
+
+# nano backup files
+*.save
 
 # generated data (rebuilt daily by scripts/generate.py)
 public/data.json
@@ -49,6 +51,4 @@ data/todays_odds.json
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-.env.local.txt
-.claude/
 .claude/
