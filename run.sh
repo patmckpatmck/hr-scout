@@ -21,4 +21,4 @@ if [ -z "${ANTHROPIC_API_KEY:-}" ]; then
   exit 1
 fi
 
-python3 scripts/generate.py
+python3 scripts/generate.py "$@"

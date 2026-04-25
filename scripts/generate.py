@@ -7,6 +7,7 @@ Usage: python3 scripts/generate.py
 Requires: ANTHROPIC_API_KEY environment variable
 """
 
+import argparse
 import json
 import os
 import re
@@ -577,7 +578,76 @@ def find_player_attrs(full_name, team):
 # MAIN
 # ═══════════════════════════════════════════════════════════════════════════════
 
+def _vegas_modifier(odds_val):
+    if odds_val <= 200:
+        return 0.5
+    if odds_val <= 400:
+        return 0
+    if odds_val <= 600:
+        return -0.3
+    return -0.5
+
+
+def run_odds_only():
+    """Re-apply FanDuel odds from data/todays_odds.json to public/data.json
+    without making any external API calls. history.json is not touched."""
+    print("ODDS-ONLY MODE: skipping data fetch, applying FanDuel odds from data/todays_odds.json...")
+
+    repo_root = Path(__file__).resolve().parent.parent
+    data_path = repo_root / "public" / "data.json"
+    odds_path = repo_root / "data" / "todays_odds.json"
+
+    data = json.loads(data_path.read_text())
+    today_iso = datetime.now().strftime("%Y-%m-%d")
+
+    odds_map = {}
+    if odds_path.exists():
+        try:
+            odds_data = json.loads(odds_path.read_text())
+            if odds_data.get("date") == today_iso:
+                odds_map = odds_data.get("odds", {})
+                print(f"  📋 Loaded {len(odds_map)} odds entries for {today_iso}")
+            else:
+                print(f"  ⚠️ Date mismatch: file has {odds_data.get('date')}, today is {today_iso} — skipping")
+        except Exception as e:
+            print(f"  ⚠️ Failed to read todays_odds.json: {e}")
+    else:
+        print("  ⚠️ todays_odds.json not found — all players get base score as adjScore")
+
+    odds_matched = 0
+    for player in data.get("players", []):
+        odds_str = odds_map.get(player["name"])
+        if odds_str:
+            try:
+                parsed = int(odds_str.replace("+", "").strip())
+                mod = _vegas_modifier(parsed)
+                player["adjScore"] = round(player["score"] + mod, 2)
+                player["fdOdds"] = odds_str
+                odds_matched += 1
+                continue
+            except (ValueError, TypeError):
+                pass
+        player["adjScore"] = player["score"]
+        player["fdOdds"] = None
+
+    data_path.write_text(json.dumps(data, indent=2, ensure_ascii=False))
+    print(f"  ✅ Applied odds for {odds_matched}/{len(data.get('players', []))} players")
+    print(f"✅ Wrote updated adjScore values to {data_path}")
+
+
 def main():
+    parser = argparse.ArgumentParser(description="HR Scout daily data generator.")
+    parser.add_argument(
+        "--odds-only",
+        action="store_true",
+        help="Skip all API calls; re-apply FanDuel odds from data/todays_odds.json to public/data.json only.",
+    )
+    args = parser.parse_args()
+
+    if args.odds_only:
+        run_odds_only()
+        return
+
     today = datetime.now().strftime("%B %d, %Y")
     print(f"═══ HR Scout — Generating data for {today} ═══\n")
 
