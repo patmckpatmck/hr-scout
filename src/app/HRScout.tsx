@@ -52,6 +52,15 @@ const BULLPEN = {
 const scoreColor = (s: number) => s>=7.5?"#e8e020":s>=6.5?"#86efac":s>=5.5?"#93c5fd":"#94a3b8";
 const factorBg   = (s: number) => `rgba(232,224,32,${0.15+(s/10)*0.6})`;
 
+// Calibrated for HR hit rates (typical 10-25% range) — distinct from
+// scoreColor which is calibrated for 0-10 factor/composite scores.
+const rateColor = (rate: number): string => {
+  if (rate >= 0.20) return "#e8e020";   // yellow — strong
+  if (rate >= 0.15) return "#22c55e";   // green — good
+  if (rate >= 0.10) return "#3b82f6";   // blue — baseline-ish
+  return "#64748b";                      // gray — weak
+};
+
 
 interface Data {
   date: string;
@@ -83,6 +92,8 @@ interface Data {
     fdOdds: string | null;
     recent: { r5: number; r10: number };
     flags?: string[];
+    v2Score?: number;
+    v2Rank?: number;
   }>;
   windData: Record<string, { speed: number; deg: number }>;
 }
@@ -94,6 +105,8 @@ interface HistoryPlayer {
   score: number;
   hitHR: boolean;
   autoResulted?: boolean;
+  v2Score?: number;
+  v2Rank?: number;
 }
 
 interface HistoryDay {
@@ -315,6 +328,97 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
     }
   }, [cappedPlayers]);
 
+  // ── v2 display pipeline (parallel to v1, used only by the Top 20 v2 tab) ──
+  // - IL-excluded
+  // - Sorted by v2Rank ascending (backend-assigned)
+  // - Team-capped with the same rule as v1 (max 2/team in 1-10, 2/team in 11-20)
+  const v2CappedPlayers = useMemo(() => {
+    const raw = data?.players || [];
+    const noIL = raw.filter(p => !p.flags?.includes("IL"));
+    // Treat missing v2Rank as +Infinity so legacy records sink to the bottom
+    const sorted = [...noIL].sort((a, b) => (a.v2Rank ?? Number.POSITIVE_INFINITY) - (b.v2Rank ?? Number.POSITIVE_INFINITY));
+    return applyTeamCap(sorted);
+  }, [data?.players]);
+
+  // v1 display rank lookup — replays the v1 Top 20 tab pipeline (adjScore desc
+  // + applyTeamCap) across ALL eligible players (not just top 20), so each
+  // player in the v2 tab can be annotated with the rank v1 would have shown.
+  const v1DisplayRankByName = useMemo(() => {
+    const sorted = [...cappedPlayers].sort((a, b) => b.adjScore - a.adjScore);
+    const capped = applyTeamCap(sorted);
+    const map = new Map<string, number>();
+    capped.forEach((p, i) => map.set(p.name, i + 1));
+    return map;
+  }, [cappedPlayers]);
+
+  // ── v1 vs v2 comparison metrics (history-derived) ──
+  // Window = every history day that has at least one player with a numeric v2Rank.
+  // v1 hit rates use the base `rank` field (the score-desc archived rank) so the
+  // comparison is apples-to-apples against pre-v2 archived days.
+  // Hit-rate buckets count only autoResulted=true records.
+  // Agreement counters use day picks regardless of autoResulted state.
+  const v2Stats = useMemo(() => {
+    type Bucket = { n: number; h: number; rate: number; ci: number };
+    const emptyBucket = (): Bucket => ({ n: 0, h: 0, rate: 0, ci: 0 });
+    const finalize = (b: Bucket): Bucket => {
+      if (b.n === 0) return b;
+      b.rate = b.h / b.n;
+      b.ci = 1.96 * Math.sqrt((b.rate * (1 - b.rate)) / b.n);
+      return b;
+    };
+
+    const v2Days = (history || []).filter(day =>
+      day.players.some(p => typeof p.v2Rank === "number")
+    );
+    const n_days = v2Days.length;
+    const startDate = n_days > 0
+      ? [...v2Days].map(d => d.date).sort((a, b) => new Date(a).getTime() - new Date(b).getTime())[0]
+      : null;
+
+    const bucketBy = (rankKey: "rank" | "v2Rank", pred: (r: number) => boolean): Bucket => {
+      const b = emptyBucket();
+      for (const day of v2Days) {
+        for (const p of day.players) {
+          const r = p[rankKey];
+          if (typeof r !== "number" || !pred(r)) continue;
+          if (p.autoResulted !== true) continue;
+          b.n += 1;
+          if (p.hitHR) b.h += 1;
+        }
+      }
+      return finalize(b);
+    };
+
+    const rows = [
+      { label: "Rank 1",              v1: bucketBy("rank", r => r === 1),         v2: bucketBy("v2Rank", r => r === 1) },
+      { label: "Rank 1-3 (pooled)",   v1: bucketBy("rank", r => r >= 1 && r <= 3), v2: bucketBy("v2Rank", r => r >= 1 && r <= 3) },
+      { label: "Rank 1-5 (pooled)",   v1: bucketBy("rank", r => r >= 1 && r <= 5), v2: bucketBy("v2Rank", r => r >= 1 && r <= 5) },
+      { label: "Rank 6-10 (pooled)",  v1: bucketBy("rank", r => r >= 6 && r <= 10), v2: bucketBy("v2Rank", r => r >= 6 && r <= 10) },
+      { label: "Rank 11-20 (pooled)", v1: bucketBy("rank", r => r >= 11 && r <= 20), v2: bucketBy("v2Rank", r => r >= 11 && r <= 20) },
+    ];
+
+    let top1Days = 0, top1Agree = 0;
+    let top3Days = 0, top3Agree = 0;
+    for (const day of v2Days) {
+      const v1_1 = day.players.find(p => p.rank === 1);
+      const v2_1 = day.players.find(p => p.v2Rank === 1);
+      if (v1_1 && v2_1) {
+        top1Days += 1;
+        if (v1_1.name === v2_1.name) top1Agree += 1;
+      }
+      const v1Top3 = day.players.filter(p => p.rank >= 1 && p.rank <= 3).map(p => p.name);
+      const v2Top3 = day.players.filter(p => typeof p.v2Rank === "number" && (p.v2Rank as number) >= 1 && (p.v2Rank as number) <= 3).map(p => p.name);
+      if (v1Top3.length === 3 && v2Top3.length === 3) {
+        top3Days += 1;
+        const v2set = new Set(v2Top3);
+        const overlap = v1Top3.filter(n => v2set.has(n)).length;
+        if (overlap >= 2) top3Agree += 1;
+      }
+    }
+
+    return { n_days, startDate, rows, top1Days, top1Agree, top3Days, top3Agree };
+  }, [history]);
+
   // ── History tab: memoized derived data (only recomputes when inputs change) ──
   const threshold = parseFloat(minScore) || 0;
   const historyRows = useMemo(() => {
@@ -418,7 +522,7 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
       </div>
 
       <div style={S.tabs}>
-        {([["top20","🏆 Today's Top 20"],["scout","⚾ Rankings"],["history","📊 Previous HRs"],["matchups","🏟 Matchups"],["golden","⭐ GOLDEN BALL"]] as const).map(([id,label])=>(
+        {([["top20","🏆 Today's Top 20"],["top20v2","🚀 Top 20 v2"],["scout","⚾ Rankings"],["history","📊 Previous HRs"],["matchups","🏟 Matchups"],["golden","⭐ GOLDEN BALL"]] as const).map(([id,label])=>(
           <button key={id} style={S.tab(tab===id)} onClick={()=>setTab(id)}>{label}</button>
         ))}
       </div>
@@ -483,6 +587,164 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                 <div style={{fontSize:"12px",color:"#475569"}}>Scores will appear once lineups are confirmed.</div>
               </div>
             )}
+          </div>
+        )}
+
+        {/* ── TOP 20 v2 TAB ── */}
+        {tab==="top20v2" && (
+          <div>
+            {v2CappedPlayers.length > 0 ? (
+              <>
+                <div style={{marginBottom:"16px"}}>
+                  <div style={{fontFamily:"'Bebas Neue',monospace",fontSize:"22px",color:"#e8e020",letterSpacing:"1px"}}>TOP 20 v2 — {date}</div>
+                  <div style={{fontSize:"11px",color:"#334155",marginTop:"2px"}}>Sorted by v2 Score · 8-factor weighted average · drops season_gap, bullpen, wind, BvP</div>
+                </div>
+                <div style={{overflowX:"auto",background:"#060a0c",WebkitOverflowScrolling:"touch"} as React.CSSProperties}>
+                <table style={{...S.tbl,minWidth:"620px"}}>
+                  <thead>
+                    <tr>
+                      <th style={{...S.th,textAlign:"center",width:"40px"}}>#</th>
+                      <th style={S.th}>Player</th>
+                      <th style={S.th}>Matchup</th>
+                      <th style={{...S.th,textAlign:"center"}}>Δ rank</th>
+                      <th style={{...S.th,textAlign:"right"}}>v2 Score</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {v2CappedPlayers.slice(0, 20).map((p, i) => {
+                      const v2DisplayRank = i + 1;
+                      const v1Rank = v1DisplayRankByName.get(p.name);
+                      const hasV1 = typeof v1Rank === "number";
+                      const divergent = hasV1 ? Math.abs((v1Rank as number) - v2DisplayRank) > 2 : true;
+                      const badgeStyle: React.CSSProperties = {
+                        display:"inline-block",
+                        padding:"2px 7px",
+                        borderRadius:"4px",
+                        fontSize:"10px",
+                        fontWeight:"700" as const,
+                        letterSpacing:"0.5px",
+                        background: divergent ? "rgba(232,224,32,0.15)" : "#0f1f18",
+                        color: divergent ? "#e8e020" : "#64748b",
+                        border: divergent ? "1px solid rgba(232,224,32,0.4)" : "1px solid transparent",
+                      };
+                      const v2ScoreVal = typeof p.v2Score === "number" ? p.v2Score : null;
+                      return (
+                        <tr key={p.name+i} style={{background:i%2===0?"transparent":"#060d09"}}
+                          onMouseEnter={e=>e.currentTarget.style.background="#0a1810"}
+                          onMouseLeave={e=>e.currentTarget.style.background=i%2===0?"transparent":"#060d09"}>
+                          <td style={{...S.td,...S.rank}}>{v2DisplayRank}</td>
+                          <td style={S.td}>
+                            <span style={{fontWeight:"600",fontSize:"13px"}}>{p.name}</span>
+                            <span style={S.badge}>{p.team}</span>
+                            <span style={{marginLeft:"6px",fontSize:"10px",color:"#475569"}}>{p.hand==="L"?"LHH":p.hand==="R"?"RHH":"SWI"}</span>
+                          </td>
+                          <td style={{...S.td,fontSize:"11px",color:"#64748b"}}>
+                            <span style={{color:"#94a3b8"}}>{p.matchup}</span>
+                            <div style={{color:"#475569",fontSize:"10px"}}>{p.pitcher} ({p.pitcherHand}HP)</div>
+                          </td>
+                          <td style={{...S.td,textAlign:"center"}}>
+                            <span title={hasV1 ? `v1 display rank #${v1Rank} · Δ${(v1Rank as number) - v2DisplayRank >= 0 ? "+" : ""}${(v1Rank as number) - v2DisplayRank}` : "Not present in v1 display"} style={badgeStyle}>
+                              {hasV1 ? `v1: #${v1Rank}` : "v1: —"}
+                            </span>
+                          </td>
+                          <td style={S.td}>
+                            <div style={{textAlign:"right"}}>
+                              {v2ScoreVal !== null ? (
+                                <span style={{fontFamily:"'Bebas Neue',monospace",fontSize:"24px",fontWeight:"700",color:scoreColor(v2ScoreVal)}}>{v2ScoreVal.toFixed(2)}</span>
+                              ) : (
+                                <span style={{fontSize:"11px",color:"#475569"}} title="No v2Score on this record">—</span>
+                              )}
+                            </div>
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+                </div>
+              </>
+            ) : (
+              <div style={{textAlign:"center",padding:"72px 20px"}}>
+                <div style={{fontSize:"48px",marginBottom:"12px"}}>⏳</div>
+                <div style={{fontFamily:"'Bebas Neue',monospace",fontSize:"20px",color:"#e8e020",marginBottom:"8px"}}>WAITING FOR TODAY'S DATA</div>
+                <div style={{fontSize:"12px",color:"#475569"}}>v2 scores will appear once lineups are confirmed and generate.py has produced today&apos;s data.</div>
+              </div>
+            )}
+
+            {/* ── v1 vs v2 live comparison block ── */}
+            <div style={{marginTop:"36px",borderTop:"1px solid #0f2518",paddingTop:"22px"}}>
+              <div style={{fontFamily:"'Bebas Neue',monospace",fontSize:"20px",color:"#e8e020",letterSpacing:"1px"}}>v1 vs v2 — Live Comparison</div>
+              {v2Stats.n_days === 0 ? (
+                <div style={{fontSize:"12px",color:"#475569",marginTop:"8px",lineHeight:"1.7"}}>
+                  No v2-tagged history days yet. The first comparison metrics will appear after generate.py runs with the v2 model and a day&apos;s results are logged by update_results.py the following morning.
+                </div>
+              ) : (
+                <>
+                  <div style={{fontSize:"11px",color:"#94a3b8",marginTop:"4px",letterSpacing:"0.4px"}}>
+                    Experiment window started <span style={{color:"#e8e020",fontWeight:"700"}}>{v2Stats.startDate}</span>
+                    {" · "}{v2Stats.n_days} day{v2Stats.n_days === 1 ? "" : "s"} of v2 data
+                  </div>
+                  {v2Stats.n_days < 14 && (
+                    <div style={{marginTop:"12px",padding:"10px 12px",background:"rgba(232,224,32,0.10)",border:"1px solid rgba(232,224,32,0.35)",borderRadius:"5px",fontSize:"11px",color:"#e8e020",lineHeight:"1.6"}}>
+                      v2 experiment running for {v2Stats.n_days} day{v2Stats.n_days === 1 ? "" : "s"} — minimum 6 weeks recommended before drawing conclusions.
+                    </div>
+                  )}
+                  <div style={{overflowX:"auto",marginTop:"14px",background:"#060a0c"} as React.CSSProperties}>
+                    <table style={{...S.tbl,minWidth:"520px"}}>
+                      <thead>
+                        <tr>
+                          <th style={S.th}>Rank band</th>
+                          <th style={{...S.th,textAlign:"right"}}>v1 hit rate <span style={{color:"#475569"}}>(n, ±CI)</span></th>
+                          <th style={{...S.th,textAlign:"right"}}>v2 hit rate <span style={{color:"#475569"}}>(n, ±CI)</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {v2Stats.rows.map((row, i) => {
+                          const fmt = (b: { n: number; h: number; rate: number; ci: number }) => {
+                            if (b.n === 0) return <span style={{color:"#475569"}}>—</span>;
+                            const ratePct = (b.rate * 100).toFixed(1);
+                            const ciPct = (b.ci * 100).toFixed(1);
+                            return (
+                              <>
+                                <span style={{fontFamily:"'Bebas Neue',monospace",fontSize:"18px",fontWeight:"700",color:rateColor(b.rate)}}>{ratePct}%</span>
+                                <span style={{marginLeft:"8px",fontSize:"10px",color:"#64748b"}}>({b.h}/{b.n}, ±{ciPct})</span>
+                              </>
+                            );
+                          };
+                          return (
+                            <tr key={row.label} style={{background:i%2===0?"transparent":"#060d09"}}>
+                              <td style={{...S.td,fontSize:"12px",color:"#94a3b8"}}>{row.label}</td>
+                              <td style={{...S.td,textAlign:"right"}}>{fmt(row.v1)}</td>
+                              <td style={{...S.td,textAlign:"right"}}>{fmt(row.v2)}</td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  </div>
+                  <div style={{marginTop:"14px",fontSize:"12px",color:"#94a3b8",lineHeight:"1.8"}}>
+                    <div>
+                      <span style={{color:"#64748b",fontSize:"10px",letterSpacing:"0.8px",textTransform:"uppercase",marginRight:"8px"}}>Top-1 agreement</span>
+                      {v2Stats.top1Days === 0 ? <span style={{color:"#475569"}}>—</span> : (
+                        <>
+                          <span style={{color:"#e8e020",fontWeight:"700"}}>{((v2Stats.top1Agree / v2Stats.top1Days) * 100).toFixed(1)}%</span>
+                          <span style={{marginLeft:"6px",fontSize:"11px",color:"#64748b"}}>of days ({v2Stats.top1Agree}/{v2Stats.top1Days}) have the same #1 pick</span>
+                        </>
+                      )}
+                    </div>
+                    <div>
+                      <span style={{color:"#64748b",fontSize:"10px",letterSpacing:"0.8px",textTransform:"uppercase",marginRight:"8px"}}>Top-3 agreement</span>
+                      {v2Stats.top3Days === 0 ? <span style={{color:"#475569"}}>—</span> : (
+                        <>
+                          <span style={{color:"#e8e020",fontWeight:"700"}}>{((v2Stats.top3Agree / v2Stats.top3Days) * 100).toFixed(1)}%</span>
+                          <span style={{marginLeft:"6px",fontSize:"11px",color:"#64748b"}}>of days ({v2Stats.top3Agree}/{v2Stats.top3Days}) have ≥2 of 3 same picks</span>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
           </div>
         )}
 

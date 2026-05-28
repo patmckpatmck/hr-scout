@@ -361,6 +361,49 @@ def compute_score(f):
     ) / 9
 
 
+# ─── v2 model (parallel scoring, does not affect v1) ──────────────────────────
+# Curated 8-factor weighted average. Drops season_gap, bullpen, wind, bvp.
+# Maps the v2 conceptual keys to the v1 `factors` dict keys used at the
+# call site in stage 7. Weights and divisor are hardcoded for legibility.
+
+V2_WEIGHTS = {
+    "lhp_rhp_split": 1.5,
+    "season_hr":     1.5,
+    "recent_10":     1.5,
+    "xhr":           1.3,
+    "pitcher_hr9":   1.0,
+    "recent_5":      1.0,
+    "ballpark":      1.0,
+    "home_away":     1.0,
+}
+V2_DIVISOR = sum(V2_WEIGHTS.values())  # = 9.8
+
+# v2 conceptual key → key inside the v1 `factors` dict built in stage 7
+V2_FACTOR_FIELDS = {
+    "lhp_rhp_split": "lhpVsRhp",
+    "season_hr":     "hr2025",
+    "recent_10":     "recent10",
+    "xhr":           "xhr",
+    "pitcher_hr9":   "pitcherHR9",
+    "recent_5":      "recent5",
+    "ballpark":      "ballpark",
+    "home_away":     "homeAway",
+}
+
+
+def compute_v2_score(factors):
+    """Weighted 8-factor v2 score. Mirrors v1's neutral-5 fallback for any
+    factor that is missing or non-numeric."""
+    total = 0.0
+    for v2_key, weight in V2_WEIGHTS.items():
+        v1_key = V2_FACTOR_FIELDS[v2_key]
+        val = factors.get(v1_key, 5)
+        if not isinstance(val, (int, float)):
+            val = 5
+        total += val * weight
+    return total / V2_DIVISOR
+
+
 # ═══════════════════════════════════════════════════════════════════════════════
 # CLAUDE HELPERS
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -1227,6 +1270,15 @@ def main():
 
     scored.sort(key=lambda x: x["score"], reverse=True)
 
+    # ── STAGE 7.5: v2 parallel scoring + ranking (purely additive) ──
+    # Compute v2Score for every player from the v1 `factors` dict, then
+    # assign v2Rank by stable sort of a copy. v1 score/rank are untouched.
+    for p in scored:
+        p["v2Score"] = round(compute_v2_score(p["factors"]), 2)
+    v2_sorted = sorted(scored, key=lambda x: x["v2Score"], reverse=True)
+    for i, p in enumerate(v2_sorted):
+        p["v2Rank"] = i + 1
+
     # ── STAGE 8: Apply committed FD odds ──
     print("💰 Stage 8: Applying FanDuel odds from todays_odds.json...")
 
@@ -1320,6 +1372,8 @@ def main():
                 "team": p["team"],
                 "rank": i + 1,
                 "score": p["score"],
+                "v2Score": p.get("v2Score"),
+                "v2Rank": p.get("v2Rank"),
                 "hitHR": existing_hr.get(p["name"], False),
                 "lineupConfirmed": p.get("lineupConfirmed", False),
                 "home_away_score": p["factors"]["homeAway"],
