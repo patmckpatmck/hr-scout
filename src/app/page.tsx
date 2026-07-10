@@ -7,6 +7,7 @@ export const dynamic = "force-dynamic"; // always re-read file on each request
 export default async function Page() {
   let data = null;
   let history = null;
+  let calibration = null;
   try {
     const filePath = path.join(process.cwd(), "public", "data.json");
     const raw = await readFile(filePath, "utf-8");
@@ -21,5 +22,12 @@ export default async function Page() {
   } catch {
     // history.json doesn't exist yet
   }
-  return <HRScout data={data} history={history} />;
+  try {
+    const calibPath = path.join(process.cwd(), "public", "calibration.json");
+    const raw = await readFile(calibPath, "utf-8");
+    calibration = JSON.parse(raw);
+  } catch {
+    // calibration.json doesn't exist yet — probabilities just won't render
+  }
+  return <HRScout data={data} history={history} calibration={calibration} />;
 }

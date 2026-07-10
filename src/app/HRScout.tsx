@@ -52,6 +52,26 @@ const BULLPEN = {
 const scoreColor = (s: number) => s>=7.5?"#e8e020":s>=6.5?"#86efac":s>=5.5?"#93c5fd":"#94a3b8";
 const factorBg   = (s: number) => `rgba(232,224,32,${0.15+(s/10)*0.6})`;
 
+// Calibrated HR probability (from public/calibration.json — a logistic fit of
+// score -> P(HR) over the season). Pure function of the composite score.
+interface Calibration { intercept: number; coef: number; base_rate?: number; n?: number; }
+const hrProbFromScore = (score: number, c: Calibration | null): number | null => {
+  if (!c || typeof c.intercept !== "number" || typeof c.coef !== "number") return null;
+  return 1 / (1 + Math.exp(-(c.intercept + c.coef * score)));
+};
+const PCT_CAPTION = "Calibrated probability of a HR tonight, fit on 21,000+ scored player-games this season.";
+// Secondary probability element rendered under a score. Returns null (renders
+// nothing) when calibration is unavailable, so scores display exactly as before.
+const ScorePct = ({ score, calib }: { score: number; calib: Calibration | null }) => {
+  const p = hrProbFromScore(score, calib);
+  if (p === null) return null;
+  return (
+    <span title={PCT_CAPTION} style={{display:"block",fontFamily:"'Bebas Neue',monospace",fontSize:"12px",fontWeight:600,letterSpacing:"0.5px",color:"#6b9080",cursor:"default"}}>
+      {Math.round(p * 100)}%
+    </span>
+  );
+};
+
 // Calibrated for HR hit rates (typical 10-25% range) — distinct from
 // scoreColor which is calibrated for 0-10 factor/composite scores.
 const rateColor = (rate: number): string => {
@@ -208,9 +228,10 @@ interface HistoryRowProps {
   hitHR: boolean;
   autoResulted: boolean;
   zebra: boolean;
+  calib: Calibration | null;
 }
 const HistoryRow = memo(function HistoryRow({
-  date, name, team, rank, score, hitHR, autoResulted, zebra,
+  date, name, team, rank, score, hitHR, autoResulted, zebra, calib,
 }: HistoryRowProps) {
   const resultIcon = !autoResulted ? "⏳" : hitHR ? "✅" : "❌";
   const resultTitle = !autoResulted ? "Pending — not yet auto-resulted" : hitHR ? "Hit a HR" : "Did not hit a HR";
@@ -219,7 +240,10 @@ const HistoryRow = memo(function HistoryRow({
       <td style={HR_TD_RANK}>{rank}</td>
       <td style={HR_TD}><span style={HR_NAME}>{name}</span></td>
       <td style={HR_TD}><span style={HR_BADGE}>{team}</span></td>
-      <td style={{...HR_TD, fontFamily:"'Bebas Neue',monospace", fontSize:"24px", fontWeight:"700", color:scoreCellColor(score), textAlign:"right"}}>{score.toFixed(2)}</td>
+      <td style={{...HR_TD, textAlign:"right"}}>
+        <span style={{fontFamily:"'Bebas Neue',monospace", fontSize:"24px", fontWeight:"700", color:scoreCellColor(score)}}>{score.toFixed(2)}</span>
+        <ScorePct score={score} calib={calib} />
+      </td>
       <td style={HR_TD_CENTER}>
         <span title={resultTitle} style={{fontSize:"16px",cursor:"default"}}>{resultIcon}</span>
       </td>
@@ -227,7 +251,7 @@ const HistoryRow = memo(function HistoryRow({
   );
 });
 
-export default function HRScout({ data, history: initialHistory }: { data: Data | null; history: HistoryDay[] | null }) {
+export default function HRScout({ data, history: initialHistory, calibration }: { data: Data | null; history: HistoryDay[] | null; calibration: Calibration | null }) {
   const [tab, setTab] = useState("top20");
   const [odds, setOdds] = useState<Record<string, string>>({});
   const [history] = useState<HistoryDay[]>(initialHistory || []);
@@ -571,6 +595,7 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                             <div style={{textAlign:"right"}}>
                               <span style={{fontFamily:"'Bebas Neue',monospace",fontSize:"24px",fontWeight:"700",color:scoreColor(p.adjScore)}}>{p.adjScore.toFixed(2)}</span>
                               {!p.fdOdds && <span style={{marginLeft:"4px",fontSize:"10px",color:"#475569"}} title="No odds entered — showing base score">*</span>}
+                              <ScorePct score={p.score} calib={calibration} />
                             </div>
                           </td>
                         </tr>
@@ -654,6 +679,7 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                               ) : (
                                 <span style={{fontSize:"11px",color:"#475569"}} title="No v2Score on this record">—</span>
                               )}
+                              {typeof p.score === "number" && <ScorePct score={p.score} calib={calibration} />}
                             </div>
                           </td>
                         </tr>
@@ -836,7 +862,10 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                         <td style={{...S.td,color:"#64748b",fontSize:"12px"}}>
                           {p.recent.r5}HR / {p.recent.r10}HR
                         </td>
-                        <td style={{...S.td,...S.sc(p.score)}}>{p.score.toFixed(2)}</td>
+                        <td style={{...S.td,...S.sc(p.score)}}>
+                          {p.score.toFixed(2)}
+                          <ScorePct score={p.score} calib={calibration} />
+                        </td>
                         <td style={{...S.td,textAlign:"center"}}>
                           {i < 30 ? (
                             <input
@@ -973,6 +1002,7 @@ export default function HRScout({ data, history: initialHistory }: { data: Data 
                                   hitHR={r.hitHR}
                                   autoResulted={r.autoResulted}
                                   zebra={i % 2 === 1}
+                                  calib={calibration}
                                 />
                               ))}
                             </tbody>
