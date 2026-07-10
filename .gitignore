@@ -45,6 +45,15 @@ public/history.json
 # local odds file (manually edited, never pushed)
 data/todays_odds.json
 
+# python virtualenv (local analysis scripts)
+.venv/
+
+# cached Odds API responses (local backtest artifact, never pushed)
+odds_cache/
+
+# project docs / binaries kept locally, not in the repo
+*.docx
+
 # vercel
 .vercel
 
