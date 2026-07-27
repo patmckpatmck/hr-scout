@@ -497841,7 +497841,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 6,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Taylor Ward",
@@ -497863,7 +497864,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 10
+        "season_gap_score": 10,
+        "autoResulted": true
       },
       {
         "name": "Fernando Tatis Jr.",
@@ -497885,7 +497887,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 6,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "Spencer Torkelson",
@@ -497907,7 +497910,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 6,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Christian Encarnacion-Strand",
@@ -497929,7 +497933,8 @@
         "bvp_score": 5,
         "recent_5_score": 7,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Pete Alonso",
@@ -497938,7 +497943,7 @@
         "score": 8.01,
         "v2Score": 6.95,
         "v2Rank": 1,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 5,
         "park_score": 9,
@@ -497951,7 +497956,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Francisco Lindor",
@@ -497973,7 +497979,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "Salvador Perez",
@@ -497995,7 +498002,8 @@
         "bvp_score": 6,
         "recent_5_score": 5,
         "recent_10_score": 7,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jackson Chourio",
@@ -498017,7 +498025,8 @@
         "bvp_score": 6,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Brice Turang",
@@ -498039,7 +498048,8 @@
         "bvp_score": 8,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Andrew Vaughn",
@@ -498048,7 +498058,7 @@
         "score": 7.78,
         "v2Score": 5.15,
         "v2Rank": 101,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 5,
         "park_score": 5,
@@ -498061,7 +498071,8 @@
         "bvp_score": 6,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Cooper Pratt",
@@ -498083,7 +498094,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 5,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Bryce Harper",
@@ -498105,7 +498117,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Ryan Jeffers",
@@ -498127,7 +498140,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Byron Buxton",
@@ -498149,7 +498163,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Ketel Marte",
@@ -498158,7 +498173,7 @@
         "score": 7.69,
         "v2Score": 5.86,
         "v2Rank": 35,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 2,
         "park_score": 4,
@@ -498171,7 +498186,8 @@
         "bvp_score": 10,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Andrew Benintendi",
@@ -498193,7 +498209,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Manny Machado",
@@ -498202,7 +498219,7 @@
         "score": 7.65,
         "v2Score": 6.35,
         "v2Rank": 15,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 2,
         "park_score": 3,
@@ -498215,7 +498232,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Drake Baldwin",
@@ -498237,7 +498255,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 7,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Yordan Alvarez",
@@ -498259,7 +498278,8 @@
         "bvp_score": 5,
         "recent_5_score": 7,
         "recent_10_score": 7,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jackson Holliday",
@@ -498281,7 +498301,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Joey Ortiz",
@@ -498303,7 +498324,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Colton Cowser",
@@ -498325,7 +498347,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Corbin Carroll",
@@ -498347,7 +498370,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Kyle Schwarber",
@@ -498369,7 +498393,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Junior Caminero",
@@ -498391,7 +498416,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Matt Olson",
@@ -498413,7 +498439,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jazz Chisholm Jr.",
@@ -498435,7 +498462,8 @@
         "bvp_score": 5,
         "recent_5_score": 7,
         "recent_10_score": 7,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Adolis García",
@@ -498457,7 +498485,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Corey Seager",
@@ -498479,7 +498508,8 @@
         "bvp_score": 4,
         "recent_5_score": 5,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jorge Polanco",
@@ -498501,7 +498531,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "William Contreras",
@@ -498523,7 +498554,8 @@
         "bvp_score": 6,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Oneil Cruz",
@@ -498545,7 +498577,8 @@
         "bvp_score": 6,
         "recent_5_score": 1,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "CJ Abrams",
@@ -498554,7 +498587,7 @@
         "score": 7.39,
         "v2Score": 6.2,
         "v2Rank": 22,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 5,
         "park_score": 4,
@@ -498567,7 +498600,8 @@
         "bvp_score": 5,
         "recent_5_score": 9,
         "recent_10_score": 7,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Trent Grisham",
@@ -498589,7 +498623,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "Julio Rodríguez",
@@ -498611,7 +498646,8 @@
         "bvp_score": 6,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Rafael Devers",
@@ -498633,7 +498669,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Hunter Goodman",
@@ -498655,7 +498692,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 7,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Michael Harris II",
@@ -498677,7 +498715,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Nolan Arenado",
@@ -498699,7 +498738,8 @@
         "bvp_score": 10,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Willson Contreras",
@@ -498721,7 +498761,8 @@
         "bvp_score": 10,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Michael Busch",
@@ -498743,7 +498784,8 @@
         "bvp_score": 8,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "Wilyer Abreu",
@@ -498765,7 +498807,8 @@
         "bvp_score": 2,
         "recent_5_score": 1,
         "recent_10_score": 7,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jackson Merrill",
@@ -498774,7 +498817,7 @@
         "score": 7.23,
         "v2Score": 5.77,
         "v2Rank": 43,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 2,
         "park_score": 3,
@@ -498787,7 +498830,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 7,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Kyle Manzardo",
@@ -498809,7 +498853,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Sam Antonacci",
@@ -498831,7 +498876,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Shohei Ohtani",
@@ -498853,7 +498899,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jake Bauers",
@@ -498875,7 +498922,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Cal Raleigh",
@@ -498897,7 +498945,8 @@
         "bvp_score": 6,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Yandy Díaz",
@@ -498919,7 +498968,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Ryan Vilade",
@@ -498941,7 +498991,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 6,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Leody Taveras",
@@ -498963,7 +499014,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Patrick Bailey",
@@ -498985,7 +499037,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 6,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Luis Rengifo",
@@ -499007,7 +499060,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 5,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "Gary Sánchez",
@@ -499029,7 +499083,8 @@
         "bvp_score": 6,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Luis Lara",
@@ -499051,7 +499106,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "Kyle Stowers",
@@ -499060,7 +499116,7 @@
         "score": 7.1,
         "v2Score": 5.48,
         "v2Rank": 57,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 5,
         "park_score": 3,
@@ -499073,7 +499129,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Aaron Judge",
@@ -499095,7 +499152,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Brandon Nimmo",
@@ -499117,7 +499175,8 @@
         "bvp_score": 10,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Nick Kurtz",
@@ -499126,7 +499185,7 @@
         "score": 7.08,
         "v2Score": 5.44,
         "v2Rank": 61,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 2,
         "park_score": 4,
@@ -499139,7 +499198,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Gunnar Henderson",
@@ -499161,7 +499221,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Dillon Dingler",
@@ -499183,7 +499244,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Heliot Ramos",
@@ -499205,7 +499267,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Giancarlo Stanton",
@@ -499227,7 +499290,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Matt Wallner",
@@ -499249,7 +499313,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Bo Bichette",
@@ -499271,7 +499336,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Kyle Tucker",
@@ -499293,7 +499359,8 @@
         "bvp_score": 2,
         "recent_5_score": 5,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Heriberto Hernández",
@@ -499315,7 +499382,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Brandon Marsh",
@@ -499337,7 +499405,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Austin Wells",
@@ -499359,7 +499428,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 6,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Royce Lewis",
@@ -499381,7 +499451,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Chadwick Tromp",
@@ -499403,7 +499474,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "Brandon Lowe",
@@ -499425,7 +499497,8 @@
         "bvp_score": 10,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Isaac Paredes",
@@ -499447,7 +499520,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 5,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "LaMonte Wade Jr.",
@@ -499469,7 +499543,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Gabriel Moreno",
@@ -499491,7 +499566,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Mookie Betts",
@@ -499513,7 +499589,8 @@
         "bvp_score": 6,
         "recent_5_score": 5,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Luis Torrens",
@@ -499535,7 +499612,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Austin Riley",
@@ -499557,7 +499635,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 6,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Munetaka Murakami",
@@ -499566,7 +499645,7 @@
         "score": 6.89,
         "v2Score": 5.31,
         "v2Rank": 85,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 5,
         "park_score": 5,
@@ -499579,7 +499658,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Andrés Chaparro",
@@ -499601,7 +499681,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 6,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Carlos Narváez",
@@ -499623,7 +499704,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Austin Hedges",
@@ -499645,7 +499727,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 6,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Petey Halpin",
@@ -499667,7 +499750,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Yainer Diaz",
@@ -499689,7 +499773,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Braden Montgomery",
@@ -499711,7 +499796,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jake Burger",
@@ -499733,7 +499819,8 @@
         "bvp_score": 2,
         "recent_5_score": 5,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Joc Pederson",
@@ -499755,7 +499842,8 @@
         "bvp_score": 2,
         "recent_5_score": 5,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Miguel Vargas",
@@ -499764,7 +499852,7 @@
         "score": 6.78,
         "v2Score": 5.31,
         "v2Rank": 86,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 5,
         "park_score": 5,
@@ -499777,7 +499865,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Tristan Peters",
@@ -499799,7 +499888,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Luisangel Acuña",
@@ -499821,7 +499911,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "José Ramírez",
@@ -499843,7 +499934,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jeremy Peña",
@@ -499852,7 +499944,7 @@
         "score": 6.73,
         "v2Score": 5.33,
         "v2Rank": 80,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 2,
         "park_score": 5,
@@ -499865,7 +499957,8 @@
         "bvp_score": 5,
         "recent_5_score": 7,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Tyler Soderstrom",
@@ -499887,7 +499980,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 6,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Marcell Ozuna",
@@ -499909,7 +500003,8 @@
         "bvp_score": 2,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Jared Young",
@@ -499931,7 +500026,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Tyrone Taylor",
@@ -499940,7 +500036,7 @@
         "score": 6.7,
         "v2Score": 5.17,
         "v2Rank": 100,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 5,
         "park_score": 5,
@@ -499953,7 +500049,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Kyle Higashioka",
@@ -499975,7 +500072,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Kerry Carpenter",
@@ -499997,7 +500095,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Ozzie Albies",
@@ -500019,7 +500118,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Eugenio Suárez",
@@ -500041,7 +500141,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 7,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Riley Greene",
@@ -500063,7 +500164,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "James Wood",
@@ -500072,7 +500174,7 @@
         "score": 6.67,
         "v2Score": 5.61,
         "v2Rank": 50,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 5,
         "park_score": 4,
@@ -500085,7 +500187,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Dylan Crews",
@@ -500107,7 +500210,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Nick Loftin",
@@ -500129,7 +500233,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Jose Altuve",
@@ -500151,7 +500256,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Brooks Lee",
@@ -500173,7 +500279,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Blaze Jordan",
@@ -500195,7 +500302,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Zach Dezenzo",
@@ -500217,7 +500325,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Tommy White",
@@ -500239,7 +500348,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "Griffin Conine",
@@ -500261,7 +500371,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Joe Mack",
@@ -500283,7 +500394,8 @@
         "bvp_score": 5,
         "recent_5_score": 7,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Kody Clemens",
@@ -500305,7 +500417,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Ben Rice",
@@ -500314,7 +500427,7 @@
         "score": 6.59,
         "v2Score": 5.36,
         "v2Rank": 73,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": false,
         "home_away_score": 2,
         "park_score": 7,
@@ -500327,7 +500440,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Hao-Yu Lee",
@@ -500349,7 +500463,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Nick Fortes",
@@ -500371,7 +500486,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 5,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Richie Palacios",
@@ -500393,7 +500509,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Brady House",
@@ -500415,7 +500532,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Masataka Yoshida",
@@ -500437,7 +500555,8 @@
         "bvp_score": 6,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Kyle Karros",
@@ -500459,7 +500578,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Spencer Horwitz",
@@ -500481,7 +500601,8 @@
         "bvp_score": 2,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Isaac Collins",
@@ -500503,7 +500624,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Alec Bohm",
@@ -500525,7 +500647,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Nelson Velázquez",
@@ -500547,7 +500670,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Pedro Pagés",
@@ -500569,7 +500693,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Dominic Canzone",
@@ -500578,7 +500703,7 @@
         "score": 6.52,
         "v2Score": 5.2,
         "v2Rank": 95,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": false,
         "home_away_score": 2,
         "park_score": 3,
@@ -500591,7 +500716,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Adrian Del Castillo",
@@ -500613,7 +500739,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 5
+        "season_gap_score": 5,
+        "autoResulted": true
       },
       {
         "name": "Tim Tawa",
@@ -500635,7 +500762,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Max Muncy",
@@ -500657,7 +500785,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Paul Goldschmidt",
@@ -500679,7 +500808,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Josh Bell",
@@ -500701,7 +500831,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Kevin McGonigle",
@@ -500723,7 +500854,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Mike Yastrzemski",
@@ -500745,7 +500877,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Luis Campusano",
@@ -500767,7 +500900,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Willy Adames",
@@ -500789,7 +500923,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Luis García Jr.",
@@ -500811,7 +500946,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Edouard Julien",
@@ -500833,7 +500969,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Wyatt Langford",
@@ -500855,7 +500992,8 @@
         "bvp_score": 2,
         "recent_5_score": 5,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Dylan Beavers",
@@ -500877,7 +501015,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Seiya Suzuki",
@@ -500886,7 +501025,7 @@
         "score": 6.39,
         "v2Score": 5.2,
         "v2Rank": 97,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": false,
         "home_away_score": 2,
         "park_score": 1,
@@ -500899,7 +501038,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 5,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Taylor Trammell",
@@ -500908,7 +501048,7 @@
         "score": 6.39,
         "v2Score": 4.37,
         "v2Rank": 203,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 2,
         "park_score": 5,
@@ -500921,7 +501061,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Max Kepler",
@@ -500943,7 +501084,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Pete Crow-Armstrong",
@@ -500965,7 +501107,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jac Caglianone",
@@ -500987,7 +501130,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "A.J. Ewing",
@@ -501009,7 +501153,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Iván Herrera",
@@ -501018,7 +501163,7 @@
         "score": 6.36,
         "v2Score": 4.54,
         "v2Rank": 177,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 5,
         "park_score": 3,
@@ -501031,7 +501176,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "James Outman",
@@ -501053,7 +501199,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Ty France",
@@ -501075,7 +501222,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 7,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jonny DeLuca",
@@ -501097,7 +501245,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Ben Williamson",
@@ -501119,7 +501268,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "Cedric Mullins",
@@ -501141,7 +501291,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Ceddanne Rafaela",
@@ -501163,7 +501314,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Travis Bazzana",
@@ -501185,7 +501337,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Angel Martínez",
@@ -501207,7 +501360,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Andrew Velazquez",
@@ -501229,7 +501383,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "Anthony Volpe",
@@ -501251,7 +501406,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "Rafael Marchán",
@@ -501273,7 +501429,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Tristan Gray",
@@ -501295,7 +501452,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "JJ Wetherholt",
@@ -501317,7 +501475,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Masyn Winn",
@@ -501339,7 +501498,8 @@
         "bvp_score": 2,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Luke Raley",
@@ -501361,7 +501521,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jacob Wilson",
@@ -501383,7 +501544,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 6,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Colby Thomas",
@@ -501405,7 +501567,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Jung Hoo Lee",
@@ -501427,7 +501590,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Freddie Freeman",
@@ -501449,7 +501613,8 @@
         "bvp_score": 4,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Carson Benge",
@@ -501471,7 +501636,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jim Jarvis",
@@ -501493,7 +501659,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Sung-Mun Song",
@@ -501515,7 +501682,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "Chase Meidroth",
@@ -501524,7 +501692,7 @@
         "score": 6.22,
         "v2Score": 4.64,
         "v2Rank": 163,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 5,
         "park_score": 5,
@@ -501537,7 +501705,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Ke'Bryan Hayes",
@@ -501546,7 +501715,7 @@
         "score": 6.22,
         "v2Score": 4.63,
         "v2Rank": 165,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": false,
         "home_away_score": 5,
         "park_score": 1,
@@ -501559,7 +501728,8 @@
         "bvp_score": 2,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Jacob Young",
@@ -501581,7 +501751,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Andruw Monasterio",
@@ -501603,7 +501774,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Lane Thomas",
@@ -501612,7 +501784,7 @@
         "score": 6.21,
         "v2Score": 4.46,
         "v2Rank": 193,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 2,
         "park_score": 7,
@@ -501625,7 +501797,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Starling Marte",
@@ -501647,7 +501820,8 @@
         "bvp_score": 2,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Tyler Tolbert",
@@ -501669,7 +501843,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Cody Bellinger",
@@ -501691,7 +501866,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "José Fermín",
@@ -501713,7 +501889,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Tyler Locklear",
@@ -501735,7 +501912,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Graham Pauley",
@@ -501757,7 +501935,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "Colt Keith",
@@ -501779,7 +501958,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Dominic Smith",
@@ -501801,7 +501981,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jo Adell",
@@ -501810,7 +501991,7 @@
         "score": 6.12,
         "v2Score": 5.34,
         "v2Rank": 78,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": false,
         "home_away_score": 2,
         "park_score": 1,
@@ -501823,7 +502004,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Mickey Moniak",
@@ -501845,7 +502027,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Drew Romo",
@@ -501867,7 +502050,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Bryan Reynolds",
@@ -501889,7 +502073,8 @@
         "bvp_score": 4,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Geraldo Perdomo",
@@ -501898,7 +502083,7 @@
         "score": 6.1,
         "v2Score": 4.66,
         "v2Rank": 158,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 2,
         "park_score": 4,
@@ -501911,7 +502096,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Chase DeLauter",
@@ -501933,7 +502119,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Luke Maile",
@@ -501955,7 +502142,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Luke Keaschall",
@@ -501977,7 +502165,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Josh Naylor",
@@ -501999,7 +502188,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Jeff McNeil",
@@ -502021,7 +502211,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Henry Bolte",
@@ -502043,7 +502234,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Eliezer Alfonzo",
@@ -502065,7 +502257,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "J.T. Realmuto",
@@ -502087,7 +502280,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Andrew McCutchen",
@@ -502109,7 +502303,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Andy Pages",
@@ -502131,7 +502326,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jake Cronenworth",
@@ -502153,7 +502349,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Willi Castro",
@@ -502162,7 +502359,7 @@
         "score": 6.0,
         "v2Score": 4.68,
         "v2Rank": 155,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 2,
         "park_score": 5,
@@ -502175,7 +502372,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Chandler Simpson",
@@ -502197,7 +502395,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "Caleb Durbin",
@@ -502219,7 +502418,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Jarren Duran",
@@ -502241,7 +502441,8 @@
         "bvp_score": 4,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Elly De La Cruz",
@@ -502250,7 +502451,7 @@
         "score": 5.98,
         "v2Score": 5.11,
         "v2Rank": 107,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 2,
         "park_score": 3,
@@ -502263,7 +502464,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Nathaniel Lowe",
@@ -502285,7 +502487,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Vladimir Guerrero Jr.",
@@ -502307,7 +502510,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Liam Hicks",
@@ -502329,7 +502533,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Esteury Ruiz",
@@ -502351,7 +502556,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Gleyber Torres",
@@ -502373,7 +502579,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Randy Arozarena",
@@ -502382,7 +502589,7 @@
         "score": 5.91,
         "v2Score": 4.92,
         "v2Rank": 128,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": false,
         "home_away_score": 2,
         "park_score": 3,
@@ -502395,7 +502602,8 @@
         "bvp_score": 2,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Cam Smith",
@@ -502417,7 +502625,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Gavin Sheets",
@@ -502439,7 +502648,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Romy Gonzalez",
@@ -502461,7 +502671,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Brayan Rocchio",
@@ -502483,7 +502694,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Cole Young",
@@ -502505,7 +502717,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "George Springer",
@@ -502527,7 +502740,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Harrison Bader",
@@ -502549,7 +502763,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Matt Chapman",
@@ -502571,7 +502786,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Ryan McMahon",
@@ -502593,7 +502809,8 @@
         "bvp_score": 2,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Evan Carter",
@@ -502615,7 +502832,8 @@
         "bvp_score": 2,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Ezequiel Duran",
@@ -502624,7 +502842,7 @@
         "score": 5.81,
         "v2Score": 4.72,
         "v2Rank": 149,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": false,
         "home_away_score": 5,
         "park_score": 3,
@@ -502637,7 +502855,8 @@
         "bvp_score": 2,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Danny Jansen",
@@ -502659,7 +502878,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Mauricio Dubón",
@@ -502681,7 +502901,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Harry Ford",
@@ -502703,7 +502924,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Cole Carrigg",
@@ -502712,7 +502934,7 @@
         "score": 5.77,
         "v2Score": 4.09,
         "v2Rank": 232,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 2,
         "park_score": 5,
@@ -502725,7 +502947,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Teoscar Hernández",
@@ -502747,7 +502970,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Alec Burleson",
@@ -502769,7 +502993,8 @@
         "bvp_score": 2,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Tommy Edman",
@@ -502791,7 +503016,8 @@
         "bvp_score": 2,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Zach Neto",
@@ -502813,7 +503039,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Ryan O'Hearn",
@@ -502822,7 +503049,7 @@
         "score": 5.67,
         "v2Score": 4.5,
         "v2Rank": 189,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": false,
         "home_away_score": 5,
         "park_score": 1,
@@ -502835,7 +503062,8 @@
         "bvp_score": 2,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Nasim Nuñez",
@@ -502857,7 +503085,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "Jake McCarthy",
@@ -502879,7 +503108,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "TJ Rumfield",
@@ -502901,7 +503131,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Steven Kwan",
@@ -502923,7 +503154,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Mike Trout",
@@ -502945,7 +503177,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Logan O'Hoppe",
@@ -502967,7 +503200,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 8
+        "season_gap_score": 8,
+        "autoResulted": true
       },
       {
         "name": "Otto Lopez",
@@ -502989,7 +503223,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Josh Lowe",
@@ -503011,7 +503246,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jose Trevino",
@@ -503033,7 +503269,8 @@
         "bvp_score": 5,
         "recent_5_score": 5,
         "recent_10_score": 6,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Noelvi Marte",
@@ -503055,7 +503292,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jonah Heim",
@@ -503077,7 +503315,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Alika Williams",
@@ -503099,7 +503338,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Xavier Edwards",
@@ -503121,7 +503361,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Daulton Varsho",
@@ -503143,7 +503384,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Spencer Steer",
@@ -503165,7 +503407,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "JJ Bleday",
@@ -503187,7 +503430,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 5,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Dane Myers",
@@ -503209,7 +503453,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Ke'Bryan Hayes",
@@ -503218,7 +503463,7 @@
         "score": 5.42,
         "v2Score": 4.12,
         "v2Rank": 229,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": true,
         "home_away_score": 2,
         "park_score": 3,
@@ -503231,7 +503476,8 @@
         "bvp_score": 2,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 7
+        "season_gap_score": 7,
+        "autoResulted": true
       },
       {
         "name": "Davis Schneider",
@@ -503253,7 +503499,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Brendan Donovan",
@@ -503275,7 +503522,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Troy Johnston",
@@ -503297,7 +503545,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 4
+        "season_gap_score": 4,
+        "autoResulted": true
       },
       {
         "name": "Ian Happ",
@@ -503319,7 +503568,8 @@
         "bvp_score": 2,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Andrés Giménez",
@@ -503341,7 +503591,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Dansby Swanson",
@@ -503363,7 +503614,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Amed Rosario",
@@ -503385,7 +503637,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Alex Bregman",
@@ -503407,7 +503660,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 6,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jordan Walker",
@@ -503429,7 +503683,8 @@
         "bvp_score": 2,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Ernie Clement",
@@ -503451,7 +503706,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Nolan Schanuel",
@@ -503473,7 +503729,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Matt Shaw",
@@ -503495,7 +503752,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Alejandro Kirk",
@@ -503517,7 +503775,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Kazuma Okamoto",
@@ -503539,7 +503798,8 @@
         "bvp_score": 5,
         "recent_5_score": 3,
         "recent_10_score": 4,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Jorge Soler",
@@ -503548,7 +503808,7 @@
         "score": 5.01,
         "v2Score": 3.95,
         "v2Rank": 245,
-        "hitHR": false,
+        "hitHR": true,
         "lineupConfirmed": false,
         "home_away_score": 2,
         "park_score": 1,
@@ -503561,7 +503821,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Moisés Ballesteros",
@@ -503583,7 +503844,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Nathan Lukes",
@@ -503605,7 +503867,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 4,
-        "season_gap_score": 6
+        "season_gap_score": 6,
+        "autoResulted": true
       },
       {
         "name": "Miguel Amaya",
@@ -503627,7 +503890,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Yoán Moncada",
@@ -503649,7 +503913,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       },
       {
         "name": "Nico Hoerner",
@@ -503671,7 +503936,8 @@
         "bvp_score": 2,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 3
+        "season_gap_score": 3,
+        "autoResulted": true
       },
       {
         "name": "Oswald Peraza",
@@ -503693,7 +503959,8 @@
         "bvp_score": 5,
         "recent_5_score": 1,
         "recent_10_score": 2,
-        "season_gap_score": 2
+        "season_gap_score": 2,
+        "autoResulted": true
       }
     ]
   }
