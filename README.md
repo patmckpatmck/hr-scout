@@ -1,3 +1,5 @@
+> **Retired October 2026.** HR Scout is shut down. Automation is disabled, the site is offline, and this repo is archived read-only.
+
 # HR Scout
 
 Personal MLB home-run prediction tool. Daily pipeline scores every confirmed starting batter across 12 factors (ballpark, pitcher HR/9, bullpen, wind, xHR, BvP history, recent form, Vegas odds, etc.) and ranks them by likelihood to hit a home run.
